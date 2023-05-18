@@ -10,22 +10,24 @@ with open(html_file, 'r') as file:
 # Combine <path> and </path> tags into a single line
 html_source = re.sub(r'>\s*\n\s*</path>', '></path>', html_source)
 
-# Regular expression pattern to extract country information
-pattern = r'<path\s(?:class="(.*?)".*?|name="(.*?)".*?)d="(.*?)".*?></path>'
+# Regular expression patterns to extract country information
+pattern1 = r'<path\s(?:class="(.*?)".*?)d="(.*?)".*?></path>'
+pattern2 = r'<path\s.*?d="(.*?)".*?name="(.*?)".*?></path>'
 
-# Find all matches
-matches = re.findall(pattern, html_source, re.DOTALL)
+# Find all matches with Pattern 1
+matches = re.findall(pattern1, html_source, re.DOTALL)
 
 # Create a dictionary to store country paths
 country_paths = {}
 
-# Process each match
+# Process each match from Pattern 1
 for match in matches:
-    class_name, name, path = match
+    class_name, path = match
+    name = re.search(r'name="(.*?)"', match[0])
     if class_name:
         country = class_name
     elif name:
-        country = name.strip()
+        country = name.group(1).strip()
     else:
         continue
 
@@ -34,6 +36,20 @@ for match in matches:
         country_paths[country] += '\n' + path
     else:
         country_paths[country] = path
+
+# Find all matches with Pattern 2
+matches2 = re.findall(pattern2, html_source, re.DOTALL)
+
+# Process each match from Pattern 2
+for match2 in matches2:
+    path, name = match2
+    if name:
+        country = name.strip()
+        if country in country_paths:
+            # Concatenate multiple paths for the same country
+            country_paths[country] += '\n' + path
+        else:
+            country_paths[country] = path
 
 # List of countries
 countries = [
