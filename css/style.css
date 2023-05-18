@@ -1,0 +1,7 @@
+.map-geography{
+    border: 1px solid transparent;
+}
+
+svg {
+    transform: scale(0.5); /* desired scale factor */
+  }
