@@ -2,6 +2,11 @@
     border: 1px solid transparent;
 }
 
-svg {
-    transform: scale(0.5); /* desired scale factor */
+.wdm-map-container svg {
+    transform: scale(0.5) !important; /* desired scale factor */
   }
+
+  .svg-element-selector {
+    outline: none;
+  }
+  

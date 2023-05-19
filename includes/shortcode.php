@@ -10,6 +10,6 @@ function wdm_display_map($atts) {
     $map_html = wdm_generate_map();
 
     // Return the HTML code wrapped in a div with the specified width and height
-    return '<div style="width: ' . $width . '; height: auto;">' . $map_html . '</div>';
+    return '<div class=wdm-map>' . $map_html . '</div>';
 }
 add_shortcode('wdm_map', 'wdm_display_map');
