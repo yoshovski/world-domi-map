@@ -8,9 +8,24 @@
 
 // Include the necessary files
 require_once(plugin_dir_path(__FILE__) . 'includes/activation.php');
-require_once(plugin_dir_path(__FILE__) . 'includes/scripts.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/map-generator.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/shortcode.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/settings-page.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/settings-page-validation.php');
 require_once(plugin_dir_path(__FILE__) . 'countries.php');
+
+// Enqueue plugin scripts and styles for the admin area
+function wdm_enqueue_admin_scripts() {
+    // Enqueue admin scripts and styles here
+    wp_enqueue_style('wdm-admin-style', plugins_url('css/style.css', __FILE__));
+    wp_enqueue_script( 'wdm-admin-script', plugin_dir_url( __FILE__ ) . 'js/admin-script.js', array(), '1.0', true );
+}
+add_action('admin_enqueue_scripts', 'wdm_enqueue_admin_scripts');
+
+// Enqueue plugin scripts and styles for the front-end
+function wdm_enqueue_scripts() {
+    // Enqueue front-end scripts and styles here
+    wp_enqueue_style('wdm-style', plugins_url('css/style.css', __FILE__));
+    wp_enqueue_script('wdm-script', plugins_url('js/script.js', __FILE__), array('jquery'), '1.0.0', true);
+}
+add_action('wp_enqueue_scripts', 'wdm_enqueue_scripts');
