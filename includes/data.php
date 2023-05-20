@@ -10,7 +10,7 @@ function wdm_get_countries() {
 function readJsonFile($filePath)
 {
     // Construct the full path to the JSON file
-    $jsonFilePath = __DIR__ . '/' . $filePath;
+    $jsonFilePath = __DIR__ . '/../' . $filePath;
 
     // Read the JSON file
     $jsonContent = file_get_contents($jsonFilePath);
@@ -36,6 +36,6 @@ function readJsonFile($filePath)
 }
 
 function wdm_get_country_paths() {
-    $resultArray = readJsonFile('country_paths.json');
+    $resultArray = readJsonFile('resources/country_paths.json');
     return $resultArray;
 }
