@@ -3,8 +3,8 @@
 
 function wdm_generate_map() {
     // Define the colors for the active and inactive states
-    $activeColor = "#343434";
-    $inactiveColor = "#b1afaf";
+    $activeColor = "#62646a";
+    $inactiveColor = "#e4e5e7";
 
     // Retrieve the completed projects
     $completed_projects = get_option('wdm_completed_projects', array());
@@ -14,8 +14,8 @@ function wdm_generate_map() {
     $country_paths = wdm_get_country_paths();
 
     // Generate the SVG code by iterating over the countryPaths array
-    $svg_code = '<div class="wdm-map-container">';
-    $svg_code .= '<svg width="2000" height="850" data-tip="true" currentItem="false" aria-describedby="ta3f93b00-9063-4635-9b34-ec7bdc67d1bc">';
+    $svg_code = '<div class="wdm-map-container" style="padding: 20px; background-color: white; margin: 0; box-sizing: border-box;">';
+    $svg_code .= '<svg viewBox="0 0 2000 850" width="2000" height="850" data-tip="true" currentItem="false" aria-describedby="ta3f93b00-9063-4635-9b34-ec7bdc67d1bc" style="transform: scale(0.5); transform-origin: 0% 0%;">';
     $svg_code .= '<g class="countries">';
 
     foreach ($country_paths as $country => $path) {
