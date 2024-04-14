@@ -2,6 +2,14 @@
 // Generate the map HTML code
 
 function wdm_generate_map() {
+    // Define the colors for the active and inactive states
+    $activeColor = "#343434";
+    $inactiveColor = "#b1afaf";
+
+    // Retrieve the completed projects
+    $completed_projects = get_option('wdm_completed_projects', array());
+    error_log(print_r($completed_projects, true));
+
     // Retrieve the list of countries and their SVG paths
     $country_paths = wdm_get_country_paths();
 
@@ -11,7 +19,11 @@ function wdm_generate_map() {
     $svg_code .= '<g class="countries">';
 
     foreach ($country_paths as $country => $path) {
-        $svg_code .= '<path class="map-geography map-geography-with-value" tabindex="0" d="' . $path . '" fill="#62646a" title="' . $country . '"></path>';
+        $country_slug = sanitize_title($country);
+        $class = isset($completed_projects[$country_slug]) && $completed_projects[$country_slug] > 0 ? 'active' : 'inactive';
+        // Set the fill color based on the status of the country
+        $fillColor = $class == 'active' ? $activeColor : $inactiveColor;
+        $svg_code .= '<path class="map-geography map-geography-with-value ' . $class . '" tabindex="0" d="' . $path . '" fill="'  . $fillColor . '"style="outline: none;" title="' . $country . '"></path>';
     }
 
     $svg_code .= '</g>';

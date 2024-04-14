@@ -5,8 +5,8 @@
 .wdm-map-container svg {
     transform: scale(0.5) !important; /* desired scale factor */
   }
-
+/*
   .svg-element-selector {
-    outline: none;
+    outline: none !important;
   }
-  
+*/
