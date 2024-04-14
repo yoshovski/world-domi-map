@@ -13,7 +13,7 @@ function wdm_add_settings_page() {
 }
 add_action('admin_menu', 'wdm_add_settings_page');
 
-// Render the settings page
+// includes/admin/settings-page.php
 function wdm_render_settings_page() {
     // Retrieve the list of countries from countries.php
     $countries = wdm_get_countries();
@@ -27,24 +27,35 @@ function wdm_render_settings_page() {
 
     ?>
     <div class="wrap">
-        <h1>World Domi Map Settings</h1>
+        <h1>World DomiMap Settings</h1>
         <form method="post" action="options.php">
             <?php
             // Output security fields for the registered setting
             settings_fields('wdm_settings_group');
             // Output setting sections and their fields
             do_settings_sections('wdm_settings');
+            ?>
+            <select id="country-select">
+                <?php foreach ($countries as $country): ?>
+                    <option value="<?php echo sanitize_title($country); ?>"><?php echo $country; ?></option>
+                <?php endforeach; ?>
+            </select>
+
+
+            <?php
 
             // Render the list of countries and project fields
             foreach ($countries as $country) {
                 $country_slug = sanitize_title($country);
                 $country_value = isset($completed_projects[$country_slug]) ? $completed_projects[$country_slug] : 0;
                 ?>
-                <h3><?php echo $country; ?></h3>
-                <label for="wdm_project_<?php echo $country_slug; ?>">
-                    Number of Projects:
-                    <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1">
-                </label>
+                <div id="project-field-<?php echo $country_slug; ?>" style="display: none;">
+                    <h3><?php echo $country; ?></h3>
+                    <label for="wdm_project_<?php echo $country_slug; ?>">
+                        Number of Projects:
+                        <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1">
+                    </label>
+                </div>
                 <?php
             }
 
@@ -55,11 +66,11 @@ function wdm_render_settings_page() {
     </div>
 
 
-<?php
-$map_shortcode = '[wdm_map width="100%"]';
-$map_html = do_shortcode($map_shortcode);
-echo $map_html;
-?>
+    <?php
+    $map_shortcode = '[wdm_map width="100%"]';
+    $map_html = do_shortcode($map_shortcode);
+    echo $map_html;
+    ?>
 
 <?php
 }

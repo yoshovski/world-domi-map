@@ -1,20 +1,4 @@
 <?php
-function is_project_completed($country, $completed_projects) {
-    $country_slug = sanitize_title($country);
-    return isset($completed_projects[$country_slug]) && $completed_projects[$country_slug] > 0;
-}
-
-function calculate_world_domination_percentage($countries, $completed_projects) {
-    $completed_countries = 0;
-    foreach ($countries as $country) {
-        if (is_project_completed($country, $completed_projects)) {
-            $completed_countries++;
-        }
-    }
-
-    $world_domination_percentage = ($completed_countries / count($countries)) * 100;
-    return ceil($world_domination_percentage);
-}
 
 function wdm_generate_map() {
     $active_color = "#62646a";
@@ -43,12 +27,3 @@ function wdm_generate_map() {
     return ob_get_clean();
 }
 
-function wdm_get_world_domination_percentage() {
-    $countries = wdm_get_countries();
-    $completed_projects = get_option('wdm_completed_projects', array());
-
-    $world_domination_percentage = calculate_world_domination_percentage($countries, $completed_projects);
-    error_log("PERCENTAGE: " . $world_domination_percentage);
-
-    return $world_domination_percentage . '%';
-}

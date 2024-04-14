@@ -39,3 +39,34 @@ function wdm_get_country_paths() {
     $resultArray = readJsonFile('resources/country_paths.json');
     return $resultArray;
 }
+
+function is_project_completed($country, $completed_projects) {
+    $country_slug = sanitize_title($country);
+    return isset($completed_projects[$country_slug]) && $completed_projects[$country_slug] > 0;
+}
+
+function get_total_completed_projects() {
+    $completed_projects = get_option('wdm_completed_projects', array());
+    return array_sum($completed_projects);
+}
+
+function get_total_active_countries() {
+    $countries = wdm_get_countries();
+    $completed_projects = get_option('wdm_completed_projects', array());
+    $active_countries = 0;
+    foreach ($countries as $country) {
+        if (is_project_completed($country, $completed_projects)) {
+            $active_countries++;
+        }
+    }
+
+    return $active_countries;
+}
+
+function wdm_get_world_domination_percentage() {
+    $countries = wdm_get_countries();
+    $active_countries = get_total_active_countries();
+
+    $world_domination_percentage = ($active_countries / count($countries)) * 100;
+    return ceil($world_domination_percentage).'%';
+}

@@ -22,11 +22,11 @@ function wdm_enqueue_admin_scripts() {
     wp_enqueue_style('wdm-admin-style');
 
     // Register and enqueue admin scripts
-    wp_register_script('wdm-admin-script', plugin_dir_url(__FILE__) . 'js/admin.js', array('jquery'));
+    wp_register_script('wdm-admin-script', plugin_dir_url(__FILE__) . 'js/wdm_admin.js', array('jquery'));
     wp_enqueue_script('wdm-admin-script');
 
     // Register and enqueue common script
-    wp_register_script('wdm-common-script', plugin_dir_url(__FILE__) . 'js/common.js', array('jquery'));
+    wp_register_script('wdm-common-script', plugin_dir_url(__FILE__) . 'js/wdm_common.js', array('jquery'));
     wp_enqueue_script('wdm-common-script');
 }
 add_action('admin_enqueue_scripts', 'wdm_enqueue_admin_scripts');
@@ -38,11 +38,11 @@ function wdm_enqueue_scripts() {
     wp_enqueue_style('wdm-style');
 
     // Register and enqueue front-end scripts
-    wp_register_script('wdm-script', plugins_url('js/frontend.js', __FILE__), array('jquery'));
+    wp_register_script('wdm-script', plugins_url('js/wdm_frontend.js', __FILE__), array('jquery'));
     wp_enqueue_script('wdm-script');
 
     // Register and enqueue common script
-    wp_register_script('wdm-common-script', plugin_dir_url(__FILE__) . 'js/common.js', array('jquery'));
+    wp_register_script('wdm-common-script', plugin_dir_url(__FILE__) . 'js/wdm_common.js', array('jquery'));
     wp_enqueue_script('wdm-common-script');
 }
 add_action('wp_enqueue_scripts', 'wdm_enqueue_scripts');
