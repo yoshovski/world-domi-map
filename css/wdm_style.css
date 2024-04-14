@@ -1,0 +1,22 @@
+.map-geography{
+    border: 1px solid transparent;
+}
+
+.wdm-map-container {
+    padding: 20px;
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wdm-map-container svg {
+    transform: scale(0.6);
+    transform-origin: 0% 0%;
+    viewBox: 0 0 2000 850;
+    width: 2000px;
+    height: 850px;
+}
+
+.wdm-map-container svg path{
+outline: none;
+}

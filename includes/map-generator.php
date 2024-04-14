@@ -1,35 +1,54 @@
 <?php
-// Generate the map HTML code
+function is_project_completed($country, $completed_projects) {
+    $country_slug = sanitize_title($country);
+    return isset($completed_projects[$country_slug]) && $completed_projects[$country_slug] > 0;
+}
 
-function wdm_generate_map() {
-    // Define the colors for the active and inactive states
-    $activeColor = "#62646a";
-    $inactiveColor = "#e4e5e7";
-
-    // Retrieve the completed projects
-    $completed_projects = get_option('wdm_completed_projects', array());
-    error_log(print_r($completed_projects, true));
-
-    // Retrieve the list of countries and their SVG paths
-    $country_paths = wdm_get_country_paths();
-
-    // Generate the SVG code by iterating over the countryPaths array
-    $svg_code = '<div class="wdm-map-container" style="padding: 20px; background-color: white; margin: 0; box-sizing: border-box;">';
-    $svg_code .= '<svg viewBox="0 0 2000 850" width="2000" height="850" data-tip="true" currentItem="false" aria-describedby="ta3f93b00-9063-4635-9b34-ec7bdc67d1bc" style="transform: scale(0.5); transform-origin: 0% 0%;">';
-    $svg_code .= '<g class="countries">';
-
-    foreach ($country_paths as $country => $path) {
-        $country_slug = sanitize_title($country);
-        $class = isset($completed_projects[$country_slug]) && $completed_projects[$country_slug] > 0 ? 'active' : 'inactive';
-        // Set the fill color based on the status of the country
-        $fillColor = $class == 'active' ? $activeColor : $inactiveColor;
-        $svg_code .= '<path class="map-geography map-geography-with-value ' . $class . '" tabindex="0" d="' . $path . '" fill="'  . $fillColor . '"style="outline: none;" title="' . $country . '"></path>';
+function calculate_world_domination_percentage($countries, $completed_projects) {
+    $completed_countries = 0;
+    foreach ($countries as $country) {
+        if (is_project_completed($country, $completed_projects)) {
+            $completed_countries++;
+        }
     }
 
-    $svg_code .= '</g>';
-    $svg_code .= '</svg>';
-    $svg_code .= '</div>';
+    $world_domination_percentage = ($completed_countries / count($countries)) * 100;
+    return ceil($world_domination_percentage);
+}
 
-    // Return the generated SVG code
-    return $svg_code;
+function wdm_generate_map() {
+    $active_color = "#62646a";
+    $inactive_color = "#e4e5e7";
+
+    $completed_projects = get_option('wdm_completed_projects', array());
+    $country_paths = wdm_get_country_paths();
+
+    ob_start();
+    ?>
+    <div class="wdm-map-container">
+        <h2 class="section-header tbody-4">World Domination <?php echo wdm_get_world_domination_percentage() ?></h2>
+        <svg>
+            <g class="countries">
+                <?php foreach ($country_paths as $country => $path): ?>
+                    <?php
+                    $class = is_project_completed($country, $completed_projects) ? 'active' : 'inactive';
+                    $fillColor = $class == 'active' ? $active_color : $inactive_color;
+                    ?>
+                    <path class="map-geography map-geography-with-value <?php echo $class; ?>" tabindex="0" d="<?php echo $path; ?>" fill="<?php echo $fillColor; ?>" title="<?php echo $country; ?>"></path>
+                <?php endforeach; ?>
+            </g>
+        </svg>
+    </div>
+    <?php
+    return ob_get_clean();
+}
+
+function wdm_get_world_domination_percentage() {
+    $countries = wdm_get_countries();
+    $completed_projects = get_option('wdm_completed_projects', array());
+
+    $world_domination_percentage = calculate_world_domination_percentage($countries, $completed_projects);
+    error_log("PERCENTAGE: " . $world_domination_percentage);
+
+    return $world_domination_percentage . '%';
 }
