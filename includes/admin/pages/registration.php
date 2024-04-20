@@ -1,4 +1,8 @@
 <?php
+/*
+ * This file is used to register the settings page and the settings fields
+ */
+
 // Register the settings and fields
 function wdm_register_settings() {
     // Register a new setting
@@ -25,30 +29,6 @@ function wdm_register_settings() {
 
 add_action('admin_init', 'wdm_register_settings');
 
-function wdm_update_country_sales() {
-    // Check if the request is valid
-    if (isset($_POST['name']) && isset($_POST['value'])) {
-        // Update the setting
-        $completed_projects = get_option('wdm_completed_projects', array());
-        $completed_projects[$_POST['name']] = $_POST['value'];
-        $update_status = update_option('wdm_completed_projects', $completed_projects);
-
-        // Check if the update was successful
-        if ($update_status) {
-            echo 'Setting updated successfully';
-        } else {
-            error_log('Failed to update option: ' . print_r($completed_projects, true));
-            echo 'Failed to update setting';
-        }
-    } else {
-        error_log('Invalid request: ' . print_r($_POST, true));
-        echo 'Invalid request';
-    }
-
-    // Always die in functions echoing AJAX response
-    die();
-}
-add_action('wp_ajax_wdm_update_country_sales', 'wdm_update_country_sales');
 
 // Field callback function
 function wdm_projects_field_callback() {

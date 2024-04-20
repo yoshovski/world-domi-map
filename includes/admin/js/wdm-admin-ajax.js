@@ -11,11 +11,12 @@ jQuery(document).ready(function($) {
         let data = {
             'action': 'wdm_update_country_sales',
             'name': countryName,
-            'value': numberOfProjects
+            'value': numberOfProjects,
+            'nonce': wdm_admin_ajax_object.nonce
         };
 
         // Send the AJAX request
-        $.post(wdm_ajax_object.ajax_url, data, function(response) {
+        $.post(wdm_admin_ajax_object.ajax_url, data, function(response) {
             console.log(response);
             updateMap();
         });

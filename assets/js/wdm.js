@@ -1,24 +1,3 @@
-// Fetch data from the server
-function fetchData() {
-    return new Promise((resolve, reject) => {
-        jQuery.ajax({
-            url: wdm_ajax_object.ajax_url,
-            data: {
-                'action': 'wdm_get_map_data'
-            },
-            success: function(response) {
-                // Generate the map with the response data
-                resolve(response);
-            },
-            error: function(error) {
-                // Handle the error
-                console.log(error);
-                reject(error);
-            }
-        });
-    });
-}
-
 // Update the map with the updated data
 function updateMap() {
     // Fetch the updated data

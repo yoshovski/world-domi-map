@@ -1,4 +1,8 @@
 <?php
+/*
+ * This file is used to render the settings page
+ */
+
 // Add the settings page to the admin menu
 function wdm_add_settings_page() {
     add_menu_page(

@@ -1,4 +1,7 @@
 <?php
+/*
+ * This file is used to retrieve data from the database and prepare it for the map
+ */
 
 function wdm_get_map_data() {
     // Retrieve data
