@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     // When the value of a project field changes
-    $('.wdm-ajax-trigger').change(function() {
+    $('.completed-projects-input').change(function() {
         // Get the country name from the field's id
         const countryName = $(this).attr('id').replace('wdm_project_', '');
 

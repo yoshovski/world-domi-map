@@ -46,7 +46,7 @@ function wdm_render_settings_page() {
                 <h3><?php echo $country; ?></h3>
                 <label for="wdm_project_<?php echo $country_slug; ?>">
                     Number of Sales:
-                    <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1" class="wdm-ajax-trigger">
+                    <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1" class="completed-projects-input">
                 </label>
             </div>
             <?php
