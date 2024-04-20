@@ -38,7 +38,7 @@ function wdm_enqueue_scripts() {
     wp_enqueue_style('wdm-style');
 
     // Register and enqueue front-end scripts
-    wp_register_script('wdm-script', plugins_url('/public/js/wdm_frontend.js', __FILE__), array('jquery'));
+    wp_register_script('wdm-script', plugins_url('/includes/public/js/wdm_frontend.js', __FILE__), array('jquery'));
     wp_enqueue_script('wdm-script');
 
     // Register and enqueue common script
