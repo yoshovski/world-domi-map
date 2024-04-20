@@ -65,12 +65,7 @@ function wdm_render_settings_page() {
         </form>
     </div>
 
-
-    <?php
-    $map_shortcode = '[wdm_map width="100%"]';
-    $map_html = do_shortcode($map_shortcode);
-    echo $map_html;
-    ?>
+    <div class="wdm-map-container"></div>
 
 <?php
 }

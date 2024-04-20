@@ -1,5 +1,20 @@
-<?php  
+<?php
 
+function wdm_get_map_data() {
+    $completed_projects = get_option('wdm_completed_projects', array());
+    $country_paths = wdm_get_country_paths();
+    $world_domination_percentage = wdm_get_world_domination_percentage();
+
+    $data = array(
+        'completedProjects' => $completed_projects,
+        'countryPaths' => $country_paths,
+        'worldDominationPercentage' => $world_domination_percentage,
+    );
+
+    error_log('wdm_get_map_data is returning: ' . print_r($data, true));
+
+    return $data;
+}
 
 function wdm_get_countries() {
     $country_paths = wdm_get_country_paths();
