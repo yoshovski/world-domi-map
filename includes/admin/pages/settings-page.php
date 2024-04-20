@@ -28,7 +28,7 @@ function wdm_render_settings_page() {
     $completed_projects = get_option('wdm_completed_projects', array());
 
     ?>
-    <div class="wrap">
+    <div class="wdm-wrap">
         <h1>World DomiMap Settings</h1>
         <select id="country-select">
             <?php foreach ($countries as $country): ?>
@@ -52,9 +52,12 @@ function wdm_render_settings_page() {
             <?php
         }
         ?>
+
+
+        <div class="wdm-map-container"></div>
+
     </div>
 
-    <div class="wdm-map-container"></div>
 
     <?php
 }

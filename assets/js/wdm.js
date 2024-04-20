@@ -34,6 +34,8 @@ function generateMap(data) {
     mapContainers.forEach(container => {
         container.innerHTML = output;
     });
+
+    updateSvgScale();
 }
 
 // Check if a project is completed

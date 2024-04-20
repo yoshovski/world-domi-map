@@ -17,6 +17,12 @@
     height: 850px;
 }
 
+.wdm-wrap {
+    margin-right: 25px;
+}
+
 .wdm-map-container svg path{
 outline: none;
 }
+
+
