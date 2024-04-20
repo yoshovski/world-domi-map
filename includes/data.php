@@ -1,6 +1,27 @@
 <?php
 
 function wdm_get_map_data() {
+    // Get the completed projects
+    $completed_projects = get_option('wdm_completed_projects', array());
+
+    // Get the country paths
+    $country_paths = wdm_get_country_paths();
+
+    // Get the world domination percentage
+    $world_domination_percentage = wdm_get_world_domination_percentage();
+
+    // Prepare the map data
+    $map_data = array(
+        'completedProjects' => $completed_projects,
+        'countryPaths' => $country_paths,
+        'worldDominationPercentage' => $world_domination_percentage,
+    );
+
+    // Return the map data as a JSON response
+    wp_send_json($map_data);
+}
+/*
+function wdm_get_map_data() {
     $completed_projects = get_option('wdm_completed_projects', array());
     $country_paths = wdm_get_country_paths();
     $world_domination_percentage = wdm_get_world_domination_percentage();
@@ -14,7 +35,7 @@ function wdm_get_map_data() {
     error_log('wdm_get_map_data is returning: ' . print_r($data, true));
 
     return $data;
-}
+}*/
 
 function wdm_get_countries() {
     $country_paths = wdm_get_country_paths();

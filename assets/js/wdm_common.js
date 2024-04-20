@@ -1,8 +1,40 @@
 // Fetch data from the server
-async function fetchData() {
-    const response = await fetch(wdm_rest_object.get_map_data_url);
-    const data = await response.json();
-    return data;
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        if (typeof wdm_ajax_object === 'undefined' || typeof wdm_ajax_object.ajax_url === 'undefined') {
+            console.error('wdm_ajax_object or wdm_ajax_object.ajax_url is not defined');
+            reject('wdm_ajax_object or wdm_ajax_object.ajax_url is not defined');
+            return;
+        }
+
+        jQuery.ajax({
+            url: wdm_ajax_object.ajax_url,
+            data: {
+                'action': 'wdm_get_map_data'
+            },
+            success: function(response) {
+                // Generate the map with the response data
+                resolve(response);
+            },
+            error: function(error) {
+                // Handle the error
+                console.log(error);
+                reject(error);
+            }
+        });
+    });
+}
+
+// Update the map with the updated data
+function updateMap() {
+    // Fetch the updated data
+    fetchData().then(function(response) {
+        // Update the map with the new data
+        generateMap(response);
+    }).catch(function(error) {
+        // Handle the error
+        console.log(error);
+    });
 }
 
 // Generate the map
@@ -36,8 +68,3 @@ function isProjectCompleted(country, completedProjects) {
     const countrySlug = country.replace(/\s+/g, '-').toLowerCase();
     return completedProjects[countrySlug] && completedProjects[countrySlug] > 0;
 }
-
-// Fetch the data and generate the map
-fetchData().then(data => {
-    generateMap(data);
-});
