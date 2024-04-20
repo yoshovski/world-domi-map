@@ -1,12 +1,6 @@
 // Fetch data from the server
 function fetchData() {
     return new Promise((resolve, reject) => {
-        if (typeof wdm_ajax_object === 'undefined' || typeof wdm_ajax_object.ajax_url === 'undefined') {
-            console.error('wdm_ajax_object or wdm_ajax_object.ajax_url is not defined');
-            reject('wdm_ajax_object or wdm_ajax_object.ajax_url is not defined');
-            return;
-        }
-
         jQuery.ajax({
             url: wdm_ajax_object.ajax_url,
             data: {
@@ -68,3 +62,8 @@ function isProjectCompleted(country, completedProjects) {
     const countrySlug = country.replace(/\s+/g, '-').toLowerCase();
     return completedProjects[countrySlug] && completedProjects[countrySlug] > 0;
 }
+
+
+jQuery(document).ready(function($) {
+    updateMap();
+});

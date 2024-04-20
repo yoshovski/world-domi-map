@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 
         // Create an object to hold the data
         let data = {
-            'action': 'wdm_update_setting',
+            'action': 'wdm_update_country_sales',
             'name': countryName,
             'value': numberOfProjects
         };

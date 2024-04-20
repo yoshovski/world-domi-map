@@ -25,7 +25,7 @@ function wdm_register_settings() {
 
 add_action('admin_init', 'wdm_register_settings');
 
-function wdm_update_setting() {
+function wdm_update_country_sales() {
     // Check if the request is valid
     if (isset($_POST['name']) && isset($_POST['value'])) {
         // Update the setting
@@ -48,7 +48,7 @@ function wdm_update_setting() {
     // Always die in functions echoing AJAX response
     die();
 }
-add_action('wp_ajax_wdm_update_setting', 'wdm_update_setting');
+add_action('wp_ajax_wdm_update_country_sales', 'wdm_update_country_sales');
 
 // Field callback function
 function wdm_projects_field_callback() {
