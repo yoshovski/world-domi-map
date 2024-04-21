@@ -1,6 +1,5 @@
 .map-geography{
     border: 1px solid transparent;
-    position: relative;
 }
 
 .wdm-map-container {
@@ -20,7 +19,6 @@
 outline: none;
 }
 
-
 .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -33,27 +31,21 @@ outline: none;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s;
-    transform: translate(-50%, -100%);
-    margin-top: -10px; /* Adjust this value to move the tooltip up */
+    transform: translate(-50%, 0%);
 }
 
-.map-geography title {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+.tooltiptext::after {
+    content: "";
     position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s;
-    transform: translate(-50%, -100%);
-    margin-top: -10px;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }
 
-.map-geography:hover title {
+.map-geography:hover ~ .tooltiptext {
     visibility: visible;
     opacity: 1;
 }

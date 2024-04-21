@@ -33,13 +33,12 @@ function generateMap(data) {
             tooltipText = `${country}`;
         }
 
-        output += `<path class="map-geography map-geography-with-value ${className} tooltip"
-                        tabindex="0" d="${path}" fill="${fillColor}">
-                        <title>${tooltipText}</title>
+        output += `<path class="map-geography map-geography-with-value ${className}"
+                        tabindex="0" d="${path}" fill="${fillColor}" data-tooltip="${tooltipText}">
                     </path>`;
     }
 
-    output += '</g></svg></div>';
+    output += '</g></svg><div class="tooltiptext" id="mapTooltip"></div></div>';
 
     const mapContainers = document.querySelectorAll('.wdm-map-container');
 
@@ -47,8 +46,36 @@ function generateMap(data) {
         container.innerHTML = output;
     });
 
+    const paths = document.querySelectorAll('.map-geography');
+    const tooltip = document.getElementById('mapTooltip');
+
+    //TODO: Fix wrong y position of tooltip
+    paths.forEach(path => {
+        path.addEventListener('mouseover', function(e) {
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = '1';
+            tooltip.textContent = e.target.dataset.tooltip;
+        });
+
+        path.addEventListener('mousemove', function(e) {
+            const containerRect = document.querySelector('.wdm-map-container').getBoundingClientRect();
+            const tooltipLeft = e.pageX - containerRect.left;
+            const tooltipTop = e.pageY - containerRect.top;
+
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = tooltipTop + 'px';
+        });
+
+        path.addEventListener('mouseout', function() {
+            tooltip.style.visibility = 'hidden';
+            tooltip.style.opacity = '0';
+        });
+    });
+
     rescaleSvg();
 }
+
+
 
 function isProjectCompleted(country, completedProjects) {
     const countrySlug = country.replace(/\s+/g, '-').toLowerCase();
@@ -83,7 +110,6 @@ function rescaleSvg() {
 
     svgElement.attr('viewBox', `0 0 ${viewBoxWidth} ${viewBoxHeight}`);
 }
-
 
 window.onload = function ($) {
     renderMap();
