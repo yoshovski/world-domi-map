@@ -29,12 +29,14 @@ function generateMap(data) {
         let tooltipText;
         if (projects > 0) {
             tooltipText = `${country}: ${projects} sales`;
-            output += `<path class="map-geography map-geography-with-value ${className}"
-                        tabindex="0" d="${path}" fill="${fillColor}"  title="${country}: ${projects} sales"></path>`;
         } else {
-            output += `<path class="map-geography map-geography-with-value ${className}"
-                        tabindex="0" d="${path}" fill="${fillColor}"></path>`;
+            tooltipText = `${country}`;
         }
+
+        output += `<path class="map-geography map-geography-with-value ${className} tooltip"
+                        tabindex="0" d="${path}" fill="${fillColor}">
+                        <title>${tooltipText}</title>
+                    </path>`;
     }
 
     output += '</g></svg></div>';
@@ -88,3 +90,5 @@ window.onload = function ($) {
 };
 
 jQuery(window).resize(rescaleSvg);
+
+
