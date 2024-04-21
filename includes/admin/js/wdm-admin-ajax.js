@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
         // Send the AJAX request
         $.post(wdm_admin_ajax_object.ajax_url, data, function(response) {
             console.log(response);
-            updateMap();
+            renderMap();
         });
     });
 });

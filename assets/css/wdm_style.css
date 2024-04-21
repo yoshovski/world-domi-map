@@ -7,14 +7,8 @@
     background-color: white;
     margin: 0;
     box-sizing: border-box;
-}
-
-.wdm-map-container svg {
-    transform: scale(0.6);
-    transform-origin: 0% 0%;
-    viewBox: 0 0 2000 850;
-    width: 2000px;
-    height: 850px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .wdm-wrap {

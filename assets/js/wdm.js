@@ -1,5 +1,4 @@
-// Update the map with the updated data
-function updateMap() {
+function renderMap() {
     // Fetch the updated data
     fetchData().then(function(response) {
         // Update the map with the new data
@@ -10,7 +9,6 @@ function updateMap() {
     });
 }
 
-// Generate the map
 function generateMap(data) {
     const activeColor = "#62646a";
     const inactiveColor = "#e4e5e7";
@@ -35,16 +33,46 @@ function generateMap(data) {
         container.innerHTML = output;
     });
 
-    updateSvgScale();
+    rescaleSvg();
 }
 
-// Check if a project is completed
 function isProjectCompleted(country, completedProjects) {
     const countrySlug = country.replace(/\s+/g, '-').toLowerCase();
     return completedProjects[countrySlug] && completedProjects[countrySlug] > 0;
 }
 
 
-jQuery(document).ready(function($) {
-    updateMap();
-});
+function rescaleSvg() {
+    const widthThreshold = 0.9; // percentage (1 = 100%)
+    const viewBoxWidth = 2000;
+    const viewBoxHeight = 850;
+    const aspectRatio = viewBoxHeight / viewBoxWidth;
+    const svgElement = jQuery('.wdm-map-container svg');
+    let svgContainerWidth = svgElement.width();
+    const parentElement = jQuery('.wdm-map-container').parent();
+    const parentWidth = parentElement[0].offsetWidth;
+
+    // Adjust SVG width if it's less than the width threshold of parent's width
+    if(svgContainerWidth === undefined || svgContainerWidth === 0 || svgContainerWidth < widthThreshold * parentWidth) {
+        svgContainerWidth = parentWidth
+    }
+
+    const newScale = svgContainerWidth / parentWidth;
+    const newHeight = parentWidth * aspectRatio
+
+    svgElement.css({
+        'transform': `scale(${newScale})`,
+        'transform-origin': '0% 0%',
+        'width': '100%',
+        'height': `${newHeight}px`
+    });
+
+    svgElement.attr('viewBox', `0 0 ${viewBoxWidth} ${viewBoxHeight}`);
+}
+
+
+window.onload = function($) {
+    renderMap();
+};
+
+jQuery(window).resize(rescaleSvg);
