@@ -1,34 +1,46 @@
 function renderMap() {
-    // Fetch the updated data
-    fetchData().then(function(response) {
-        // Update the map with the new data
+    fetchData().then(function (response) {
         generateMap(response);
-    }).catch(function(error) {
-        // Handle the error
+    }).catch(function (error) {
         console.log(error);
     });
 }
 
+function countryToSlug(country) {
+    return country.toLowerCase().replace(/\s+/g, '-');
+}
+
 function generateMap(data) {
+    const {worldDominationPercentage, countryPaths, completedProjects} = data;
     const activeColor = "#62646a";
     const inactiveColor = "#e4e5e7";
 
-    let output = '<div class="wdm-map-container">';
-    output += '<h2 class="section-header tbody-4">World Domination ' + data.worldDominationPercentage + '</h2>';
-    output += '<svg><g class="countries">';
+    let output = `<div class="wdm-map-container">
+                            <h2 class="section-header tbody-4">World Domination ${worldDominationPercentage}</h2>
+                            <svg><g class="countries">`;
 
-    for (let country in data.countryPaths) {
-        const path = data.countryPaths[country];
-        const className = isProjectCompleted(country, data.completedProjects) ? 'active' : 'inactive';
-        const fillColor = className == 'active' ? activeColor : inactiveColor;
+    for (let country in countryPaths) {
+        const countrySlug = countryToSlug(country);
+        const path = countryPaths[country];
+        const className = isProjectCompleted(country, completedProjects) ? 'active' : 'inactive';
+        const fillColor = className === 'active' ? activeColor : inactiveColor;
+        const projects = completedProjects[countrySlug];
 
-        output += '<path class="map-geography map-geography-with-value ' + className + '" tabindex="0" d="' + path + '" fill="' + fillColor + '" title="' + country + '"></path>';
+        let tooltipText;
+        if (projects > 0) {
+            tooltipText = `${country}: ${projects} sales`;
+            output += `<path class="map-geography map-geography-with-value ${className}"
+                        tabindex="0" d="${path}" fill="${fillColor}"  title="${country}: ${projects} sales"></path>`;
+        } else {
+            output += `<path class="map-geography map-geography-with-value ${className}"
+                        tabindex="0" d="${path}" fill="${fillColor}"></path>`;
+        }
     }
 
     output += '</g></svg></div>';
 
     const mapContainers = document.querySelectorAll('.wdm-map-container');
-    // Generate the map for each container
+
     mapContainers.forEach(container => {
         container.innerHTML = output;
     });
@@ -53,7 +65,7 @@ function rescaleSvg() {
     const parentWidth = parentElement[0].offsetWidth;
 
     // Adjust SVG width if it's less than the width threshold of parent's width
-    if(svgContainerWidth === undefined || svgContainerWidth === 0 || svgContainerWidth < widthThreshold * parentWidth) {
+    if (svgContainerWidth === undefined || svgContainerWidth === 0 || svgContainerWidth < widthThreshold * parentWidth) {
         svgContainerWidth = parentWidth
     }
 
@@ -71,7 +83,7 @@ function rescaleSvg() {
 }
 
 
-window.onload = function($) {
+window.onload = function ($) {
     renderMap();
 };
 
