@@ -41,12 +41,16 @@ function wdm_render_settings_page() {
         foreach ($countries as $country) {
             $country_slug = sanitize_title($country);
             $country_value = isset($completed_projects[$country_slug]) ? $completed_projects[$country_slug] : 0;
+
+            if ($country_value == 0 || $country_value == '')
+                $country_value = '';
+
             ?>
             <div id="project-field-<?php echo $country_slug; ?>" style="display: none;">
                 <h3><?php echo $country; ?></h3>
                 <label for="wdm_project_<?php echo $country_slug; ?>">
                     Number of Sales:
-                    <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1" class="completed-projects-input">
+                    <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1" class="completed-projects-input" placeholder="0">
                 </label>
             </div>
             <?php

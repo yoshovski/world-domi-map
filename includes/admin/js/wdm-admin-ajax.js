@@ -1,13 +1,13 @@
 jQuery(document).ready(function($) {
-    // When the value of a project field changes
-    $('.completed-projects-input').change(function() {
-        // Get the country name from the field's id
+    let timeout = null;
+
+    $('.completed-projects-input').on('input', function() {
+        clearTimeout(timeout);
+
         const countryName = $(this).attr('id').replace('wdm_project_', '');
+        let numberOfProjects = sanitizeInputNumber($(this).val());
+        $(this).val(numberOfProjects);
 
-        // Get the number of projects from the field's value
-        const numberOfProjects = $(this).val();
-
-        // Create an object to hold the data
         let data = {
             'action': 'wdm_update_country_sales',
             'name': countryName,
@@ -15,10 +15,25 @@ jQuery(document).ready(function($) {
             'nonce': wdm_admin_ajax_object.nonce
         };
 
-        // Send the AJAX request
-        $.post(wdm_admin_ajax_object.ajax_url, data, function(response) {
-            console.log(response);
-            renderMap();
-        });
+        timeout = setTimeout(function() {
+            $.post(wdm_admin_ajax_object.ajax_url, data, function(response) {
+                console.log(response);
+                renderMap();
+            });
+        }, 100);
     });
 });
+
+
+function sanitizeInputNumber(input, maxDigits = 10) {
+    let sanitizedInput = input;
+
+    // Check if the input is a positive integer within the maximum number of digits
+    if (!new RegExp(`^[1-9]\\d{0,${maxDigits - 1}}$`).test(sanitizedInput))
+        sanitizedInput = sanitizedInput.length > maxDigits ? sanitizedInput.slice(0, maxDigits) : '';
+
+    if (sanitizedInput % 1 !== 0)
+       sanitizedInput = Math.abs(parseInt(sanitizedInput.replace(',', ''), 10));
+
+    return sanitizedInput;
+}
