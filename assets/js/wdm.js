@@ -22,21 +22,22 @@ function generateMap(data) {
     for (let country in countryPaths) {
         const countrySlug = countryToSlug(country);
         const path = countryPaths[country];
-        const className = isProjectCompleted(country, completedProjects) ? 'active' : 'inactive';
-        const fillColor = className === 'active' ? activeColor : inactiveColor;
+        const countryStatusClassName = isProjectCompleted(country, completedProjects) ? 'active' : 'inactive';
+        const fillColor = countryStatusClassName === 'active' ? activeColor : inactiveColor;
         const projects = completedProjects[countrySlug];
 
         let tooltipText;
-        if (projects > 0) {
-            tooltipText = `${country}: ${projects} sales`;
-        } else {
+        if (projects > 0)
+            tooltipText = `${country} - ${projects} Sales`;
+        else
             tooltipText = `${country}`;
-        }
 
-        output += `<path class="map-geography map-geography-with-value ${className} tooltip"
-                        tabindex="0" d="${path}" fill="${fillColor}">
-                        <title>${tooltipText}</title>
-                    </path>`;
+        output += `<path class="map-geography map-geography-with-value ${countryStatusClassName} tooltip" tabindex="0" d="${path}" fill="${fillColor}">`;
+
+        if (countryStatusClassName === 'active')
+            output += `<title>${tooltipText}</title>`;
+
+        output += `</path>`;
     }
 
     output += '</g></svg></div>';
