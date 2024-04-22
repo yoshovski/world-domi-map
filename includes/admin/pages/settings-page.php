@@ -70,7 +70,11 @@ function wdm_render_settings_page()
                     <?php
                 }
                 ?>
-
+            </div>
+            <div class="wdm-loading-icon-placeholder">
+            <div class="wdm-loading-icon">
+                <img src="<?php echo plugins_url('../../assets/images/load_spinner.gif', dirname(__FILE__)); ?>" alt="Loading..." />
+            </div>
             </div>
         </div>
 

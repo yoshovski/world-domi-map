@@ -25,3 +25,18 @@ outline: none;
     fill: #404145;
     cursor: pointer;
 }
+
+
+/* BEGIN loading icon */
+.wdm-loading-icon img {
+    height: 20px;
+    width: auto;
+}
+
+.wdm-loading-icon {
+    width: 30px;
+    margin-left: 10px;
+    display: none;
+}
+
+/* END loading icon */

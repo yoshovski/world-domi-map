@@ -169,6 +169,14 @@
 
 .sales-input-container {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    min-height: 20px;
+    margin-bottom: 15px;
+}
+
+.wdm-loading-icon-placeholder{
+    width: 30px;
+    margin-left: 10px;
 }
 /* END #2 Select Country Dropdown */

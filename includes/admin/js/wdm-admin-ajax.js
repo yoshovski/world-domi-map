@@ -1,12 +1,22 @@
 jQuery(document).ready(function($) {
     let timeout = null;
+    let loadingTimeout = null;
+    const delay = 100;
+    const loadingDelay = 1000;
+    const loadingElement = jQuery('.wdm-loading-icon');
 
     $('.completed-projects-input').on('input', function() {
         clearTimeout(timeout);
+        clearTimeout(loadingTimeout);
+
+        if (!loadingElement.is(':visible'))
+            loadingElement.show();
 
         const countryName = $(this).attr('id').replace('wdm_project_', '');
         let numberOfProjects = sanitizeInputNumber($(this).val());
         $(this).val(numberOfProjects);
+
+
 
         let data = {
             'action': 'wdm_update_country_sales',
@@ -21,13 +31,15 @@ jQuery(document).ready(function($) {
                 renderMap();
                 updateSummaryCards();
             });
+        }, delay);
 
-        }, 100);
+        loadingTimeout = setTimeout(function() {
+            loadingElement.hide();
+        }, loadingDelay);
     });
 });
 
 function updateSummaryCards() {
-    return new Promise((resolve, reject) => {
         jQuery.ajax({
             url: wdm_admin_ajax_object.ajax_url,
             data: {
@@ -49,7 +61,6 @@ function updateSummaryCards() {
                 console.log('Error:', error);
             }
         });
-    });
 }
 
 updateSummaryCards();
