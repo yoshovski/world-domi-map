@@ -21,14 +21,7 @@ function wdm_render_settings_page() {
     $countries = wdm_get_countries();
     $completed_projects = get_option('wdm_completed_projects', array());
 
-    // Summary data
-    /*$total_completed_projects = get_total_completed_projects();
-    $total_active_countries = get_total_active_countries();
-    $sales_distribution = get_sales_distribution();
-    $max_sales_info = wdm_get_country_max_sales();
-    $max_sales = $max_sales_info['sales'];
-    $country_with_max_sales = $max_sales_info['country'];*/
-
+    // Summary Card Sdata
     $total_completed_projects = 0;
     $total_active_countries = 0;
     $sales_distribution = 0;
