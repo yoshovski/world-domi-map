@@ -39,7 +39,7 @@ function updateSummaryCards() {
                     if (card === 'countryMaxSales' && typeof data[card] === 'object') {
                         const prettyNumber = prettyPrint(data[card].sales);
                         jQuery(`[data-card="${card}"] h1`).text(prettyNumber);
-                        jQuery(`[data-card="${card}"] p`).text('Sales at ' + data[card].country);
+                        jQuery(`[data-card="${card}"] p`).text('Sales in ' + data[card].country);
                     } else {
                         const prettyNumber = prettyPrint(data[card]);
                         jQuery(`[data-card="${card}"] h1`).text(prettyNumber);
