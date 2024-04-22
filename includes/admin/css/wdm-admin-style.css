@@ -1,4 +1,4 @@
-/*BEGIN Summary Card */
+/*BEGIN #1 Summary Card */
 
 .wdm-summary-cards {
     display: flex;
@@ -83,4 +83,92 @@
     }
 }
 
-/*END Summary Card */
+/*END #1 Summary Card */
+
+/* BEGIN #2 Select Country Dropdown */
+.country-select {
+    cursor: pointer;
+    position : relative;
+    max-width:  20em;
+    margin: 5em auto;
+    width: 100%;
+    background: #ececec;
+}
+
+.select,
+.label {
+    color: #414141;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 2em;
+}
+
+.select {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 5px 0;
+    height: 40px;
+    opacity: 0;
+    background: none transparent;
+    border: 0 none;
+}
+
+.label {
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.open .label::after {
+    content: "▲";
+}
+.label::after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 15px;
+    border-left: 5px solid #fff;
+}
+
+.country-select {
+    cursor: pointer;
+    position : relative;
+    margin: 20px;
+    width: 500px;
+    background: #ececec;
+    min-width: fit-content;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: -30px;
+}
+
+.country-and-project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#country-select {
+    min-width: fit-content;
+}
+
+#project-field {
+    flex-grow: 1;
+}
+
+.sales-input-container {
+    display: flex;
+    flex-direction: column;
+}
+/* END #2 Select Country Dropdown */

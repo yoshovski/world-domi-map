@@ -10,6 +10,11 @@ function countryToSlug(country) {
     return country.toLowerCase().replace(/\s+/g, '-');
 }
 
+function slugToCountry(slug) {
+    if (slug)
+        return slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+}
+
 function generateMap(data) {
     const {worldDominationPercentage, countryPaths, completedProjects} = data;
     const activeColor = "#62646a";

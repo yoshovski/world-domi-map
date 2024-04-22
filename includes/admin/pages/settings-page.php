@@ -4,7 +4,8 @@
  */
 
 // Add the settings page to the admin menu
-function wdm_add_settings_page() {
+function wdm_add_settings_page()
+{
     add_menu_page(
         'World DomiMap Settings',
         'World DomiMap',
@@ -15,9 +16,11 @@ function wdm_add_settings_page() {
         80
     );
 }
+
 add_action('admin_menu', 'wdm_add_settings_page');
 
-function wdm_render_settings_page() {
+function wdm_render_settings_page()
+{
     $countries = wdm_get_countries();
     $completed_projects = get_option('wdm_completed_projects', array());
 
@@ -32,33 +35,44 @@ function wdm_render_settings_page() {
     ?>
 
     <div class="wdm-wrap">
-        <h1>World DomiMap Settings</h1>
-        <select id="country-select">
-            <?php foreach ($countries as $country): ?>
-                <option value="<?php echo sanitize_title($country); ?>"><?php echo $country; ?></option>
-            <?php endforeach; ?>
-        </select>
+        <h1>World DomiMap</h1>
+        <div class="center-container">
+            <div class="country-and-project-container">
+                <div class="country-select">
+                    <label for="country-select" class="label select-box1">
+                        <span class="label-desc">Choose your country</span>
+                    </label>
+                    <select id="country-select" class="select">
+                        <option value="" disabled selected class="default-option">Choose your country</option>
+                        <?php foreach ($countries as $country): ?>
+                            <option value="<?php echo sanitize_title($country); ?>"><?php echo $country; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <?php
+                // Render the list of countries and project fields
+                foreach ($countries as $country) {
+                    $country_slug = sanitize_title($country);
+                    $country_value = isset($completed_projects[$country_slug]) ? $completed_projects[$country_slug] : 0;
 
-        <?php
-        // Render the list of countries and project fields
-        foreach ($countries as $country) {
-            $country_slug = sanitize_title($country);
-            $country_value = isset($completed_projects[$country_slug]) ? $completed_projects[$country_slug] : 0;
+                    if ($country_value == 0 || $country_value == '')
+                        $country_value = '';
 
-            if ($country_value == 0 || $country_value == '')
-                $country_value = '';
+                    ?>
+                    <div id="project-field-<?php echo $country_slug; ?>" style="display: none;">
+                        <div class="sales-input-container"><span>Number of Sales</span>
+                            <input type="number" id="wdm_project_<?php echo $country_slug; ?>"
+                                   name="wdm_completed_projects[<?php echo $country_slug; ?>]"
+                                   value="<?php echo $country_value; ?>" min="0" step="1"
+                                   class="completed-projects-input" placeholder="0">
+                        </div>
+                    </div>
+                    <?php
+                }
+                ?>
 
-            ?>
-            <div id="project-field-<?php echo $country_slug; ?>" style="display: none;">
-                <h3><?php echo $country; ?></h3>
-                <label for="wdm_project_<?php echo $country_slug; ?>">
-                    Number of Sales:
-                    <input type="number" id="wdm_project_<?php echo $country_slug; ?>" name="wdm_completed_projects[<?php echo $country_slug; ?>]" value="<?php echo $country_value; ?>" min="0" step="1" class="completed-projects-input" placeholder="0">
-                </label>
             </div>
-            <?php
-        }
-        ?>
+        </div>
 
         <div class="wdm-summary-cards">
             <div class="mt-6 col">
@@ -127,7 +141,7 @@ function wdm_render_settings_page() {
                                 <h4 class="mb-0">Average Distribution</h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-primary text-primary rounded-2">
-                                <span class="dashicons dashicons-chart-line"></span>                            </div>
+                                <span class="dashicons dashicons-chart-line"></span></div>
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo $sales_distribution; ?></h1>
