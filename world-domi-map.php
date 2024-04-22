@@ -30,6 +30,7 @@ function wdm_enqueue_common_scripts() {
     // Register and enqueue common script
     wp_register_script('wdm-common-script', plugin_dir_url(__FILE__) . '/assets/js/wdm.js', array('jquery'));
     wp_enqueue_script('wdm-common-script');
+
 }
 
 // Enqueue plugin scripts and styles for the admin area
@@ -40,9 +41,6 @@ function wdm_enqueue_admin_scripts() {
     wp_register_style('wdm-admin-style', plugins_url('/assets/css/wdm_style.css', __FILE__));
     wp_enqueue_style('wdm-admin-style');
 
-    // Register and enqueue admin scripts
-    wp_register_script('wdm-admin-script', plugin_dir_url(__FILE__) . '/includes/admin/js/wdm-admin.js', array('jquery'));
-    wp_enqueue_script('wdm-admin-script');
 
     // Register and enqueue admin ajax script
     wp_register_script('wdm-admin-ajax', plugin_dir_url(__FILE__) . '/includes/admin/js/wdm-admin-ajax.js', array('jquery'));
@@ -51,6 +49,10 @@ function wdm_enqueue_admin_scripts() {
         'ajax_url' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('wdm-admin-ajax-nonce')
     ));
+
+    // Register and enqueue admin scripts
+    wp_register_script('wdm-admin-script', plugin_dir_url(__FILE__) . '/includes/admin/js/wdm-admin.js', array('jquery'));
+    wp_enqueue_script('wdm-admin-script');
 }
 
 // Enqueue plugin scripts and styles for the public area
@@ -67,3 +69,5 @@ add_action('admin_enqueue_scripts', 'wdm_enqueue_admin_scripts');
 add_action('wp_enqueue_scripts', 'wdm_enqueue_public_scripts');
 
 add_action('wp_ajax_wdm_get_map_data', 'wdm_get_map_data');
+
+add_action('wp_ajax_wdm_get_summary_cards', 'wdm_get_summary_cards');

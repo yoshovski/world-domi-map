@@ -24,11 +24,14 @@ function generateMap(data) {
         const path = countryPaths[country];
         const countryStatusClassName = isProjectCompleted(country, completedProjects) ? 'active' : 'inactive';
         const fillColor = countryStatusClassName === 'active' ? activeColor : inactiveColor;
-        const projects = completedProjects[countrySlug];
+        const countProjects = completedProjects[countrySlug];
+        const prettyCountProjects = prettyPrint(countProjects);
 
         let tooltipText;
-        if (projects > 0)
-            tooltipText = `${country} - ${projects} Sales`;
+        if (countProjects > 0) {
+            let salesText = countProjects > 1 ? 'Sales' : 'Sale';
+            tooltipText = `${country} - ${prettyCountProjects} ${salesText}`;
+        }
         else
             tooltipText = `${country}`;
 
@@ -54,6 +57,22 @@ function generateMap(data) {
 function isProjectCompleted(country, completedProjects) {
     const countrySlug = country.replace(/\s+/g, '-').toLowerCase();
     return completedProjects[countrySlug] && completedProjects[countrySlug] > 0;
+}
+
+function prettyPrint(number) {
+
+    if (number > 999999) {
+        let result = (number / 1000000).toFixed(1);
+        return result.endsWith('.0') ? result.slice(0, -2) + 'M' : result + 'M';
+    }
+
+    if (number > 999) {
+        let result = (number / 1000).toFixed(1);
+        return result.endsWith('.0') ? result.slice(0, -2) + 'K' : result + 'K';
+    }
+
+    let result = (1* number).toFixed(1);
+    return result.endsWith('.0') ? result.slice(0, -2) : result;
 }
 
 
@@ -84,7 +103,6 @@ function rescaleSvg() {
 
     svgElement.attr('viewBox', `0 0 ${viewBoxWidth} ${viewBoxHeight}`);
 }
-
 
 window.onload = function ($) {
     renderMap();

@@ -19,11 +19,40 @@ jQuery(document).ready(function($) {
             $.post(wdm_admin_ajax_object.ajax_url, data, function(response) {
                 console.log(response);
                 renderMap();
+                updateSummaryCards();
             });
+
         }, 100);
     });
 });
 
+function updateSummaryCards() {
+    return new Promise((resolve, reject) => {
+        jQuery.ajax({
+            url: wdm_admin_ajax_object.ajax_url,
+            data: {
+                'action': 'wdm_get_summary_cards',
+                'nonce': wdm_admin_ajax_object.nonce
+            },
+            success: function (data) {
+                for (let card in data) {
+                    if (card === 'countryMaxSales' && typeof data[card] === 'object') {
+                        const prettyNumber = prettyPrint(data[card].sales);
+                        jQuery(`[data-card="${card}"] h1`).text(prettyNumber);
+                        jQuery(`[data-card="${card}"] p`).text('Sales at ' + data[card].country);
+                    } else {
+                        const prettyNumber = prettyPrint(data[card]);
+                        jQuery(`[data-card="${card}"] h1`).text(prettyNumber);
+                    }                }
+            },
+            error: function (error) {
+                console.log('Error:', error);
+            }
+        });
+    });
+}
+
+updateSummaryCards();
 
 function sanitizeInputNumber(input, maxDigits = 10) {
     let sanitizedInput = input;

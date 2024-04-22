@@ -25,3 +25,90 @@ outline: none;
     fill: #404145;
     cursor: pointer;
 }
+
+
+/*BEGIN Summary Card */
+
+.wdm-summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .col {
+        flex: 1 0 0%;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mb-2 {
+        margin-bottom: .5rem;
+    }
+
+    .text-white {
+        color: #fff;
+    }
+
+    .btn-white {
+        background-color: #fff;
+        border: none;
+        padding: .375rem .75rem;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .mt-6 {
+        margin-top: 2rem;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 1.25rem;
+    }
+
+    h4.mb-0 {
+        font-size: 1.125rem;
+        color: #212b36;
+    }
+
+    p.mb-0 {
+        font-size: 0.75rem;
+        color: #637381;
+    }
+
+    .fw-bold {
+        font-weight: 700;
+    }
+
+    .bg-light-primary {
+        background-color: #d3e2e9;
+    }
+
+    .text-primary {
+        color: #0d6efd;
+    }
+
+    .rounded-2 {
+        border-radius: .2rem;
+    }
+
+    .icon-shape {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #cedff4;
+    }
+}
+
+/*END Summary Card */
