@@ -38,7 +38,7 @@ function wdm_enqueue_admin_scripts() {
     wdm_enqueue_common_scripts();
 
     // Register and enqueue admin styles
-    wp_register_style('wdm-admin-style', plugins_url('/assets/css/wdm_style.css', __FILE__));
+    wp_register_style('wdm-admin-style', plugins_url('/includes/admin/css/wdm-admin-style.css', __FILE__));
     wp_enqueue_style('wdm-admin-style');
 
 
