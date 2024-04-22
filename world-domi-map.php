@@ -7,6 +7,7 @@
  */
 
 // Include the necessary files
+require_once(plugin_dir_path(__FILE__) . 'includes/shortcode.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/nonce-verification.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/pages/ajax-handling.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/data.php');
