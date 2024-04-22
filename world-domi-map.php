@@ -15,6 +15,9 @@ require_once(plugin_dir_path(__FILE__) . 'includes/activation.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/pages/settings-page.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/pages/registration.php');
 
+$wdm_data = WDM_Data::getInstance();
+$wdm_shortcode = WDM_Shortcode::getInstance();
+
 // Enqueue plugin scripts and styles for the common area
 function wdm_enqueue_common_scripts() {
     // Register and enqueue front-end styles
@@ -69,6 +72,8 @@ function wdm_enqueue_public_scripts() {
 add_action('admin_enqueue_scripts', 'wdm_enqueue_admin_scripts');
 add_action('wp_enqueue_scripts', 'wdm_enqueue_public_scripts');
 
-add_action('wp_ajax_wdm_get_map_data', 'wdm_get_map_data');
+add_action('wp_ajax_wdm_get_map_data', array($wdm_data, 'get_map_data'));
+add_action('wp_ajax_nopriv_wdm_get_map_data', array($wdm_data, 'get_map_data'));
 
-add_action('wp_ajax_wdm_get_summary_cards', 'wdm_get_summary_cards');
+add_action('wp_ajax_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
+add_action('wp_ajax_nopriv_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));

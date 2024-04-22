@@ -21,7 +21,8 @@ add_action('admin_menu', 'wdm_add_settings_page');
 
 function wdm_render_settings_page()
 {
-    $countries = wdm_get_countries();
+    $wdm_data = WDM_Data::getInstance();
+    $countries = $wdm_data->get_countries();
     $completed_projects = get_option('wdm_completed_projects', array());
 
     // Summary Card Sdata

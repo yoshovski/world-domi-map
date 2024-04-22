@@ -1,13 +1,26 @@
 <?php
 
-define ('WDM_SHORTCODE', 'world-domi-map');
+class WDM_Shortcode {
 
-function wdm_map_container_shortcode($atts = [], $content = null) {
-    return '<div class="wdm-map-container"></div>';
+    private $wdm_shortcode_name = 'world-domi-map';
+    private static $instance = null;
+
+    public static function getInstance() {
+        if (self::$instance == null) {
+            self::$instance = new WDM_Shortcode();
+        }
+        return self::$instance;
+    }
+
+    public function __construct() {
+        add_shortcode($this->wdm_shortcode_name, array($this, 'wdm_map_container_shortcode'));
+    }
+
+    public function wdm_map_container_shortcode($atts = [], $content = null) {
+        return '<div class="wdm-map-container"></div>';
+    }
+
+    public function get_shortcode_name() {
+        return $this->wdm_shortcode_name;
+    }
 }
-
-function get_shortcode_name() {
-    return WDM_SHORTCODE;
-}
-
-add_shortcode(WDM_SHORTCODE, 'wdm_map_container_shortcode');

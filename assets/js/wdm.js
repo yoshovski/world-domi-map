@@ -21,7 +21,7 @@ function generateMap(data) {
     const inactiveColor = "#e4e5e7";
 
     let output = `<div class="wdm-map-container">
-                            <h2 class="section-header tbody-4">World Domination ${worldDominationPercentage}</h2>
+                            <h4 class="section-header tbody-4">World Domination ${worldDominationPercentage}</h4>
                             <svg><g class="countries">`;
 
     for (let country in countryPaths) {

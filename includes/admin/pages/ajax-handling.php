@@ -8,7 +8,7 @@
 function wdm_update_country_sales() {
 
     // Check if our nonce is set.
-    if(!check_nonce_admin()) {
+    if(!wdm_check_nonce_admin()) {
         echo 'No permission to update settings';
         die();
     }

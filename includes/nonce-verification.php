@@ -6,7 +6,7 @@
  */
 
 // Check if our nonce is set and verify that it is valid
-function check_nonce($context) {
+function wdm_check_nonce($context) {
     // Check if our nonce is set.
     if ( ! isset( $_POST['nonce'] ) ) {
         return false;
@@ -23,10 +23,10 @@ function check_nonce($context) {
     return true;
 }
 
-function check_nonce_admin() {
-    return check_nonce('admin');
+function wdm_check_nonce_admin() {
+    return wdm_check_nonce('admin');
 }
 
-function check_nonce_other() {
-    return check_nonce('other');
+function wdm_check_nonce_other() {
+    return wdm_check_nonce('other');
 }
