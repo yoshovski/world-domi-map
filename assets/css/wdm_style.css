@@ -1,7 +1,3 @@
-.map-geography{
-    border: 1px solid transparent;
-}
-
 .wdm-map-container {
     padding: 20px;
     background-color: white;
@@ -11,12 +7,21 @@
     border-radius: 15px;
 }
 
-.wdm-wrap {
-    margin-right: 20px;
+.wdm-map-container h2 {
+    font-size: 1.125rem;
+    color: #212b36;
+}
+
+.wdm-map-container .map-geography{
+    border: 1px solid transparent;
 }
 
 .wdm-map-container svg path{
-outline: none;
+    outline: none;
+}
+
+.wdm-wrap {
+    margin-right: 20px;
 }
 
 .map-geography.active:hover {
@@ -38,5 +43,4 @@ outline: none;
     margin-left: 10px;
     display: none;
 }
-
 /* END loading icon */

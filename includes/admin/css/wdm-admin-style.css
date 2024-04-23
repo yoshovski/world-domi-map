@@ -1,4 +1,4 @@
-/*BEGIN #1 Summary Card */
+/* BEGIN #1 Summary Card */
 
 .wdm-summary-cards {
     display: flex;
@@ -6,97 +6,112 @@
     margin-right: -15px;
     margin-left: -15px;
     margin-bottom: 20px;
-
-    .col {
-        flex: 1 0 0%;
-        max-width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .d-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .mb-2 {
-        margin-bottom: .5rem;
-    }
-
-    .text-white {
-        color: #fff;
-    }
-
-    .btn-white {
-        background-color: #fff;
-        border: none;
-        padding: .375rem .75rem;
-        color: #333;
-        text-decoration: none;
-    }
-
-    .mt-6 {
-        margin-top: 2rem;
-    }
-
-    .card {
-        border: 1px solid #ccc;
-        border-radius: 15px;
-        padding: 1.25rem;
-    }
-
-    h4.mb-0 {
-        font-size: 1.125rem;
-        color: #212b36;
-    }
-
-    p.mb-0 {
-        font-size: 0.75rem;
-        color: #637381;
-    }
-
-    .fw-bold {
-        font-weight: 700;
-    }
-
-    .bg-light-primary {
-        background-color: #d3e2e9;
-    }
-
-    .text-primary {
-        color: #0d6efd;
-    }
-
-    .rounded-2 {
-        border-radius: .2rem;
-    }
-
-    .icon-shape {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #cedff4;
-    }
 }
 
-/*END #1 Summary Card */
+
+.wdm-summary-cards .col {
+    flex: 1 0 0%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.wdm-summary-cards .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wdm-summary-cards .mb-2 {
+    margin-bottom: .5rem;
+}
+
+.wdm-summary-cards .text-white {
+    color: #fff;
+}
+
+.wdm-summary-cards .btn-white {
+    background-color: #fff;
+    border: none;
+    padding: .375rem .75rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.wdm-summary-cards .mt-6 {
+    margin-top: 2rem;
+}
+
+.wdm-summary-cards .card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 1.25rem;
+}
+
+.wdm-summary-cards h4.mb-0 {
+    font-size: 1.125rem;
+    color: #212b36;
+}
+
+.wdm-summary-cards p.mb-0 {
+    font-size: 0.75rem;
+    color: #637381;
+}
+
+.wdm-summary-cards .fw-bold {
+    font-weight: 700;
+}
+
+.wdm-summary-cards .bg-light-primary {
+    background-color: #d3e2e9;
+}
+
+.wdm-summary-cards .text-primary {
+    color: #0d6efd;
+}
+
+.wdm-summary-cards .rounded-2 {
+    border-radius: .2rem;
+}
+
+.wdm-summary-cards .icon-shape {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cedff4;
+}
+
+/* END #1 Summary Card */
 
 /* BEGIN #2 Select Country Dropdown */
-.country-select {
+.wdm-country-picker-wrap .country-select {
     cursor: pointer;
     position : relative;
     max-width:  20em;
-    margin: 5em auto;
-    width: 100%;
+    width: 500px;
     background: #ececec;
+    margin: 20px;
+    min-width: fit-content;
 }
 
-.select,
-.label {
+.wdm-country-picker-wrap .open .label::after {
+    content: "▲";
+}
+.wdm-country-picker-wrap .label::after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 15px;
+    border-left: 5px solid #fff;
+}
+
+.wdm-country-picker-wrap .select,
+.wdm-country-picker-wrap .label {
     color: #414141;
     display: block;
     font-family: Arial, sans-serif;
@@ -105,7 +120,7 @@
     line-height: 2em;
 }
 
-.select {
+.wdm-country-picker-wrap .select {
     width: 100%;
     position: absolute;
     top: 0;
@@ -116,34 +131,19 @@
     border: 0 none;
 }
 
-.label {
+.wdm-country-picker-wrap .label {
     position: relative;
     padding: 5px 10px;
     cursor: pointer;
 }
-.open .label::after {
-    content: "▲";
-}
-.label::after {
-    content: "▼";
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px 15px;
-    border-left: 5px solid #fff;
+
+.wdm-country-picker-wrap .country-and-project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.country-select {
-    cursor: pointer;
-    position : relative;
-    margin: 20px;
-    width: 500px;
-    background: #ececec;
-    min-width: fit-content;
-}
-
-.center-container {
+.wdm-country-picker-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,21 +153,15 @@
     margin-bottom: -30px;
 }
 
-.country-and-project-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#country-select {
+.wdm-country-picker-wrap #country-select {
     min-width: fit-content;
 }
 
-#project-field {
+.wdm-country-picker-wrap #project-field {
     flex-grow: 1;
 }
 
-.sales-input-container {
+.wdm-country-picker-wrap .sales-input-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -175,8 +169,15 @@
     margin-bottom: 15px;
 }
 
-.wdm-loading-icon-placeholder{
+.wdm-country-picker-wrap .wdm-loading-icon-placeholder{
     width: 30px;
     margin-left: 10px;
 }
 /* END #2 Select Country Dropdown */
+
+/* BEGIN #3  How to use page */
+.wdm-how-to-use {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+/* END #3 How to use page */

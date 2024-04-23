@@ -20,9 +20,8 @@ function generateMap(data) {
     const activeColor = "#62646a";
     const inactiveColor = "#e4e5e7";
 
-    let output = `<div class="wdm-map-container">
-                            <h4 class="section-header tbody-4">World Domination ${worldDominationPercentage}</h4>
-                            <svg><g class="countries">`;
+    let output = `<h2 class="section-header tbody-4">World Domination ${worldDominationPercentage}</h2>
+                         <svg><g class="countries">`;
 
     for (let country in countryPaths) {
         const countrySlug = countryToSlug(country);
@@ -48,7 +47,7 @@ function generateMap(data) {
         output += `</path>`;
     }
 
-    output += '</g></svg></div>';
+    output += '</g></svg>';
 
     const mapContainers = document.querySelectorAll('.wdm-map-container');
 
@@ -65,6 +64,11 @@ function isProjectCompleted(country, completedProjects) {
 }
 
 function prettyPrint(number) {
+
+    if (number > 999999999) {
+        let result = (number / 1000000000).toFixed(1);
+        return result.endsWith('.0') ? result.slice(0, -2) + 'B' : result + 'B';
+    }
 
     if (number > 999999) {
         let result = (number / 1000000).toFixed(1);

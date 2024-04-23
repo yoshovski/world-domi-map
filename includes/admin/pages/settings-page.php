@@ -17,11 +17,40 @@ function wdm_add_settings_page()
     );
 }
 
+function wdm_add_how_to_use_submenu() {
+    add_submenu_page(
+        'wdm_settings', // parent slug
+        'How to Use', // page title
+        'How to Use', // menu title
+        'manage_options', // capability
+        'wdm_how_to_use', // menu slug
+        'wdm_render_how_to_use_page' // function that renders the page
+    );
+}
+
 add_action('admin_menu', 'wdm_add_settings_page');
+add_action('admin_menu', 'wdm_add_how_to_use_submenu');
+
+function wdm_render_how_to_use_page() {
+    $shortcode = WDM_Shortcode::getInstance()->get_shortcode_name();
+    ?>
+    <div class="wrap">
+        <h1>How to Use</h1>
+        <p>This plugin shows a map of the world and tracks completed projects in different countries.</p>
+        <p>To use this plugin, simply add the following shortcode to any post or page:</p>
+        <code>[<?php echo $shortcode; ?>]</code>
+    </div>
+    <div class="wdm-how-to-use">
+        <div class="wdm-map-container"></div>
+    </div>
+    <?php
+}
 
 function wdm_render_settings_page()
 {
     $wdm_data = WDM_Data::getInstance();
+    $wdm_shortcode = WDM_Shortcode::getInstance();
+
     $countries = $wdm_data->get_countries();
     $completed_projects = get_option('wdm_completed_projects', array());
 
@@ -37,7 +66,7 @@ function wdm_render_settings_page()
 
     <div class="wdm-wrap">
         <h1>World DomiMap</h1>
-        <div class="center-container">
+        <div class="wdm-country-picker-wrap">
             <div class="country-and-project-container">
                 <div class="country-select">
                     <label for="country-select" class="label select-box1">
@@ -158,7 +187,7 @@ function wdm_render_settings_page()
         </div>
 
 
-        <div class="wdm-map-container"></div>
+        <?php echo $wdm_shortcode->wdm_map_container_shortcode(); ?>
 
     </div>
 
