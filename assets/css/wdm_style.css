@@ -1,3 +1,4 @@
+/* BEGIN #1 General WDM Styles */
 .wdm-map-container {
     padding: 20px;
     background-color: white;
@@ -31,8 +32,10 @@
     cursor: pointer;
 }
 
+/* END #1 General WDM Styles */
 
-/* BEGIN loading icon */
+
+/* BEGIN #2 loading icon */
 .wdm-loading-icon img {
     height: 20px;
     width: auto;
@@ -43,4 +46,4 @@
     margin-left: 10px;
     display: none;
 }
-/* END loading icon */
+/* END #2 loading icon */

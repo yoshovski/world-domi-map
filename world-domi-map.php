@@ -2,8 +2,14 @@
 /**
  * Plugin Name: World DomiMap
  * Version: 1.0.0
+ * Contributors: @syoshovski
  * Author: Stefan Yoshovski
  * Description: This plugin shows a map of the world and tracks completed projects in different countries.
+ * Donate link: https://paypal.me/yoshovski
+ * Tags: world-map, project-tracking, sales-tracking, country-sales, shortcode, admin-dashboard, map-plugin, project-map, sales-map, world-domination
+ * Requires at least: 4.7
+ * Tested up to: 6.5.2
+ * License: GPLv2
  */
 
 // Include the necessary files
@@ -69,6 +75,49 @@ function wdm_enqueue_public_scripts() {
 
 }
 
+// Register the Gutenberg block script
+function wdm_block_scripts() {
+    wp_register_script(
+        'wdm-block-render-map',
+        plugins_url( '/assets/js/wdm.js', __FILE__ ),
+        array( 'wp-blocks', 'wp-element', 'wp-editor' )
+       );
+
+    wp_register_script(
+        'wdm-block-map',
+        plugins_url( 'includes/admin/js/wdm-admin-block.js', __FILE__ ),
+        array( 'wp-blocks', 'wp-element', 'wp-editor' )
+    );
+
+    wp_localize_script('wdm-block-map', 'wdm_block_map_data',
+        array('wdmPreviewImage' => plugins_url( '/assets/images/preview.jpg', __FILE__ ))
+    );
+
+    wp_enqueue_script('wdm-block-map');
+
+
+}
+
+// Register new Gutenberg block
+function wdm_register_block() {
+    $wdm_shortcode = WDM_Shortcode::getInstance();
+    register_block_type( 'world-domi-map/world-domination-map', array(
+        'editor_script' => 'wdm-block-map',
+        'render_callback' => 'wdm_render_block'
+    ));
+}
+
+// This function will generate the block's output
+function wdm_render_block($attributes, $content) {
+    return '<div class="wdm-map-container"></div>';
+}
+
+// Add Gutenberg block script actions
+add_action( 'admin_enqueue_scripts', 'wdm_block_scripts' );
+add_action( 'init', 'wdm_register_block' );
+
+
+// Add the necessary actions
 add_action('admin_enqueue_scripts', 'wdm_enqueue_admin_scripts');
 add_action('wp_enqueue_scripts', 'wdm_enqueue_public_scripts');
 
@@ -77,3 +126,5 @@ add_action('wp_ajax_nopriv_wdm_get_map_data', array($wdm_data, 'get_map_data'));
 
 add_action('wp_ajax_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
 add_action('wp_ajax_nopriv_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
+
+

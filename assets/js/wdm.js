@@ -15,7 +15,7 @@ function slugToCountry(slug) {
         return slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
 
-function generateMap(data) {
+function generateMapHTML(data) {
     const {worldDominationPercentage, countryPaths, completedProjects} = data;
     const activeColor = "#62646a";
     const inactiveColor = "#e4e5e7";
@@ -49,10 +49,16 @@ function generateMap(data) {
 
     output += '</g></svg>';
 
+    rescaleSvg();
+
+    return output;
+}
+
+function generateMap(data) {
     const mapContainers = document.querySelectorAll('.wdm-map-container');
 
     mapContainers.forEach(container => {
-        container.innerHTML = output;
+        container.innerHTML = generateMapHTML(data);
     });
 
     rescaleSvg();
@@ -92,7 +98,12 @@ function rescaleSvg() {
     const aspectRatio = viewBoxHeight / viewBoxWidth;
     const svgElement = jQuery('.wdm-map-container svg');
     let svgContainerWidth = svgElement.width();
-    const parentElement = jQuery('.wdm-map-container').parent();
+    const wdmMapContainer = jQuery('.wdm-map-container');
+
+    if (wdmMapContainer.length === 0)
+        return;
+
+    const parentElement = wdmMapContainer.parent();
     const parentWidth = parentElement[0].offsetWidth;
 
     // Adjust SVG width if it's less than the width threshold of parent's width
@@ -118,5 +129,3 @@ window.onload = function ($) {
 };
 
 jQuery(window).resize(rescaleSvg);
-
-
