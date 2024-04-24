@@ -38,7 +38,7 @@ function wdm_render_how_to_use_page() {
         <h1>How to Use</h1>
         <p>Display an interactive global map showcasing tracked projects completed in various countries.</p>
         <p>To utilize the plugin, choose the 'World DomiMap' block in the Gutenberg editor. As an alternative, you can simply insert the provided shortcode into any post or page:</p>
-        <code>[<?php echo $shortcode; ?>]</code>
+        <code>[<?php echo esc_html($shortcode); ?>]</code>
     </div>
     <div class="wdm-how-to-use">
         <div class="wdm-map-container"></div>
@@ -75,7 +75,7 @@ function wdm_render_settings_page()
                     <select id="country-select" class="select">
                         <option value="" disabled selected class="default-option">Choose your country</option>
                         <?php foreach ($countries as $country): ?>
-                            <option value="<?php echo sanitize_title($country); ?>"><?php echo $country; ?></option>
+                            <option value="<?php echo esc_attr(sanitize_title($country)); ?>"><?php echo $country; ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -89,11 +89,11 @@ function wdm_render_settings_page()
                         $country_value = '';
 
                     ?>
-                    <div id="project-field-<?php echo $country_slug; ?>" style="display: none;">
+                    <div id="project-field-<?php echo esc_attr($country_slug); ?>" style="display: none;">
                         <div class="sales-input-container"><span>Number of Sales</span>
-                            <input type="number" id="wdm_project_<?php echo $country_slug; ?>"
-                                   name="wdm_completed_projects[<?php echo $country_slug; ?>]"
-                                   value="<?php echo $country_value; ?>" min="0" step="1"
+                            <input type="number" id="wdm_project_<?php echo esc_attr($country_slug); ?>"
+                                   name="wdm_completed_projects[<?php echo esc_attr($country_slug); ?>]"
+                                   value="<?php echo esc_attr($country_value); ?>" min="0" step="1"
                                    class="completed-projects-input" placeholder="0">
                         </div>
                     </div>
@@ -103,7 +103,7 @@ function wdm_render_settings_page()
             </div>
             <div class="wdm-loading-icon-placeholder">
             <div class="wdm-loading-icon">
-                <img src="<?php echo plugins_url('../../assets/images/load_spinner.gif', dirname(__FILE__)); ?>" alt="Loading..." />
+                <img src="<?php echo esc_url(plugins_url('../../assets/images/load_spinner.gif', dirname(__FILE__))); ?>" alt="Loading..." />
             </div>
             </div>
         </div>
@@ -122,7 +122,7 @@ function wdm_render_settings_page()
                             </div>
                         </div>
                         <div>
-                            <h1 class="fw-bold"><?php echo $total_completed_projects; ?></h1>
+                            <h1 class="fw-bold"><?php echo esc_html($total_completed_projects); ?></h1>
                             <p class="mb-0">Completed Projects</p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ function wdm_render_settings_page()
                             </div>
                         </div>
                         <div>
-                            <h1 class="fw-bold"><?php echo $total_active_countries; ?></h1>
+                            <h1 class="fw-bold"><?php echo esc_html($total_active_countries); ?></h1>
                             <p class="mb-0">Reached Countries</p>
                         </div>
                     </div>
@@ -160,8 +160,8 @@ function wdm_render_settings_page()
                             </div>
                         </div>
                         <div>
-                            <h1 class="fw-bold"><?php echo $max_sales; ?></h1>
-                            <p class="mb-0">Sales at <?php echo $country_with_max_sales; ?></p>
+                            <h1 class="fw-bold"><?php echo esc_html($max_sales); ?></h1>
+                            <p class="mb-0">Sales at <?php echo esc_html($country_with_max_sales); ?></p>
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@ function wdm_render_settings_page()
                                 <span class="dashicons dashicons-chart-line"></span></div>
                         </div>
                         <div>
-                            <h1 class="fw-bold"><?php echo $sales_distribution; ?></h1>
+                            <h1 class="fw-bold"><?php echo esc_html($sales_distribution); ?></h1>
                             <p class="mb-0">Average Completed Projects Per Country</p>
                         </div>
                     </div>
