@@ -1,4 +1,4 @@
-=== World DomiMap ===
+=== World Domi Map ===
 Contributors: @syoshovski
 Donate link: https://paypal.me/yoshovski
 Tags: world-map, project-tracking, sales-tracking, country-sales, shortcode, admin-dashboard, map-plugin, project-map, sales-map, world-domination

@@ -1,6 +1,6 @@
 /* Block for Gutenberg */
 wp.blocks.registerBlockType( 'world-domi-map/world-domination-map', {
-    title: 'World DomiMap',
+    title: 'World Domi Map',
     icon: 'dashicons dashicons-admin-site-alt',
     category: 'widgets',
     description: "Display an interactive global map showcasing tracked projects completed in various countries.",

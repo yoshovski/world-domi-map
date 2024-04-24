@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: World DomiMap
+ * Plugin Name: World Domi Map
  * Version: 1.0.0
  * Contributors: @syoshovski
  * Author: Stefan Yoshovski

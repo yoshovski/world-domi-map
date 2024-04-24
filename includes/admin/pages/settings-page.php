@@ -7,8 +7,8 @@
 function wdm_add_settings_page()
 {
     add_menu_page(
-        'World DomiMap Settings',
-        'World DomiMap',
+        'World Domi Map Settings',
+        'World Domi Map',
         'manage_options',
         'wdm_settings',
         'wdm_render_settings_page',
@@ -65,7 +65,7 @@ function wdm_render_settings_page()
     ?>
 
     <div class="wdm-wrap">
-        <h1>World DomiMap</h1>
+        <h1>World Domi Map</h1>
         <div class="wdm-country-picker-wrap">
             <div class="country-and-project-container">
                 <div class="country-select">
