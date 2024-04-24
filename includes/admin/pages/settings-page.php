@@ -75,7 +75,7 @@ function wdm_render_settings_page()
                     <select id="country-select" class="select">
                         <option value="" disabled selected class="default-option">Choose your country</option>
                         <?php foreach ($countries as $country): ?>
-                            <option value="<?php echo esc_attr(sanitize_title($country)); ?>"><?php echo $country; ?></option>
+                            <option value="<?php echo esc_attr(sanitize_title($country)); ?>"><?php echo esc_html($country); ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>

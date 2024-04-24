@@ -15,9 +15,13 @@ function wdm_update_country_sales() {
 
     // Check if the request is valid
     if (isset($_POST['name']) && isset($_POST['value'])) {
+        // Sanitize and validate the input
+        $name = sanitize_text_field($_POST['name']);
+        $value = sanitize_text_field($_POST['value']);
+
         // Update the setting
         $completed_projects = get_option('wdm_completed_projects', array());
-        $completed_projects[$_POST['name']] = $_POST['value'];
+        $completed_projects[$name] = $value;
         $update_status = update_option('wdm_completed_projects', $completed_projects);
 
         // Check if the update was successful
@@ -25,10 +29,12 @@ function wdm_update_country_sales() {
             echo 'Setting updated successfully';
         } else {
             error_log('Failed to update option: ' . print_r($completed_projects, true));
+            http_response_code(500);
             echo 'Failed to update setting';
         }
     } else {
         error_log('Invalid request: ' . print_r($_POST, true));
+        http_response_code(400);
         echo 'Invalid request';
     }
 
