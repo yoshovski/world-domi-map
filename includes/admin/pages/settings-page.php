@@ -37,7 +37,7 @@ function wdm_render_how_to_use_page() {
     <div class="wrap">
         <h1>How to Use</h1>
         <p>Display an interactive global map showcasing tracked projects completed in various countries.</p>
-        <p>"To utilize the plugin, choose the 'World DomiMap' block in the Gutenberg editor. As an alternative, you can simply insert the provided shortcode into any post or page:"</p>
+        <p>To utilize the plugin, choose the 'World DomiMap' block in the Gutenberg editor. As an alternative, you can simply insert the provided shortcode into any post or page:</p>
         <code>[<?php echo $shortcode; ?>]</code>
     </div>
     <div class="wdm-how-to-use">
