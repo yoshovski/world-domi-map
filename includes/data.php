@@ -57,8 +57,15 @@ class WDM_Data {
     }
 
     public function readJsonFile($filePath) {
-        $jsonFilePath = __DIR__ . '/../' . $filePath;
-        $jsonContent = file_get_contents($jsonFilePath);
+        $jsonFileUrl = plugin_dir_url(__FILE__) . '../' . $filePath;
+        $response = wp_remote_get($jsonFileUrl);
+
+        if (is_wp_error($response)) {
+            error_log('Failed to get file: ' . $jsonFileUrl);
+            return array();
+        }
+
+        $jsonContent = wp_remote_retrieve_body($response);
         $data = json_decode($jsonContent, true);
         $result = array();
 
