@@ -17,7 +17,12 @@ class WDM_Shortcode {
     }
 
     public function wdm_map_container_shortcode($atts = [], $content = null) {
-        return '<div class="wdm-map-container"></div>';
+        $allowed_html = array(
+            'div' => array(
+                'class' => array(),
+            ),
+        );
+        return wp_kses('<div class="wdm-map-container"></div>', $allowed_html);
     }
 
     public function get_shortcode_name() {

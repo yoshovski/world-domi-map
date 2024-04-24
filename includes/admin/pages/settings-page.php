@@ -187,7 +187,7 @@ function wdm_render_settings_page()
         </div>
 
 
-        <?php echo $wdm_shortcode->wdm_map_container_shortcode(); ?>
+        <?php echo wp_kses_post($wdm_shortcode->wdm_map_container_shortcode()); ?>
 
     </div>
 
