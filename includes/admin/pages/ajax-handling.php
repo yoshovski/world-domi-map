@@ -7,8 +7,8 @@
 
 function wdm_update_country_sales() {
 
-    // Check if our nonce is set.
-    if(!wdm_check_nonce_admin()) {
+    // Check if nonce is valid
+    if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'wdm-admin-ajax-nonce' ) ) {
         echo 'No permission to update settings';
         die();
     }
