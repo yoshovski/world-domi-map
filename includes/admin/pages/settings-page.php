@@ -79,7 +79,7 @@ function wdm_render_settings_page()
                         <?php foreach ($countries as $country):
                             $country_slug = Country::getInstance()->get_key_of_country($country);
                             ?>
-                            <option value="<?php echo $country_slug; ?>" data-country-name="<?php echo $country; ?>"><?php echo $country; ?></option>
+                            <option value="<?php echo esc_attr($country_slug); ?>" data-country-name="<?php echo esc_attr($country); ?>"><?php echo esc_attr($country); ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>

@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-25T08:22:28+00:00\n"
-"PO-Revision-Date: 2024-04-25 19:33+0000\n"
+"PO-Revision-Date: 2024-04-25 20:56+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: world-domi-map\n"
 "Language: it_IT\n"
@@ -70,11 +70,11 @@ msgstr "Australia"
 msgid "Austria"
 msgstr "Austria"
 
-#: includes/admin/pages/settings-page.php:183
+#: includes/admin/pages/settings-page.php:186
 msgid "Average Completed Projects Per country"
 msgstr "Progetti Completati in Media per Paese"
 
-#: includes/admin/pages/settings-page.php:176
+#: includes/admin/pages/settings-page.php:179
 msgid "Average Distribution"
 msgstr "Distribuzione Media"
 
@@ -198,8 +198,8 @@ msgstr "Cile"
 msgid "China"
 msgstr "Cina"
 
-#: includes/admin/pages/settings-page.php:74
-#: includes/admin/pages/settings-page.php:77
+#: includes/admin/pages/settings-page.php:75
+#: includes/admin/pages/settings-page.php:78
 msgid "Choose your country"
 msgstr "Scegli il tuo paese"
 
@@ -211,7 +211,7 @@ msgstr "Colombia"
 msgid "Comoros"
 msgstr "Comore"
 
-#: includes/admin/pages/settings-page.php:127
+#: includes/admin/pages/settings-page.php:130
 msgid "Completed Projects"
 msgstr "Progetti completati"
 
@@ -219,7 +219,7 @@ msgstr "Progetti completati"
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
-#: includes/admin/pages/settings-page.php:138
+#: includes/admin/pages/settings-page.php:141
 msgid "Countries"
 msgstr "Paesi"
 
@@ -255,7 +255,7 @@ msgstr "Repubblica Democratica del Congo"
 msgid "Denmark"
 msgstr "Danimarca"
 
-#: includes/admin/pages/settings-page.php:40 world-domi-map.php:108
+#: world-domi-map.php:108 includes/admin/pages/settings-page.php:40
 msgid ""
 "Display an interactive global map showcasing tracked projects completed in "
 "various countries."
@@ -399,6 +399,7 @@ msgstr "Haiti"
 msgid "Honduras"
 msgstr "Honduras"
 
+#. page title
 #: includes/admin/pages/settings-page.php:24
 #: includes/admin/pages/settings-page.php:38
 msgid "How to Use"
@@ -596,7 +597,7 @@ msgstr "Montserrat"
 msgid "Morocco"
 msgstr "Marocco"
 
-#: includes/admin/pages/settings-page.php:157
+#: includes/admin/pages/settings-page.php:160
 msgid "Most Sales"
 msgstr "Maggiori Vendite"
 
@@ -652,7 +653,7 @@ msgstr "Isole Marianne Settentrionali"
 msgid "Norway"
 msgstr "Norvegia"
 
-#: includes/admin/pages/settings-page.php:94
+#: includes/admin/pages/settings-page.php:97
 msgid "Number of Sales"
 msgstr "Numero di Vendite"
 
@@ -708,7 +709,9 @@ msgstr "Porto Rico"
 msgid "Qatar"
 msgstr "Qatar"
 
-#: includes/admin/pages/settings-page.php:146
+#: includes/admin/pages/settings-page.php:149
+#| msgid "Reached Country"
+#| msgid_plural "Reached Countries"
 msgid "Reached Countries"
 msgstr "Paesi Raggiunti"
 
@@ -764,11 +767,11 @@ msgstr "Saint Martin"
 msgid "Sale"
 msgstr "Vendita"
 
-#: includes/admin/pages/settings-page.php:119 world-domi-map.php:54
+#: world-domi-map.php:54 includes/admin/pages/settings-page.php:122
 msgid "Sales"
 msgstr "Vendite"
 
-#: includes/admin/pages/settings-page.php:165
+#: includes/admin/pages/settings-page.php:168
 msgid "Sales at"
 msgstr "Numero di Vendite in"
 
@@ -853,7 +856,6 @@ msgid "St. Eustatius (Netherlands)"
 msgstr "Sint Eustatius (Paesi Bassi)"
 
 #. Author of the plugin
-#: C:\Users\stefa\Coding\Web\htdocs\wordpress\wp-content\plugins\world-domi-map\world-domi-map.php
 msgid "Stefan Yoshovski"
 msgstr "Stefan Yoshovski"
 
@@ -906,7 +908,6 @@ msgid "The Gambia"
 msgstr "Gambia"
 
 #. Description of the plugin
-#: C:\Users\stefa\Coding\Web\htdocs\wordpress\wp-content\plugins\world-domi-map\world-domi-map.php
 msgid ""
 "This plugin shows a map of the world and tracks completed projects in "
 "different countries."
@@ -1012,8 +1013,7 @@ msgstr "Vietnam"
 msgid "Western Sahara"
 msgstr "Sahara Occidentale"
 
-#. Plugin Name of the plugin
-#: C:\Users\stefa\Coding\Web\htdocs\wordpress\wp-content\plugins\world-domi-map\world-domi-map.php
+#. Name of the plugin
 msgid "World Domi Map"
 msgstr "World Domi Map"
 

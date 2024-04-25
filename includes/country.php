@@ -260,7 +260,7 @@ class Country {
             return $countries[$normalizedSlug];
         }
 
-        return null;
+        return "";
     }
 
     public function get_key_of_country($country_name){
