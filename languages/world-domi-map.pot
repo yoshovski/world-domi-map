@@ -1,0 +1,85 @@
+# Slug world-domi-map
+# Copyright (C) 2024 Stefan Yoshovski
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: World Domi Map 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/world-domi-map\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-25T08:22:28+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: world-domi-map\n"
+
+#. Plugin Name of the plugin
+#: C:\Users\stefa\Coding\Web\htdocs\wordpress\wp-content\plugins\world-domi-map\world-domi-map.php
+msgid "World Domi Map"
+msgstr ""
+
+#. Description of the plugin
+#: C:\Users\stefa\Coding\Web\htdocs\wordpress\wp-content\plugins\world-domi-map\world-domi-map.php
+msgid "This plugin shows a map of the world and tracks completed projects in different countries."
+msgstr ""
+
+#. Author of the plugin
+#: C:\Users\stefa\Coding\Web\htdocs\wordpress\wp-content\plugins\world-domi-map\world-domi-map.php
+msgid "Stefan Yoshovski"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:24
+#: includes/admin/pages/settings-page.php:38
+msgid "How to Use"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:40
+msgid "Display an interactive global map showcasing tracked projects completed in various countries."
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:41
+msgid "To utilize the plugin, choose the 'World Domi Map' block in the Gutenberg editor. As an alternative, you can simply insert the provided shortcode into any post or page:"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:74
+#: includes/admin/pages/settings-page.php:77
+msgid "Choose your country"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:94
+msgid "Number of Sales"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:119
+msgid "Sales"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:127
+msgid "Completed Projects"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:138
+msgid "Countries"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:146
+msgid "Reached Countries"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:157
+msgid "Most Sales"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:165
+msgid "Sales at"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:176
+msgid "Average Distribution"
+msgstr ""
+
+#: includes/admin/pages/settings-page.php:183
+msgid "Average Completed Projects Per Country"
+msgstr ""

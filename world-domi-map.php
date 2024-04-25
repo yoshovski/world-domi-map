@@ -1,9 +1,13 @@
 <?php
 /**
  * Plugin Name: World Domi Map
+ * Plugin URI:
  * Version: 1.0.0
  * Contributors: @syoshovski
  * Author: Stefan Yoshovski
+ * Author URI:
+ * Text Domain: world-domi-map
+ * Domain Path: /languages
  * Description: This plugin shows a map of the world and tracks completed projects in different countries.
  * Donate link: https://paypal.me/yoshovski
  * Tags: world-map, project-tracking, sales-tracking, country-sales, shortcode, admin-dashboard, map-plugin, project-map, sales-map, world-domination
@@ -21,6 +25,7 @@ require_once(plugin_dir_path(__FILE__) . 'includes/admin/pages/settings-page.php
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/pages/registration.php');
 
 define('WDM_VERSION', '1.0.0');
+define('WDM_TEXT_DOMAIN', 'world-domi-map'); // TODO: Remove the constant and use the text domain directly
 
 $wdm_data = WDM_Data::getInstance();
 $wdm_shortcode = WDM_Shortcode::getInstance();
@@ -78,29 +83,16 @@ function wdm_enqueue_public_scripts() {
 
 // Register the Gutenberg block script
 function wdm_block_scripts() {
-    wp_register_script(
-        'wdm-block-render-map',
-        plugins_url( '/assets/js/wdm.js', __FILE__ ),
-        array( 'wp-blocks', 'wp-element', 'wp-editor' ),
-        WDM_VERSION,
-        true
-       );
+    wp_register_script('wdm-block-render-map', plugins_url( '/assets/js/wdm.js', __FILE__ ),
+        array( 'wp-blocks', 'wp-element', 'wp-editor' ), WDM_VERSION, true);
 
-    wp_register_script(
-        'wdm-block-map',
-        plugins_url( 'includes/admin/js/wdm-admin-block.js', __FILE__ ),
-        array( 'wp-blocks', 'wp-element', 'wp-editor' ),
-        WDM_VERSION,
-        true
-    );
+    wp_register_script('wdm-block-map', plugins_url( 'includes/admin/js/wdm-admin-block.js', __FILE__ ),
+        array( 'wp-blocks', 'wp-element', 'wp-editor' ), WDM_VERSION, true);
 
     wp_localize_script('wdm-block-map', 'wdm_block_map_data',
-        array('wdmPreviewImage' => plugins_url( '/assets/images/preview.jpg', __FILE__ ))
-    );
+        array('wdmPreviewImage' => plugins_url( '/assets/images/preview.jpg', __FILE__ )));
 
     wp_enqueue_script('wdm-block-map');
-
-
 }
 
 // Register new Gutenberg block
@@ -115,6 +107,11 @@ function wdm_register_block() {
 // This function will generate the block's output
 function wdm_render_block($attributes, $content) {
     return '<div class="wdm-map-container"></div>';
+}
+
+// Load the plugin text domain for translation
+function world_domi_map_load_textdomain() {
+    load_plugin_textdomain(WDM_TEXT_DOMAIN, false, basename(dirname(__FILE__)) . '/languages');
 }
 
 // Add Gutenberg block script actions
@@ -132,4 +129,6 @@ add_action('wp_ajax_nopriv_wdm_get_map_data', array($wdm_data, 'get_map_data'));
 add_action('wp_ajax_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
 add_action('wp_ajax_nopriv_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
 
+// Load text domain
+add_action('plugins_loaded', 'world_domi_map_load_textdomain');
 

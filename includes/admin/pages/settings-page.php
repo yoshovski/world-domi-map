@@ -7,13 +7,13 @@
 function wdm_add_settings_page()
 {
     add_menu_page(
-        'World Domi Map Settings',
-        'World Domi Map',
-        'manage_options',
-        'wdm_settings',
-        'wdm_render_settings_page',
-        'dashicons-admin-site-alt',
-        80
+        'World Domi Map Settings', // page title
+        'World Domi Map', // menu title
+        'manage_options', // capability
+        'wdm_settings', // menu slug
+        'wdm_render_settings_page', // function that renders the page
+        'dashicons-admin-site-alt', // icon
+        80 // position in the menu
     );
 }
 
@@ -21,7 +21,7 @@ function wdm_add_how_to_use_submenu() {
     add_submenu_page(
         'wdm_settings', // parent slug
         'How to Use', // page title
-        'How to Use', // menu title
+        esc_html__('How to Use', 'world-domi-map'), // menu title
         'manage_options', // capability
         'wdm_how_to_use', // menu slug
         'wdm_render_how_to_use_page' // function that renders the page
@@ -35,10 +35,11 @@ function wdm_render_how_to_use_page() {
     $shortcode = WDM_Shortcode::getInstance()->get_shortcode_name();
     ?>
     <div class="wrap">
-        <h1>How to Use</h1>
-        <p>Display an interactive global map showcasing tracked projects completed in various countries.</p>
-        <p>To utilize the plugin, choose the 'World DomiMap' block in the Gutenberg editor. As an alternative, you can simply insert the provided shortcode into any post or page:</p>
-        <code>[<?php echo esc_html($shortcode); ?>]</code>
+        <h1><?php esc_html_e( 'How to Use', 'world-domi-map' );?></h1>
+
+        <p><?php esc_html_e( 'Display an interactive global map showcasing tracked projects completed in various countries.', 'world-domi-map' ); ?></p>
+        <p><?php esc_html_e( "To utilize the plugin, choose the 'World Domi Map' block in the Gutenberg editor. As an alternative, you can simply insert the provided shortcode into any post or page:", 'world-domi-map' ); ?>
+        </p><code>[<?php echo esc_html($shortcode); ?>]</code>
     </div>
     <div class="wdm-how-to-use">
         <div class="wdm-map-container"></div>
@@ -70,10 +71,10 @@ function wdm_render_settings_page()
             <div class="country-and-project-container">
                 <div class="country-select">
                     <label for="country-select" class="label select-box1">
-                        <span class="label-desc">Choose your country</span>
+                        <span class="label-desc"><?php esc_html_e('Choose your country','world-domi-map') ?></span>
                     </label>
                     <select id="country-select" class="select">
-                        <option value="" disabled selected class="default-option">Choose your country</option>
+                        <option value="" disabled selected class="default-option"><?php esc_html_e('Choose your country','world-domi-map') ?></option>
                         <?php foreach ($countries as $country): ?>
                             <option value="<?php echo esc_attr(sanitize_title($country)); ?>"><?php echo esc_html($country); ?></option>
                         <?php endforeach; ?>
@@ -90,7 +91,7 @@ function wdm_render_settings_page()
 
                     ?>
                     <div id="project-field-<?php echo esc_attr($country_slug); ?>" style="display: none;">
-                        <div class="sales-input-container"><span>Number of Sales</span>
+                        <div class="sales-input-container"><span><?php esc_html_e('Number of Sales','world-domi-map') ?></span>
                             <input type="number" id="wdm_project_<?php echo esc_attr($country_slug); ?>"
                                    name="wdm_completed_projects[<?php echo esc_attr($country_slug); ?>]"
                                    value="<?php echo esc_attr($country_value); ?>" min="0" step="1"
@@ -115,7 +116,7 @@ function wdm_render_settings_page()
                     <div class="card-body">
                         <div class="d-flex">
                             <div>
-                                <h4 class="mb-0">Sales</h4>
+                                <h4 class="mb-0"><?php esc_html_e('Sales','world-domi-map') ?></h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-primary text-primary rounded-2">
                                 <span class="dashicons dashicons-yes"></span>
@@ -123,7 +124,7 @@ function wdm_render_settings_page()
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo esc_html($total_completed_projects); ?></h1>
-                            <p class="mb-0">Completed Projects</p>
+                            <p class="mb-0"><?php esc_html_e('Completed Projects','world-domi-map') ?></p>
                         </div>
                     </div>
                 </div>
@@ -134,7 +135,7 @@ function wdm_render_settings_page()
                     <div class="card-body">
                         <div class="d-flex">
                             <div>
-                                <h4 class="mb-0">Countries</h4>
+                                <h4 class="mb-0"><?php esc_html_e('Countries','world-domi-map') ?></h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-primary text-primary rounded-2">
                                 <span class="dashicons dashicons-admin-site-alt"></span>
@@ -142,7 +143,7 @@ function wdm_render_settings_page()
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo esc_html($total_active_countries); ?></h1>
-                            <p class="mb-0">Reached Countries</p>
+                            <p class="mb-0"><?php esc_html_e('Reached Countries','world-domi-map') ?></p>
                         </div>
                     </div>
                 </div>
@@ -153,7 +154,7 @@ function wdm_render_settings_page()
                     <div class="card-body">
                         <div class="d-flex">
                             <div>
-                                <h4 class="mb-0">Most Sales</h4>
+                                <h4 class="mb-0"><?php esc_html_e('Most Sales','world-domi-map') ?></h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-primary text-primary rounded-2">
                                 <span class="dashicons dashicons-chart-pie"></span>
@@ -161,7 +162,7 @@ function wdm_render_settings_page()
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo esc_html($max_sales); ?></h1>
-                            <p class="mb-0">Sales at <?php echo esc_html($country_with_max_sales); ?></p>
+                            <p class="mb-0"><?php esc_html_e('Sales at','world-domi-map') ?> <?php echo esc_html($country_with_max_sales); ?></p>
                         </div>
                     </div>
                 </div>
@@ -172,14 +173,14 @@ function wdm_render_settings_page()
                     <div class="card-body">
                         <div class="d-flex">
                             <div>
-                                <h4 class="mb-0">Average Distribution</h4>
+                                <h4 class="mb-0"><?php esc_html_e('Average Distribution','world-domi-map') ?></h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-primary text-primary rounded-2">
                                 <span class="dashicons dashicons-chart-line"></span></div>
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo esc_html($sales_distribution); ?></h1>
-                            <p class="mb-0">Average Completed Projects Per Country</p>
+                            <p class="mb-0"><?php esc_html_e('Average Completed Projects Per Country','world-domi-map') ?></p>
                         </div>
                     </div>
                 </div>
