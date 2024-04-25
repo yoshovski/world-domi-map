@@ -52,7 +52,8 @@ function wdm_render_settings_page()
     $wdm_data = WDM_Data::getInstance();
     $wdm_shortcode = WDM_Shortcode::getInstance();
 
-    $countries = $wdm_data->get_countries();
+   // $countries = $wdm_data->get_countries();
+    $countries = Country::getInstance()->get_ordered_countries();
     $completed_projects = get_option('wdm_completed_projects', array());
 
     // Summary Card Sdata
@@ -75,15 +76,17 @@ function wdm_render_settings_page()
                     </label>
                     <select id="country-select" class="select">
                         <option value="" disabled selected class="default-option"><?php esc_html_e('Choose your country','world-domi-map') ?></option>
-                        <?php foreach ($countries as $country): ?>
-                            <option value="<?php echo esc_attr(sanitize_title($country)); ?>"><?php echo esc_html($country); ?></option>
+                        <?php foreach ($countries as $country):
+                            $country_slug = Country::getInstance()->get_key_of_country($country);
+                            ?>
+                            <option value="<?php echo $country_slug; ?>" data-country-name="<?php echo $country; ?>"><?php echo $country; ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
                 <?php
                 // Render the list of countries and project fields
                 foreach ($countries as $country) {
-                    $country_slug = sanitize_title($country);
+                    $country_slug = Country::getInstance()->get_key_of_country($country);
                     $country_value = isset($completed_projects[$country_slug]) ? $completed_projects[$country_slug] : 0;
 
                     if ($country_value == 0 || $country_value == '')
@@ -180,7 +183,7 @@ function wdm_render_settings_page()
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo esc_html($sales_distribution); ?></h1>
-                            <p class="mb-0"><?php esc_html_e('Average Completed Projects Per Country','world-domi-map') ?></p>
+                            <p class="mb-0"><?php esc_html_e('Average Completed Projects Per country','world-domi-map') ?></p>
                         </div>
                     </div>
                 </div>

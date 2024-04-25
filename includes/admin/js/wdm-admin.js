@@ -6,6 +6,7 @@ function handleCountrySelection() {
             $('[id^=project-field-]').hide();
 
             const selectedCountry = $(this).val();
+            const displayCountryName = $(this).find(':selected').data('country-name');
 
             // Show the project field for the selected country
             $('#project-field-' + selectedCountry).show();
@@ -13,7 +14,7 @@ function handleCountrySelection() {
             // Update the label description with the selected country
             var labelFor = $(this).attr("id"),
             label = $("[for='" + labelFor + "']");
-            label.find(".label-desc").html(slugToCountry(selectedCountry));
+            label.find(".label-desc").html(displayCountryName);
 
         }).change(); // Trigger the change event manually
 

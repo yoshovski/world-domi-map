@@ -2,6 +2,7 @@
 /**
  * Plugin Name: World Domi Map
  * Plugin URI:
+ * Slug: world-domi-map
  * Version: 1.0.0
  * Contributors: @syoshovski
  * Author: Stefan Yoshovski
@@ -17,6 +18,7 @@
  */
 
 // Include the necessary files
+require_once(plugin_dir_path(__FILE__) . 'includes/country.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/shortcode.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/admin/pages/ajax-handling.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/data.php');
@@ -43,10 +45,15 @@ function wdm_enqueue_common_scripts() {
         'nonce' => wp_create_nonce('wdm-ajax-nonce')
     ));
 
+
     // Register and enqueue common script
     wp_register_script('wdm-common-script', plugin_dir_url(__FILE__) . '/assets/js/wdm.js', array('jquery'), WDM_VERSION, true);
     wp_enqueue_script('wdm-common-script');
-
+    wp_localize_script('wdm-common-script', 'wdm_text', array(
+        'map_title' => esc_html__('World Domination', 'world-domi-map'),
+        'sales' => esc_html__('Sales', 'world-domi-map'),
+        'sale' => esc_html__('Sale', 'world-domi-map'),
+    ));
 }
 
 // Enqueue plugin scripts and styles for the admin area
@@ -63,7 +70,12 @@ function wdm_enqueue_admin_scripts() {
     wp_enqueue_script('wdm-admin-ajax');
     wp_localize_script('wdm-admin-ajax', 'wdm_admin_ajax_object', array(
         'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce' => wp_create_nonce('wdm-admin-ajax-nonce')
+        'nonce' => wp_create_nonce('wdm-admin-ajax-nonce'),
+
+    ));
+
+    wp_localize_script('wdm-admin-ajax', 'wdm_admin_ajax_text', array(
+        'salesIn' => esc_html__('Sales in', 'world-domi-map')
     ));
 
     // Register and enqueue admin scripts
@@ -78,19 +90,23 @@ function wdm_enqueue_public_scripts() {
     // Register and enqueue front-end scripts
     wp_register_script('wdm-script', plugin_dir_url(__FILE__) . '/includes/public/js/wdm_frontend.js', array('jquery'), WDM_VERSION, true);
     wp_enqueue_script('wdm-script');
-
 }
 
 // Register the Gutenberg block script
 function wdm_block_scripts() {
     wp_register_script('wdm-block-render-map', plugins_url( '/assets/js/wdm.js', __FILE__ ),
-        array( 'wp-blocks', 'wp-element', 'wp-editor' ), WDM_VERSION, true);
+        array( 'wp-blocks', 'wp-element', 'wp-editor'), WDM_VERSION, true);
 
     wp_register_script('wdm-block-map', plugins_url( 'includes/admin/js/wdm-admin-block.js', __FILE__ ),
-        array( 'wp-blocks', 'wp-element', 'wp-editor' ), WDM_VERSION, true);
+        array( 'wp-blocks', 'wp-element', 'wp-editor'), WDM_VERSION, true);
 
-    wp_localize_script('wdm-block-map', 'wdm_block_map_data',
-        array('wdmPreviewImage' => plugins_url( '/assets/images/preview.jpg', __FILE__ )));
+    wp_localize_script('wdm-block-map', 'wdm_block_map_data', array(
+        'wdmPreviewImage' => plugins_url( '/assets/images/preview.jpg', __FILE__ )
+    ));
+
+    wp_localize_script('wdm-block-map', 'wdm_block_text', array(
+        'descr' => esc_html__('Display an interactive global map showcasing tracked projects completed in various countries.', 'world-domi-map')
+    ));
 
     wp_enqueue_script('wdm-block-map');
 }
@@ -114,6 +130,9 @@ function world_domi_map_load_textdomain() {
     load_plugin_textdomain(WDM_TEXT_DOMAIN, false, basename(dirname(__FILE__)) . '/languages');
 }
 
+// Load text domain
+add_action('plugins_loaded', 'world_domi_map_load_textdomain');
+
 // Add Gutenberg block script actions
 add_action( 'admin_enqueue_scripts', 'wdm_block_scripts' );
 add_action( 'init', 'wdm_register_block' );
@@ -128,7 +147,3 @@ add_action('wp_ajax_nopriv_wdm_get_map_data', array($wdm_data, 'get_map_data'));
 
 add_action('wp_ajax_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
 add_action('wp_ajax_nopriv_wdm_get_summary_cards', array($wdm_data, 'get_summary_cards'));
-
-// Load text domain
-add_action('plugins_loaded', 'world_domi_map_load_textdomain');
-

@@ -16,28 +16,37 @@ function slugToCountry(slug) {
 }
 
 function generateMapHTML(data) {
-    const {worldDominationPercentage, countryPaths, completedProjects} = data;
+    const {worldDominationPercentage, countryPaths, completedProjects, displayCountryNames} = data;
     const activeColor = "#62646a";
     const inactiveColor = "#e4e5e7";
+    const titleMessage = wdm_text.map_title;
 
-    let output = `<h2 class="section-header tbody-4">World Domination ${worldDominationPercentage}</h2>
+    let output = `<h2 class="section-header tbody-4">${titleMessage} ${worldDominationPercentage}</h2>
                          <svg><g class="countries">`;
 
     for (let country in countryPaths) {
         const countrySlug = countryToSlug(country);
         const path = countryPaths[country];
-        const countryStatusClassName = isProjectCompleted(country, completedProjects) ? 'active' : 'inactive';
+        const countryData = completedProjects[countrySlug];
+        let projectCount = 0;
+        if (countryData) {  // Check if countryData is not undefined
+            const displayCountryName = Object.keys(countryData)[0];
+            projectCount = countryData[displayCountryName];
+        }
+
+        const countryStatusClassName = projectCount > 0 ? 'active' : 'inactive';
         const fillColor = countryStatusClassName === 'active' ? activeColor : inactiveColor;
         const countProjects = completedProjects[countrySlug];
         const prettyCountProjects = prettyPrint(countProjects);
+        const displayCountryName = displayCountryNames[countrySlug];
 
         let tooltipText;
         if (countProjects > 0) {
-            let salesText = countProjects > 1 ? 'Sales' : 'Sale';
-            tooltipText = `${country} - ${prettyCountProjects} ${salesText}`;
+            let salesText = countProjects > 1 ? wdm_text.sales : wdm_text.sale;
+            tooltipText = `${displayCountryName} - ${prettyCountProjects} ${salesText}`;
         }
         else
-            tooltipText = `${country}`;
+            tooltipText = displayCountryName;
 
         output += `<path class="map-geography map-geography-with-value ${countryStatusClassName} tooltip" tabindex="0" d="${path}" fill="${fillColor}">`;
 
@@ -48,8 +57,6 @@ function generateMapHTML(data) {
     }
 
     output += '</g></svg>';
-
-    rescaleSvg();
 
     return output;
 }

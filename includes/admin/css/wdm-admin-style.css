@@ -86,7 +86,7 @@
 
 /* END #1 Summary Card */
 
-/* BEGIN #2 Select Country Dropdown */
+/* BEGIN #2 Select country Dropdown */
 .wdm-country-picker-wrap .country-select {
     cursor: pointer;
     position : relative;
@@ -173,7 +173,7 @@
     width: 30px;
     margin-left: 10px;
 }
-/* END #2 Select Country Dropdown */
+/* END #2 Select country Dropdown */
 
 /* BEGIN #3  How to use page */
 .wdm-how-to-use {

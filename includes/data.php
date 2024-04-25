@@ -28,6 +28,7 @@ class WDM_Data {
             'completedProjects' => $completed_projects,
             'countryPaths' => $country_paths,
             'worldDominationPercentage' => $world_domination_percentage,
+            'displayCountryNames' => Country::getInstance()->get_names()
         );
 
         // Return the map data as a JSON response
@@ -137,9 +138,7 @@ class WDM_Data {
             }
         }
 
-        // Convert the country slug back to a readable country name
-        $max_sales_country = str_replace('-', ' ', $max_sales_country);
-        $max_sales_country = ucwords($max_sales_country);
+        $max_sales_country = Country::getInstance()->get_country_name($max_sales_country);
 
         return array('country' => $max_sales_country, 'sales' => $max_sales);
     }
