@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-25 20:56+0000\n"
-"PO-Revision-Date: 2024-04-25 21:07+0000\n"
+"PO-Revision-Date: 2024-04-25 23:20+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: world-domi-map\n"
 "Language: de_DE\n"
@@ -70,7 +70,8 @@ msgid "Austria"
 msgstr "Österreich"
 
 #: includes/admin/pages/settings-page.php:186
-msgid "Average Completed Projects Per country"
+#| msgid "Average Completed Projects Per country"
+msgid "Average Completed Projects Per Country"
 msgstr "Durchschnittlich abgeschlossene Projekte pro Land"
 
 #: includes/admin/pages/settings-page.php:179

@@ -183,7 +183,7 @@ function wdm_render_settings_page()
                         </div>
                         <div>
                             <h1 class="fw-bold"><?php echo esc_html($sales_distribution); ?></h1>
-                            <p class="mb-0"><?php esc_html_e('Average Completed Projects Per country','world-domi-map') ?></p>
+                            <p class="mb-0"><?php esc_html_e('Average Completed Projects Per Country','world-domi-map') ?></p>
                         </div>
                     </div>
                 </div>
