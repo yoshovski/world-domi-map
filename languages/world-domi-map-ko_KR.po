@@ -1,0 +1,1026 @@
+# Copyright (C) 2024 Stefan Yoshovski
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: World Domi Map 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/world-domi-map\n"
+"Last-Translator: \n"
+"Language-Team: Korean\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-25 20:56+0000\n"
+"PO-Revision-Date: 2024-04-25 21:19+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: world-domi-map\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Loco-Version: 2.6.7; wp-6.5.2"
+
+#: includes/country.php:10
+msgid "Afghanistan"
+msgstr "아프가니스탄"
+
+#: includes/country.php:11
+msgid "Albania"
+msgstr "알바니아"
+
+#: includes/country.php:12
+msgid "Algeria"
+msgstr "알제리"
+
+#: includes/country.php:13
+msgid "American Samoa"
+msgstr "아메리칸 사모아"
+
+#: includes/country.php:14
+msgid "Andorra"
+msgstr "안도라"
+
+#: includes/country.php:15
+msgid "Angola"
+msgstr "앙골라"
+
+#: includes/country.php:16
+msgid "Anguilla"
+msgstr "앵 귈라"
+
+#: includes/country.php:17
+msgid "Antigua and Barbuda"
+msgstr "앤티가 바부다"
+
+#: includes/country.php:18
+msgid "Argentina"
+msgstr "아르헨티나"
+
+#: includes/country.php:19
+msgid "Armenia"
+msgstr "아르메니아"
+
+#: includes/country.php:20
+msgid "Aruba"
+msgstr "아루바"
+
+#: includes/country.php:21
+msgid "Australia"
+msgstr "호주"
+
+#: includes/country.php:22
+msgid "Austria"
+msgstr "오스트리아"
+
+#: includes/admin/pages/settings-page.php:186
+msgid "Average Completed Projects Per country"
+msgstr "국가별 평균 완료된 프로젝트 수"
+
+#: includes/admin/pages/settings-page.php:179
+msgid "Average Distribution"
+msgstr "평균 분포"
+
+#: includes/country.php:23
+msgid "Azerbaijan"
+msgstr "아제르바이잔"
+
+#: includes/country.php:24
+msgid "Bahamas"
+msgstr "바하마"
+
+#: includes/country.php:25
+msgid "Bahrain"
+msgstr "바레인"
+
+#: includes/country.php:26
+msgid "Bangladesh"
+msgstr "방글라데시"
+
+#: includes/country.php:27
+msgid "Barbados"
+msgstr "바베이도스"
+
+#: includes/country.php:28
+msgid "Belarus"
+msgstr "벨로루시"
+
+#: includes/country.php:29
+msgid "Belgium"
+msgstr "벨기에"
+
+#: includes/country.php:30
+msgid "Belize"
+msgstr "벨리즈"
+
+#: includes/country.php:31
+msgid "Benin"
+msgstr "베냉"
+
+#: includes/country.php:32
+msgid "Bermuda"
+msgstr "버뮤다"
+
+#: includes/country.php:33
+msgid "Bhutan"
+msgstr "부탄"
+
+#: includes/country.php:34
+msgid "Bolivia"
+msgstr "볼리비아"
+
+#: includes/country.php:35
+msgid "Bosnia and Herzegovina"
+msgstr "보스니아 헤르체고비나"
+
+#: includes/country.php:36
+msgid "Botswana"
+msgstr "보츠와나"
+
+#: includes/country.php:37
+msgid "Brazil"
+msgstr "브라질"
+
+#: includes/country.php:38
+msgid "British Virgin Islands"
+msgstr "영국령 버진 아일랜드"
+
+#: includes/country.php:39
+msgid "Brunei Darussalam"
+msgstr "브루나이 다루살람"
+
+#: includes/country.php:40
+msgid "Bulgaria"
+msgstr "불가리아"
+
+#: includes/country.php:41
+msgid "Burkina Faso"
+msgstr "부르키나파소"
+
+#: includes/country.php:42
+msgid "Burundi"
+msgstr "부룬디"
+
+#: includes/country.php:43
+msgid "Cambodia"
+msgstr "캄보디아"
+
+#: includes/country.php:44
+msgid "Cameroon"
+msgstr "카메룬"
+
+#: includes/country.php:45
+msgid "Canada"
+msgstr "캐나다"
+
+#: includes/country.php:46
+msgid "Canary Islands (Spain)"
+msgstr "카나리아 제도(스페인)"
+
+#: includes/country.php:47
+msgid "Cape Verde"
+msgstr "카보베르데"
+
+#: includes/country.php:48
+msgid "Cayman Islands"
+msgstr "케이맨 제도"
+
+#: includes/country.php:49
+msgid "Central African Republic"
+msgstr "중앙 아프리카 공화국"
+
+#: includes/country.php:50
+msgid "Chad"
+msgstr "Chad"
+
+#: includes/country.php:51
+msgid "Chile"
+msgstr "칠레"
+
+#: includes/country.php:52
+msgid "China"
+msgstr "중국"
+
+#: includes/admin/pages/settings-page.php:75
+#: includes/admin/pages/settings-page.php:78
+msgid "Choose your country"
+msgstr "국가 선택"
+
+#: includes/country.php:53
+msgid "Colombia"
+msgstr "콜롬비아"
+
+#: includes/country.php:54
+msgid "Comoros"
+msgstr "코모로"
+
+#: includes/admin/pages/settings-page.php:130
+msgid "Completed Projects"
+msgstr "완료된 프로젝트"
+
+#: includes/country.php:55
+msgid "Costa Rica"
+msgstr "코스타리카"
+
+#: includes/admin/pages/settings-page.php:141
+msgid "Countries"
+msgstr "국가"
+
+#: includes/country.php:56
+msgid "Croatia"
+msgstr "크로아티아"
+
+#: includes/country.php:57
+msgid "Cuba"
+msgstr "쿠바"
+
+#: includes/country.php:58
+msgid "Curaçao"
+msgstr "큐라소"
+
+#: includes/country.php:59
+msgid "Cyprus"
+msgstr "키프로스"
+
+#: includes/country.php:60
+msgid "Czech Republic"
+msgstr "체코 공화국"
+
+#: includes/country.php:61
+msgid "Dem. Rep. Korea"
+msgstr "Dem. 한국 의원"
+
+#: includes/country.php:62
+msgid "Democratic Republic of the Congo"
+msgstr "콩고 민주 공화국"
+
+#: includes/country.php:63
+msgid "Denmark"
+msgstr "덴마크"
+
+#: world-domi-map.php:108 includes/admin/pages/settings-page.php:40
+msgid ""
+"Display an interactive global map showcasing tracked projects completed in "
+"various countries."
+msgstr "다양한 국가에서 완료된 추적 프로젝트를 보여주는 대화형 글로벌 지도를 표시합니다."
+
+#: includes/country.php:64
+msgid "Djibouti"
+msgstr "지부티"
+
+#: includes/country.php:65
+msgid "Dominica"
+msgstr "도미니카"
+
+#: includes/country.php:66
+msgid "Dominican Republic"
+msgstr "도미니카 공화국"
+
+#: includes/country.php:67
+msgid "Ecuador"
+msgstr "에콰도르"
+
+#: includes/country.php:68
+msgid "Egypt"
+msgstr "이집트"
+
+#: includes/country.php:69
+msgid "El Salvador"
+msgstr "엘살바도르"
+
+#: includes/country.php:70
+msgid "Equatorial Guinea"
+msgstr "적도 기니"
+
+#: includes/country.php:71
+msgid "Eritrea"
+msgstr "에리트레아"
+
+#: includes/country.php:72
+msgid "Estonia"
+msgstr "에스토니아"
+
+#: includes/country.php:73
+msgid "Eswatini"
+msgstr "에스와티니"
+
+#: includes/country.php:74
+msgid "Ethiopia"
+msgstr "에티오피아"
+
+#: includes/country.php:75
+msgid "Faeroe Islands"
+msgstr "페이로 제도"
+
+#: includes/country.php:76
+msgid "Falkland Islands"
+msgstr "포클랜드 제도"
+
+#: includes/country.php:77
+msgid "Federated States of Micronesia"
+msgstr "미크로네시아 연방"
+
+#: includes/country.php:78
+msgid "Fiji"
+msgstr "피지"
+
+#: includes/country.php:79
+msgid "Finland"
+msgstr "핀란드"
+
+#: includes/country.php:80
+msgid "France"
+msgstr "프랑스"
+
+#: includes/country.php:81
+msgid "French Guiana"
+msgstr "프랑스령 기아나"
+
+#: includes/country.php:82
+msgid "French Polynesia"
+msgstr "프렌치 폴리네시아"
+
+#: includes/country.php:83
+msgid "Gabon"
+msgstr "가봉"
+
+#: includes/country.php:84
+msgid "Georgia"
+msgstr "조지아"
+
+#: includes/country.php:85
+msgid "Germany"
+msgstr "독일"
+
+#: includes/country.php:86
+msgid "Ghana"
+msgstr "가나"
+
+#: includes/country.php:87
+msgid "Greece"
+msgstr "그리스"
+
+#: includes/country.php:88
+msgid "Greenland"
+msgstr "그린란드"
+
+#: includes/country.php:89
+msgid "Grenada"
+msgstr "그레나다"
+
+#: includes/country.php:90
+msgid "Guadeloupe"
+msgstr "과들루프"
+
+#: includes/country.php:91
+msgid "Guam"
+msgstr "괌"
+
+#: includes/country.php:92
+msgid "Guatemala"
+msgstr "과테말라"
+
+#: includes/country.php:93
+msgid "Guinea"
+msgstr "기니"
+
+#: includes/country.php:94
+msgid "Guinea-Bissau"
+msgstr "기니 비사우"
+
+#: includes/country.php:95
+msgid "Guyana"
+msgstr "가이아나"
+
+#: includes/country.php:96
+msgid "Haiti"
+msgstr "아이티"
+
+#: includes/country.php:97
+msgid "Honduras"
+msgstr "온두라스"
+
+#. page title
+#: includes/admin/pages/settings-page.php:24
+#: includes/admin/pages/settings-page.php:38
+msgid "How to Use"
+msgstr "사용 방법"
+
+#: includes/country.php:98
+msgid "Hungary"
+msgstr "헝가리"
+
+#: includes/country.php:99
+msgid "Iceland"
+msgstr "아이슬란드"
+
+#: includes/country.php:100
+msgid "India"
+msgstr "인도"
+
+#: includes/country.php:101
+msgid "Indonesia"
+msgstr "인도네시아"
+
+#: includes/country.php:102
+msgid "Iran"
+msgstr "이란"
+
+#: includes/country.php:103
+msgid "Iraq"
+msgstr "이라크"
+
+#: includes/country.php:104
+msgid "Ireland"
+msgstr "아일랜드"
+
+#: includes/country.php:105
+msgid "Israel"
+msgstr "이스라엘"
+
+#: includes/country.php:106
+msgid "Italy"
+msgstr "이탈리아"
+
+#: includes/country.php:107
+msgid "Ivory Coast"
+msgstr "아이보리 코스트"
+
+#: includes/country.php:108
+msgid "Jamaica"
+msgstr "자메이카"
+
+#: includes/country.php:109
+msgid "Japan"
+msgstr "일본"
+
+#: includes/country.php:110
+msgid "Jordan"
+msgstr "Jordan"
+
+#: includes/country.php:111
+msgid "Kazakhstan"
+msgstr "카자흐스탄"
+
+#: includes/country.php:112
+msgid "Kenya"
+msgstr "케냐"
+
+#: includes/country.php:113
+msgid "Kiribati"
+msgstr "키리바시"
+
+#: includes/country.php:114
+msgid "Kosovo"
+msgstr "코소보"
+
+#: includes/country.php:115
+msgid "Kuwait"
+msgstr "쿠웨이트"
+
+#: includes/country.php:116
+msgid "Kyrgyzstan"
+msgstr "키르기스스탄"
+
+#: includes/country.php:117
+msgid "Lao PDR"
+msgstr "라오스"
+
+#: includes/country.php:118
+msgid "Laos"
+msgstr "Laos"
+
+#: includes/country.php:119
+msgid "Latvia"
+msgstr "라트비아"
+
+#: includes/country.php:120
+msgid "Lebanon"
+msgstr "레바논"
+
+#: includes/country.php:121
+msgid "Lesotho"
+msgstr "레소토"
+
+#: includes/country.php:122
+msgid "Liberia"
+msgstr "라이베리아"
+
+#: includes/country.php:123
+msgid "Libya"
+msgstr "리비아"
+
+#: includes/country.php:124
+msgid "Liechtenstein"
+msgstr "리히텐슈타인"
+
+#: includes/country.php:125
+msgid "Lithuania"
+msgstr "리투아니아"
+
+#: includes/country.php:126
+msgid "Luxembourg"
+msgstr "룩셈부르크"
+
+#: includes/country.php:127
+msgid "Macedonia"
+msgstr "마케도니아"
+
+#: includes/country.php:128
+msgid "Madagascar"
+msgstr "마다가스카르"
+
+#: includes/country.php:129
+msgid "Malawi"
+msgstr "말라위"
+
+#: includes/country.php:130
+msgid "Malaysia"
+msgstr "말레이시아"
+
+#: includes/country.php:131
+msgid "Maldives"
+msgstr "몰디브"
+
+#: includes/country.php:132
+msgid "Mali"
+msgstr "말리"
+
+#: includes/country.php:133
+msgid "Malta"
+msgstr "Malta"
+
+#: includes/country.php:134
+msgid "Marshall Islands"
+msgstr "마셜 제도"
+
+#: includes/country.php:135
+msgid "Martinique"
+msgstr "마르티니크"
+
+#: includes/country.php:136
+msgid "Mauritania"
+msgstr "모리타니아"
+
+#: includes/country.php:137
+msgid "Mauritius"
+msgstr "모리셔스"
+
+#: includes/country.php:138
+msgid "Mayotte"
+msgstr "마요트"
+
+#: includes/country.php:139
+msgid "Mexico"
+msgstr "멕시코"
+
+#: includes/country.php:140
+msgid "Moldova"
+msgstr "몰도바"
+
+#: includes/country.php:141
+msgid "Monaco"
+msgstr "모나코"
+
+#: includes/country.php:142
+msgid "Mongolia"
+msgstr "몽골"
+
+#: includes/country.php:143
+msgid "Montenegro"
+msgstr "몬테네그로"
+
+#: includes/country.php:144
+msgid "Montserrat"
+msgstr "몬세라트"
+
+#: includes/country.php:145
+msgid "Morocco"
+msgstr "모로코"
+
+#: includes/admin/pages/settings-page.php:160
+msgid "Most Sales"
+msgstr "대부분의 판매"
+
+#: includes/country.php:146
+msgid "Mozambique"
+msgstr "모잠비크"
+
+#: includes/country.php:147
+msgid "Myanmar"
+msgstr "미얀마"
+
+#: includes/country.php:148
+msgid "Namibia"
+msgstr "나미비아"
+
+#: includes/country.php:149
+msgid "Nauru"
+msgstr "나우루"
+
+#: includes/country.php:150
+msgid "Nepal"
+msgstr "네팔"
+
+#: includes/country.php:151
+msgid "Netherlands"
+msgstr "네덜란드"
+
+#: includes/country.php:152
+msgid "New Caledonia"
+msgstr "뉴칼레도니아"
+
+#: includes/country.php:153
+msgid "New Zealand"
+msgstr "뉴질랜드"
+
+#: includes/country.php:154
+msgid "Nicaragua"
+msgstr "니카라과"
+
+#: includes/country.php:155
+msgid "Niger"
+msgstr "니제르"
+
+#: includes/country.php:156
+msgid "Nigeria"
+msgstr "나이지리아"
+
+#: includes/country.php:157
+msgid "Northern Mariana Islands"
+msgstr "북마리아나 제도"
+
+#: includes/country.php:158
+msgid "Norway"
+msgstr "노르웨이"
+
+#: includes/admin/pages/settings-page.php:97
+msgid "Number of Sales"
+msgstr "판매 건수"
+
+#: includes/country.php:159
+msgid "Oman"
+msgstr "Oman"
+
+#: includes/country.php:160
+msgid "Pakistan"
+msgstr "파키스탄"
+
+#: includes/country.php:161
+msgid "Palau"
+msgstr "팔라우"
+
+#: includes/country.php:162
+msgid "Palestine"
+msgstr "팔레스타인"
+
+#: includes/country.php:163
+msgid "Panama"
+msgstr "파나마"
+
+#: includes/country.php:164
+msgid "Papua New Guinea"
+msgstr "파푸아뉴기니"
+
+#: includes/country.php:165
+msgid "Paraguay"
+msgstr "파라과이"
+
+#: includes/country.php:166
+msgid "Peru"
+msgstr "페루"
+
+#: includes/country.php:167
+msgid "Philippines"
+msgstr "필리핀"
+
+#: includes/country.php:168
+msgid "Poland"
+msgstr "폴란드"
+
+#: includes/country.php:169
+msgid "Portugal"
+msgstr "포르투갈"
+
+#: includes/country.php:170
+msgid "Puerto Rico"
+msgstr "푸에르토리코"
+
+#: includes/country.php:171
+msgid "Qatar"
+msgstr "카타르"
+
+#: includes/admin/pages/settings-page.php:149
+msgid "Reached Countries"
+msgstr "도달 국가"
+
+#: includes/country.php:172
+msgid "Republic of Congo"
+msgstr "콩고 공화국"
+
+#: includes/country.php:173
+msgid "Republic of Korea"
+msgstr "대한민국"
+
+#: includes/country.php:174
+msgid "Reunion"
+msgstr "재결합"
+
+#: includes/country.php:175
+msgid "Romania"
+msgstr "루마니아"
+
+#: includes/country.php:176
+msgid "Russian Federation"
+msgstr "러시아 연방"
+
+#: includes/country.php:177
+msgid "Rwanda"
+msgstr "르완다"
+
+#: includes/country.php:178
+msgid "Saba (Netherlands)"
+msgstr "사바(네덜란드)"
+
+#: includes/country.php:179
+msgid "Saint Kitts and Nevis"
+msgstr "세인트 키츠 네비스"
+
+#: includes/country.php:180
+msgid "Saint Lucia"
+msgstr "세인트 루시아"
+
+#: includes/country.php:181
+msgid "Saint Vincent and the Grenadines"
+msgstr "세인트 빈센트 그레나딘"
+
+#: includes/country.php:182
+msgid "Saint-Barthélemy"
+msgstr "생 바르텔레미"
+
+#: includes/country.php:183
+msgid "Saint-Martin"
+msgstr "생 마르탱"
+
+#: world-domi-map.php:55
+msgid "Sale"
+msgstr "판매"
+
+#: world-domi-map.php:54 includes/admin/pages/settings-page.php:122
+msgid "Sales"
+msgstr "판매"
+
+#: includes/admin/pages/settings-page.php:168
+msgid "Sales at"
+msgstr "판매처"
+
+#: world-domi-map.php:78
+msgid "Sales in"
+msgstr "판매 지역"
+
+#: includes/country.php:184
+msgid "Samoa"
+msgstr "사모아"
+
+#: includes/country.php:185
+msgid "San Marino"
+msgstr "산마리노"
+
+#: includes/country.php:186
+msgid "Sao Tome and Principe"
+msgstr "상투메 프린시페"
+
+#: includes/country.php:187
+msgid "Saudi Arabia"
+msgstr "사우디 아라비아"
+
+#: includes/country.php:188
+msgid "Senegal"
+msgstr "세네갈"
+
+#: includes/country.php:189
+msgid "Serbia"
+msgstr "세르비아"
+
+#: includes/country.php:190
+msgid "Seychelles"
+msgstr "세이셸"
+
+#: includes/country.php:191
+msgid "Sierra Leone"
+msgstr "시에라리온"
+
+#: includes/country.php:192
+msgid "Singapore"
+msgstr "싱가포르"
+
+#: includes/country.php:193
+msgid "Sint Maarten"
+msgstr "신트마르턴"
+
+#: includes/country.php:194
+msgid "Slovakia"
+msgstr "슬로바키아"
+
+#: includes/country.php:195
+msgid "Slovenia"
+msgstr "슬로베니아"
+
+#: includes/country.php:196
+msgid "Solomon Islands"
+msgstr "솔로몬 제도"
+
+#: includes/country.php:197
+msgid "Somalia"
+msgstr "소말리아"
+
+#: includes/country.php:198
+msgid "South Africa"
+msgstr "남아프리카 공화국"
+
+#: includes/country.php:199
+msgid "South Sudan"
+msgstr "남수단"
+
+#: includes/country.php:200
+msgid "Spain"
+msgstr "스페인"
+
+#: includes/country.php:201
+msgid "Sri Lanka"
+msgstr "스리랑카"
+
+#: includes/country.php:202
+msgid "St. Eustatius (Netherlands)"
+msgstr "성 유스타티우스 (네덜란드)"
+
+#. Author of the plugin
+msgid "Stefan Yoshovski"
+msgstr "스테판 요쇼브스키"
+
+#: includes/country.php:203
+msgid "Sudan"
+msgstr "수단"
+
+#: includes/country.php:204
+msgid "Suriname"
+msgstr "수리남"
+
+#: includes/country.php:205
+msgid "Swaziland"
+msgstr "스와질란드"
+
+#: includes/country.php:206
+msgid "Sweden"
+msgstr "스웨덴"
+
+#: includes/country.php:207
+msgid "Switzerland"
+msgstr "스위스"
+
+#: includes/country.php:208
+msgid "Syria"
+msgstr "시리아"
+
+#: includes/country.php:209
+msgid "São Tomé and Principe"
+msgstr "상투메 프린시페"
+
+#: includes/country.php:210
+msgid "Taiwan"
+msgstr "대만"
+
+#: includes/country.php:211
+msgid "Tajikistan"
+msgstr "타지키스탄"
+
+#: includes/country.php:212
+msgid "Tanzania"
+msgstr "탄자니아"
+
+#: includes/country.php:213
+msgid "Thailand"
+msgstr "태국"
+
+#: includes/country.php:214
+msgid "The Gambia"
+msgstr "감비아"
+
+#. Description of the plugin
+msgid ""
+"This plugin shows a map of the world and tracks completed projects in "
+"different countries."
+msgstr "이 플러그인은 세계 지도를 표시하고 여러 국가에서 완료된 프로젝트를 추적합니다."
+
+#: includes/country.php:215
+msgid "Timor-Leste"
+msgstr "동티모르"
+
+#: includes/admin/pages/settings-page.php:41
+msgid ""
+"To utilize the plugin, choose the 'World Domi Map' block in the Gutenberg "
+"editor. As an alternative, you can simply insert the provided shortcode into "
+"any post or page:"
+msgstr ""
+"플러그인을 사용하려면 구텐베르크 편집기에서 '세계 도미 지도' 블록을 선택하세요. 또는 제공된 단축 코드를 글이나 페이지에 삽입하기만 "
+"하면 됩니다:"
+
+#: includes/country.php:216
+msgid "Togo"
+msgstr "Togo"
+
+#: includes/country.php:217
+msgid "Tonga"
+msgstr "통가"
+
+#: includes/country.php:218
+msgid "Trinidad and Tobago"
+msgstr "트리니다드 토바고"
+
+#: includes/country.php:219
+msgid "Tunisia"
+msgstr "튀니지"
+
+#: includes/country.php:220
+msgid "Turkey"
+msgstr "터키"
+
+#: includes/country.php:221
+msgid "Turkmenistan"
+msgstr "투르크메니스탄"
+
+#: includes/country.php:222
+msgid "Turks and Caicos Islands"
+msgstr "터크스케이커스 제도"
+
+#: includes/country.php:223
+msgid "Tuvalu"
+msgstr "투발루"
+
+#: includes/country.php:224
+msgid "Uganda"
+msgstr "우간다"
+
+#: includes/country.php:225
+msgid "Ukraine"
+msgstr "우크라이나"
+
+#: includes/country.php:226
+msgid "United Arab Emirates"
+msgstr "아랍에미리트"
+
+#: includes/country.php:227
+msgid "United Kingdom"
+msgstr "영국"
+
+#: includes/country.php:228
+msgid "United States"
+msgstr "미국"
+
+#: includes/country.php:229
+msgid "United States Virgin Islands"
+msgstr "미국령 버진 아일랜드"
+
+#: includes/country.php:230
+msgid "Uruguay"
+msgstr "우루과이"
+
+#: includes/country.php:231
+msgid "Uzbekistan"
+msgstr "우즈베키스탄"
+
+#: includes/country.php:232
+msgid "Vanuatu"
+msgstr "바누아투"
+
+#: includes/country.php:233
+msgid "Vatican City"
+msgstr "바티칸 시티"
+
+#: includes/country.php:234
+msgid "Venezuela"
+msgstr "베네수엘라"
+
+#: includes/country.php:235
+msgid "Vietnam"
+msgstr "베트남"
+
+#: includes/country.php:236
+msgid "Western Sahara"
+msgstr "서사하라"
+
+#. Name of the plugin
+msgid "World Domi Map"
+msgstr "세계 도미 지도"
+
+#: world-domi-map.php:53
+msgid "World Domination"
+msgstr "세계 지배"
+
+#: includes/country.php:237
+msgid "Yemen"
+msgstr "예멘"
+
+#: includes/country.php:238
+msgid "Zambia"
+msgstr "잠비아"
+
+#: includes/country.php:239
+msgid "Zimbabwe"
+msgstr "짐바브웨"
