@@ -1,46 +1,70 @@
 === World Domi Map ===
-Contributors: @syoshovski
+Contributors: stefanyoshovski
 Donate link: https://paypal.me/yoshovski
-Tags: world-map, project-tracking, sales-tracking, country-sales, shortcode, admin-dashboard, map-plugin, project-map, sales-map, world-domination
+Tags: world-map, project-tracking, sales-tracking, country-sales, shortcode, admin-dashboard, map-plugin, project-map, sales-map, world-domination, map, globe, project, tracking, country, sales, distribution, global, presence, credibility
 Requires at least: 5.0
 Tested up to: 6.5.2
-Stable tag: 6.5.2
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Display an interactive global map showcasing tracked projects completed in various countries.
+Use World Domi Map to track projects completed in different countries and showcase them with an interactive map on any page or post.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+World Domi Map provides a visual representation of your projects across the globe. It allows you to track the total number of completed projects for every country. It automatically calculates the total number of countries you've reached, the country with the maximum sales, and the sales distribution. It is useful to showcase your global presence, increasing credibility.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+= Key Features: =
 
-A few notes about the sections above:
+* Global Visualization: See your project presence worldwide on an interactive map.
+* Country-wise Tracking: Track completed projects for each country.
+* Automatic Calculations: Automatically calculates total reached countries, identifies top-selling country, and provides sales distribution breakdown.
+* Credibility Boost: Showcase your global presence, enhancing credibility and trustworthiness.
+* Mobile Responsive: Fully responsive design for mobile, tablet, and desktop.
 
-* "Contributors" is a comma separated list of wordpress.org usernames
-* "Tags" is a comma separated list of tags that apply to the plugin
-* "Requires at least" is the lowest version that the plugin will work on
-* "Tested up to" is the highest version that you've *successfully used to test the plugin*
-* Stable tag must indicate the Subversion "tag" of the latest stable version
+= Usage: =
 
-Note that the `readme.txt` value of stable tag is the one that is the defining one for the plugin.  If the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used for displaying information about the plugin.
+Upload Data: Input your project data into the system.
+Visualize: Explore the interactive map to visualize your global project distribution.
+Analyze: Standard automatic calculations to understand performance metrics.
+Showcase: Share visualizations to showcase your global presence and credibility.
 
-If you develop in trunk, you can update the trunk `readme.txt` to reflect changes in your in-development version, without having that information incorrectly disclosed about the current stable version that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+== Installation ==
 
-If no stable tag is provided, your users may not get the correct version of your code.
+1. Upload the plugin to your website or install it through the WordPress plugin directory
+2. Activate the plugin
+3. Go to the World Domi Map menu in the admin dashboard to add your projects and track them on the map
+4. To display the map on any page or post, you have two options:
+    - Use the shortcode `[world-domi-map]`
+    - Use the Gutenberg block "World Domi Map"
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How do I add projects? =
+Go to the World Domi Map menu in the admin dashboard. There you can add your projects and track them on the map.
+Any changes you make are saved automatically and will be reflected on the map in real-time.
 
-An answer to that question.
+= How do I remove projects? =
+To remove a project, go to the World Domi Map menu in the admin dashboard. Select the country from the dropdown menu and delete the number shown in the input field. Any changes you make are saved automatically and will be reflected on the map in real-time.
 
-= What about foo bar? =
+= How do I display the map on my website? =
+You can display the map on any page or post by using the shortcode `[world-domi-map]` or the Gutenberg block "World Domi Map".
 
-Answer to foo bar dilemma.
+= Can I customize the map? =
+Currently, to customize the map, you need to add custom CSS code to your website. We are working on adding more customization options in the future.
+
+= Is it available in multiple languages? =
+Yes, the plugin is available in more than 13 languages. The language will be automatically set based on your website's language settings. The currently officially supported languages are: Arabic, Bulgarian, German, Greek, Spanish, French, Italian, Japanese, Korean, Dutch, Polish, Portuguese, Russian, and Chinese. To add a new language, you can add a custom translation file (.po) or use Loco Translate.
+
+= Can I change any text? =
+Yes but  it is not natively supported. However, if you want to change any text, you can use a custom translation file (.po) or Loco Translate. If your wordpress website is in English, use the Loco Translate plugin to change the text for that language.
+
+= Can I use this plugin for free? =
+Yes, this plugin is free to use. However, we appreciate any donations to help us continue developing and maintaining it.
+
+= I found a bug, how can I report it? =
+Please report any bugs to the email: wordpress_dev@yoshovski.it
 
 == Screenshots ==
 
@@ -49,47 +73,5 @@ Answer to foo bar dilemma.
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== A brief Markdown Example ==
-
-Markdown is what the parser uses to process much of the readme file.
-
-[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Links require brackets and parenthesis:
-
-Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax]. Link titles are optional, naturally.
-
-Blockquotes are email style:
-
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-And Backticks for code:
-
-`<?php code(); ?>`
+= 1.0.0 =
+* Initial release.
