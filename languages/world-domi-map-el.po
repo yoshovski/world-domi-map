@@ -1,0 +1,1031 @@
+# Copyright (C) 2024 Stefan Yoshovski
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: World Domi Map 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/world-domi-map\n"
+"Last-Translator: \n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-25 20:56+0000\n"
+"PO-Revision-Date: 2024-04-25 21:17+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: world-domi-map\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.6.7; wp-6.5.2"
+
+#: includes/country.php:10
+msgid "Afghanistan"
+msgstr "Αφγανιστάν"
+
+#: includes/country.php:11
+msgid "Albania"
+msgstr "Αλβανία"
+
+#: includes/country.php:12
+msgid "Algeria"
+msgstr "Αλγερία"
+
+#: includes/country.php:13
+msgid "American Samoa"
+msgstr "Αμερικανική Σαμόα"
+
+#: includes/country.php:14
+msgid "Andorra"
+msgstr "Ανδόρα"
+
+#: includes/country.php:15
+msgid "Angola"
+msgstr "Αγκόλα"
+
+#: includes/country.php:16
+msgid "Anguilla"
+msgstr "Ανγκουίλα"
+
+#: includes/country.php:17
+msgid "Antigua and Barbuda"
+msgstr "Αντίγκουα και Μπαρμπούντα"
+
+#: includes/country.php:18
+msgid "Argentina"
+msgstr "Αργεντινή"
+
+#: includes/country.php:19
+msgid "Armenia"
+msgstr "Αρμενία"
+
+#: includes/country.php:20
+msgid "Aruba"
+msgstr "Αρούμπα"
+
+#: includes/country.php:21
+msgid "Australia"
+msgstr "Αυστραλία"
+
+#: includes/country.php:22
+msgid "Austria"
+msgstr "Αυστρία"
+
+#: includes/admin/pages/settings-page.php:186
+msgid "Average Completed Projects Per country"
+msgstr "Μέσος όρος ολοκληρωμένων έργων ανά χώρα"
+
+#: includes/admin/pages/settings-page.php:179
+msgid "Average Distribution"
+msgstr "Μέση κατανομή"
+
+#: includes/country.php:23
+msgid "Azerbaijan"
+msgstr "Αζερμπαϊτζάν"
+
+#: includes/country.php:24
+msgid "Bahamas"
+msgstr "Μπαχάμες"
+
+#: includes/country.php:25
+msgid "Bahrain"
+msgstr "Μπαχρέιν"
+
+#: includes/country.php:26
+msgid "Bangladesh"
+msgstr "Μπαγκλαντές"
+
+#: includes/country.php:27
+msgid "Barbados"
+msgstr "Μπαρμπάντος"
+
+#: includes/country.php:28
+msgid "Belarus"
+msgstr "Λευκορωσία"
+
+#: includes/country.php:29
+msgid "Belgium"
+msgstr "Βέλγιο"
+
+#: includes/country.php:30
+msgid "Belize"
+msgstr "Μπελίζ"
+
+#: includes/country.php:31
+msgid "Benin"
+msgstr "Μπενίν"
+
+#: includes/country.php:32
+msgid "Bermuda"
+msgstr "Βερμούδες"
+
+#: includes/country.php:33
+msgid "Bhutan"
+msgstr "Μπουτάν"
+
+#: includes/country.php:34
+msgid "Bolivia"
+msgstr "Βολιβία"
+
+#: includes/country.php:35
+msgid "Bosnia and Herzegovina"
+msgstr "Βοσνία-Ερζεγοβίνη"
+
+#: includes/country.php:36
+msgid "Botswana"
+msgstr "Μποτσουάνα"
+
+#: includes/country.php:37
+msgid "Brazil"
+msgstr "Βραζιλία"
+
+#: includes/country.php:38
+msgid "British Virgin Islands"
+msgstr "Βρετανικές Παρθένοι Νήσοι"
+
+#: includes/country.php:39
+msgid "Brunei Darussalam"
+msgstr "Μπρουνέι Νταρουσαλάμ"
+
+#: includes/country.php:40
+msgid "Bulgaria"
+msgstr "Βουλγαρία"
+
+#: includes/country.php:41
+msgid "Burkina Faso"
+msgstr "Μπουρκίνα Φάσο"
+
+#: includes/country.php:42
+msgid "Burundi"
+msgstr "Μπουρούντι"
+
+#: includes/country.php:43
+msgid "Cambodia"
+msgstr "Καμπότζη"
+
+#: includes/country.php:44
+msgid "Cameroon"
+msgstr "Καμερούν"
+
+#: includes/country.php:45
+msgid "Canada"
+msgstr "Καναδάς"
+
+#: includes/country.php:46
+msgid "Canary Islands (Spain)"
+msgstr "Κανάρια Νησιά (Ισπανία)"
+
+#: includes/country.php:47
+msgid "Cape Verde"
+msgstr "Πράσινο Ακρωτήριο"
+
+#: includes/country.php:48
+msgid "Cayman Islands"
+msgstr "Νησιά Κέιμαν"
+
+#: includes/country.php:49
+msgid "Central African Republic"
+msgstr "Κεντροαφρικανική Δημοκρατία"
+
+#: includes/country.php:50
+msgid "Chad"
+msgstr "Τσαντ"
+
+#: includes/country.php:51
+msgid "Chile"
+msgstr "Χιλή"
+
+#: includes/country.php:52
+msgid "China"
+msgstr "Κίνα"
+
+#: includes/admin/pages/settings-page.php:75
+#: includes/admin/pages/settings-page.php:78
+msgid "Choose your country"
+msgstr "Επιλέξτε τη χώρα σας"
+
+#: includes/country.php:53
+msgid "Colombia"
+msgstr "Κολομβία"
+
+#: includes/country.php:54
+msgid "Comoros"
+msgstr "Κομόρες"
+
+#: includes/admin/pages/settings-page.php:130
+msgid "Completed Projects"
+msgstr "Ολοκληρωμένα έργα"
+
+#: includes/country.php:55
+msgid "Costa Rica"
+msgstr "Κόστα Ρίκα"
+
+#: includes/admin/pages/settings-page.php:141
+msgid "Countries"
+msgstr "Χώρες"
+
+#: includes/country.php:56
+msgid "Croatia"
+msgstr "Κροατία"
+
+#: includes/country.php:57
+msgid "Cuba"
+msgstr "Κούβα"
+
+#: includes/country.php:58
+msgid "Curaçao"
+msgstr "Κουρασάο"
+
+#: includes/country.php:59
+msgid "Cyprus"
+msgstr "Κύπρος"
+
+#: includes/country.php:60
+msgid "Czech Republic"
+msgstr "Τσεχική Δημοκρατία"
+
+#: includes/country.php:61
+msgid "Dem. Rep. Korea"
+msgstr "Dem. Rep"
+
+#: includes/country.php:62
+msgid "Democratic Republic of the Congo"
+msgstr "Λαϊκή Δημοκρατία του Κονγκό"
+
+#: includes/country.php:63
+msgid "Denmark"
+msgstr "Δανία"
+
+#: world-domi-map.php:108 includes/admin/pages/settings-page.php:40
+msgid ""
+"Display an interactive global map showcasing tracked projects completed in "
+"various countries."
+msgstr ""
+"Εμφανίστε έναν διαδραστικό παγκόσμιο χάρτη που παρουσιάζει τα "
+"παρακολουθούμενα έργα που έχουν ολοκληρωθεί σε διάφορες χώρες."
+
+#: includes/country.php:64
+msgid "Djibouti"
+msgstr "Τζιμπουτί"
+
+#: includes/country.php:65
+msgid "Dominica"
+msgstr "Ντομίνικα"
+
+#: includes/country.php:66
+msgid "Dominican Republic"
+msgstr "Δομινικανή Δημοκρατία"
+
+#: includes/country.php:67
+msgid "Ecuador"
+msgstr "Εκουαδόρ"
+
+#: includes/country.php:68
+msgid "Egypt"
+msgstr "Αίγυπτος"
+
+#: includes/country.php:69
+msgid "El Salvador"
+msgstr "Ελ Σαλβαδόρ"
+
+#: includes/country.php:70
+msgid "Equatorial Guinea"
+msgstr "Ισημερινή Γουινέα"
+
+#: includes/country.php:71
+msgid "Eritrea"
+msgstr "Ερυθραία"
+
+#: includes/country.php:72
+msgid "Estonia"
+msgstr "Εσθονία"
+
+#: includes/country.php:73
+msgid "Eswatini"
+msgstr "Eswatini"
+
+#: includes/country.php:74
+msgid "Ethiopia"
+msgstr "Αιθιοπία"
+
+#: includes/country.php:75
+msgid "Faeroe Islands"
+msgstr "Νήσοι Φερόες"
+
+#: includes/country.php:76
+msgid "Falkland Islands"
+msgstr "Νήσοι Φόκλαντ"
+
+#: includes/country.php:77
+msgid "Federated States of Micronesia"
+msgstr "Ομόσπονδες Πολιτείες της Μικρονησίας"
+
+#: includes/country.php:78
+msgid "Fiji"
+msgstr "Φίτζι"
+
+#: includes/country.php:79
+msgid "Finland"
+msgstr "Φινλανδία"
+
+#: includes/country.php:80
+msgid "France"
+msgstr "Γαλλία"
+
+#: includes/country.php:81
+msgid "French Guiana"
+msgstr "Γαλλική Γουιάνα"
+
+#: includes/country.php:82
+msgid "French Polynesia"
+msgstr "Γαλλική Πολυνησία"
+
+#: includes/country.php:83
+msgid "Gabon"
+msgstr "Γκαμπόν"
+
+#: includes/country.php:84
+msgid "Georgia"
+msgstr "Γεωργία"
+
+#: includes/country.php:85
+msgid "Germany"
+msgstr "Γερμανία"
+
+#: includes/country.php:86
+msgid "Ghana"
+msgstr "Γκάνα"
+
+#: includes/country.php:87
+msgid "Greece"
+msgstr "Ελλάδα"
+
+#: includes/country.php:88
+msgid "Greenland"
+msgstr "Γροιλανδία"
+
+#: includes/country.php:89
+msgid "Grenada"
+msgstr "Γρενάδα"
+
+#: includes/country.php:90
+msgid "Guadeloupe"
+msgstr "Γουαδελούπη"
+
+#: includes/country.php:91
+msgid "Guam"
+msgstr "Γκουάμ"
+
+#: includes/country.php:92
+msgid "Guatemala"
+msgstr "Γουατεμάλα"
+
+#: includes/country.php:93
+msgid "Guinea"
+msgstr "Γουινέα"
+
+#: includes/country.php:94
+msgid "Guinea-Bissau"
+msgstr "Γουινέα-Μπισσάου"
+
+#: includes/country.php:95
+msgid "Guyana"
+msgstr "Γουιάνα"
+
+#: includes/country.php:96
+msgid "Haiti"
+msgstr "Αϊτή"
+
+#: includes/country.php:97
+msgid "Honduras"
+msgstr "Ονδούρα"
+
+#. page title
+#: includes/admin/pages/settings-page.php:24
+#: includes/admin/pages/settings-page.php:38
+msgid "How to Use"
+msgstr "Πώς να χρησιμοποιήσετε"
+
+#: includes/country.php:98
+msgid "Hungary"
+msgstr "Ουγγαρία"
+
+#: includes/country.php:99
+msgid "Iceland"
+msgstr "Ισλανδία"
+
+#: includes/country.php:100
+msgid "India"
+msgstr "Ινδία"
+
+#: includes/country.php:101
+msgid "Indonesia"
+msgstr "Ινδονησία"
+
+#: includes/country.php:102
+msgid "Iran"
+msgstr "Ιράν"
+
+#: includes/country.php:103
+msgid "Iraq"
+msgstr "Ιράκ"
+
+#: includes/country.php:104
+msgid "Ireland"
+msgstr "Ιρλανδία"
+
+#: includes/country.php:105
+msgid "Israel"
+msgstr "Ισραήλ"
+
+#: includes/country.php:106
+msgid "Italy"
+msgstr "Ιταλία"
+
+#: includes/country.php:107
+msgid "Ivory Coast"
+msgstr "Ακτή Ελεφαντοστού"
+
+#: includes/country.php:108
+msgid "Jamaica"
+msgstr "Τζαμάικα"
+
+#: includes/country.php:109
+msgid "Japan"
+msgstr "Ιαπωνία"
+
+#: includes/country.php:110
+msgid "Jordan"
+msgstr "Ιορδανία"
+
+#: includes/country.php:111
+msgid "Kazakhstan"
+msgstr "Καζακστάν"
+
+#: includes/country.php:112
+msgid "Kenya"
+msgstr "Κένυα"
+
+#: includes/country.php:113
+msgid "Kiribati"
+msgstr "Κιριμπάτι"
+
+#: includes/country.php:114
+msgid "Kosovo"
+msgstr "Κόσοβο"
+
+#: includes/country.php:115
+msgid "Kuwait"
+msgstr "Κουβέιτ"
+
+#: includes/country.php:116
+msgid "Kyrgyzstan"
+msgstr "Κιργιζία"
+
+#: includes/country.php:117
+msgid "Lao PDR"
+msgstr "ΛΑΟΣ"
+
+#: includes/country.php:118
+msgid "Laos"
+msgstr "Λάος"
+
+#: includes/country.php:119
+msgid "Latvia"
+msgstr "Λετονία"
+
+#: includes/country.php:120
+msgid "Lebanon"
+msgstr "Λίβανος"
+
+#: includes/country.php:121
+msgid "Lesotho"
+msgstr "Λεσότο"
+
+#: includes/country.php:122
+msgid "Liberia"
+msgstr "Λιβερία"
+
+#: includes/country.php:123
+msgid "Libya"
+msgstr "Λιβύη"
+
+#: includes/country.php:124
+msgid "Liechtenstein"
+msgstr "Λιχτενστάιν"
+
+#: includes/country.php:125
+msgid "Lithuania"
+msgstr "Λιθουανία"
+
+#: includes/country.php:126
+msgid "Luxembourg"
+msgstr "Λουξεμβούργο"
+
+#: includes/country.php:127
+msgid "Macedonia"
+msgstr "Μακεδονία"
+
+#: includes/country.php:128
+msgid "Madagascar"
+msgstr "Μαδαγασκάρη"
+
+#: includes/country.php:129
+msgid "Malawi"
+msgstr "Μαλάουι"
+
+#: includes/country.php:130
+msgid "Malaysia"
+msgstr "Μαλαισία"
+
+#: includes/country.php:131
+msgid "Maldives"
+msgstr "Μαλδίβες"
+
+#: includes/country.php:132
+msgid "Mali"
+msgstr "Μάλι"
+
+#: includes/country.php:133
+msgid "Malta"
+msgstr "Μάλτα"
+
+#: includes/country.php:134
+msgid "Marshall Islands"
+msgstr "Νήσοι Μάρσαλ"
+
+#: includes/country.php:135
+msgid "Martinique"
+msgstr "Μαρτινίκα"
+
+#: includes/country.php:136
+msgid "Mauritania"
+msgstr "Μαυριτανία"
+
+#: includes/country.php:137
+msgid "Mauritius"
+msgstr "Μαυρίκιος"
+
+#: includes/country.php:138
+msgid "Mayotte"
+msgstr "Μαγιότ"
+
+#: includes/country.php:139
+msgid "Mexico"
+msgstr "Μεξικό"
+
+#: includes/country.php:140
+msgid "Moldova"
+msgstr "Μολδαβία"
+
+#: includes/country.php:141
+msgid "Monaco"
+msgstr "Μονακό"
+
+#: includes/country.php:142
+msgid "Mongolia"
+msgstr "Μογγολία"
+
+#: includes/country.php:143
+msgid "Montenegro"
+msgstr "Μαυροβούνιο"
+
+#: includes/country.php:144
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: includes/country.php:145
+msgid "Morocco"
+msgstr "Μαρόκο"
+
+#: includes/admin/pages/settings-page.php:160
+msgid "Most Sales"
+msgstr "Οι περισσότερες πωλήσεις"
+
+#: includes/country.php:146
+msgid "Mozambique"
+msgstr "Μοζαμβίκη"
+
+#: includes/country.php:147
+msgid "Myanmar"
+msgstr "Μιανμάρ"
+
+#: includes/country.php:148
+msgid "Namibia"
+msgstr "Ναμίμπια"
+
+#: includes/country.php:149
+msgid "Nauru"
+msgstr "Ναούρου"
+
+#: includes/country.php:150
+msgid "Nepal"
+msgstr "Νεπάλ"
+
+#: includes/country.php:151
+msgid "Netherlands"
+msgstr "Ολλανδία"
+
+#: includes/country.php:152
+msgid "New Caledonia"
+msgstr "Νέα Καληδονία"
+
+#: includes/country.php:153
+msgid "New Zealand"
+msgstr "Νέα Ζηλανδία"
+
+#: includes/country.php:154
+msgid "Nicaragua"
+msgstr "Νικαράγουα"
+
+#: includes/country.php:155
+msgid "Niger"
+msgstr "Νίγηρας"
+
+#: includes/country.php:156
+msgid "Nigeria"
+msgstr "Νιγηρία"
+
+#: includes/country.php:157
+msgid "Northern Mariana Islands"
+msgstr "Βόρειες Μαριάνα Νήσοι"
+
+#: includes/country.php:158
+msgid "Norway"
+msgstr "Νορβηγία"
+
+#: includes/admin/pages/settings-page.php:97
+msgid "Number of Sales"
+msgstr "Αριθμός πωλήσεων"
+
+#: includes/country.php:159
+msgid "Oman"
+msgstr "Ομάν"
+
+#: includes/country.php:160
+msgid "Pakistan"
+msgstr "Πακιστάν"
+
+#: includes/country.php:161
+msgid "Palau"
+msgstr "Παλάου"
+
+#: includes/country.php:162
+msgid "Palestine"
+msgstr "Παλαιστίνη"
+
+#: includes/country.php:163
+msgid "Panama"
+msgstr "Παναμάς"
+
+#: includes/country.php:164
+msgid "Papua New Guinea"
+msgstr "Παπούα Νέα Γουινέα"
+
+#: includes/country.php:165
+msgid "Paraguay"
+msgstr "Παραγουάη"
+
+#: includes/country.php:166
+msgid "Peru"
+msgstr "Περού"
+
+#: includes/country.php:167
+msgid "Philippines"
+msgstr "Φιλιππίνες"
+
+#: includes/country.php:168
+msgid "Poland"
+msgstr "Πολωνία"
+
+#: includes/country.php:169
+msgid "Portugal"
+msgstr "Πορτογαλία"
+
+#: includes/country.php:170
+msgid "Puerto Rico"
+msgstr "Πουέρτο Ρίκο"
+
+#: includes/country.php:171
+msgid "Qatar"
+msgstr "Κατάρ"
+
+#: includes/admin/pages/settings-page.php:149
+msgid "Reached Countries"
+msgstr "Χώρες που προσεγγίστηκαν"
+
+#: includes/country.php:172
+msgid "Republic of Congo"
+msgstr "Δημοκρατία του Κονγκό"
+
+#: includes/country.php:173
+msgid "Republic of Korea"
+msgstr "Δημοκρατία της Κορέας"
+
+#: includes/country.php:174
+msgid "Reunion"
+msgstr "Επανένωση"
+
+#: includes/country.php:175
+msgid "Romania"
+msgstr "Ρουμανία"
+
+#: includes/country.php:176
+msgid "Russian Federation"
+msgstr "Ρωσική Ομοσπονδία"
+
+#: includes/country.php:177
+msgid "Rwanda"
+msgstr "Ρουάντα"
+
+#: includes/country.php:178
+msgid "Saba (Netherlands)"
+msgstr "Saba (Κάτω Χώρες)"
+
+#: includes/country.php:179
+msgid "Saint Kitts and Nevis"
+msgstr "Άγιος Χριστόφορος και Νέβις"
+
+#: includes/country.php:180
+msgid "Saint Lucia"
+msgstr "Αγία Λουκία"
+
+#: includes/country.php:181
+msgid "Saint Vincent and the Grenadines"
+msgstr "Άγιος Βικέντιος και Γρεναδίνες"
+
+#: includes/country.php:182
+msgid "Saint-Barthélemy"
+msgstr "Saint-Barthélemy"
+
+#: includes/country.php:183
+msgid "Saint-Martin"
+msgstr "Saint-Martin"
+
+#: world-domi-map.php:55
+msgid "Sale"
+msgstr "Πώληση"
+
+#: world-domi-map.php:54 includes/admin/pages/settings-page.php:122
+msgid "Sales"
+msgstr "Πωλήσεις"
+
+#: includes/admin/pages/settings-page.php:168
+msgid "Sales at"
+msgstr "Πωλήσεις σε"
+
+#: world-domi-map.php:78
+msgid "Sales in"
+msgstr "Πωλήσεις σε"
+
+#: includes/country.php:184
+msgid "Samoa"
+msgstr "Σαμόα"
+
+#: includes/country.php:185
+msgid "San Marino"
+msgstr "Άγιος Μαρίνος"
+
+#: includes/country.php:186
+msgid "Sao Tome and Principe"
+msgstr "Σάο Τομέ και Πρίνσιπε"
+
+#: includes/country.php:187
+msgid "Saudi Arabia"
+msgstr "Σαουδική Αραβία"
+
+#: includes/country.php:188
+msgid "Senegal"
+msgstr "Σενεγάλη"
+
+#: includes/country.php:189
+msgid "Serbia"
+msgstr "Σερβία"
+
+#: includes/country.php:190
+msgid "Seychelles"
+msgstr "Σεϋχέλλες"
+
+#: includes/country.php:191
+msgid "Sierra Leone"
+msgstr "Σιέρα Λεόνε"
+
+#: includes/country.php:192
+msgid "Singapore"
+msgstr "Σιγκαπούρη"
+
+#: includes/country.php:193
+msgid "Sint Maarten"
+msgstr "Sint Maarten"
+
+#: includes/country.php:194
+msgid "Slovakia"
+msgstr "Σλοβακία"
+
+#: includes/country.php:195
+msgid "Slovenia"
+msgstr "Σλοβενία"
+
+#: includes/country.php:196
+msgid "Solomon Islands"
+msgstr "Νήσοι Σολομώντος"
+
+#: includes/country.php:197
+msgid "Somalia"
+msgstr "Σομαλία"
+
+#: includes/country.php:198
+msgid "South Africa"
+msgstr "Νότια Αφρική"
+
+#: includes/country.php:199
+msgid "South Sudan"
+msgstr "Νότιο Σουδάν"
+
+#: includes/country.php:200
+msgid "Spain"
+msgstr "Ισπανία"
+
+#: includes/country.php:201
+msgid "Sri Lanka"
+msgstr "Σρι Λάνκα"
+
+#: includes/country.php:202
+msgid "St. Eustatius (Netherlands)"
+msgstr "Άγιος Ευστάθιος (Κάτω Χώρες)"
+
+#. Author of the plugin
+msgid "Stefan Yoshovski"
+msgstr "Stefan Yoshovski"
+
+#: includes/country.php:203
+msgid "Sudan"
+msgstr "Σουδάν"
+
+#: includes/country.php:204
+msgid "Suriname"
+msgstr "Σουρινάμ"
+
+#: includes/country.php:205
+msgid "Swaziland"
+msgstr "Σουαζιλάνδη"
+
+#: includes/country.php:206
+msgid "Sweden"
+msgstr "Σουηδία"
+
+#: includes/country.php:207
+msgid "Switzerland"
+msgstr "Ελβετία"
+
+#: includes/country.php:208
+msgid "Syria"
+msgstr "Συρία"
+
+#: includes/country.php:209
+msgid "São Tomé and Principe"
+msgstr "Σάο Τομέ και Πρίνσιπε"
+
+#: includes/country.php:210
+msgid "Taiwan"
+msgstr "Ταϊβάν"
+
+#: includes/country.php:211
+msgid "Tajikistan"
+msgstr "Τατζικιστάν"
+
+#: includes/country.php:212
+msgid "Tanzania"
+msgstr "Τανζανία"
+
+#: includes/country.php:213
+msgid "Thailand"
+msgstr "Ταϊλάνδη"
+
+#: includes/country.php:214
+msgid "The Gambia"
+msgstr "Γκάμπια"
+
+#. Description of the plugin
+msgid ""
+"This plugin shows a map of the world and tracks completed projects in "
+"different countries."
+msgstr ""
+"Αυτό το πρόσθετο εμφανίζει έναν χάρτη του κόσμου και παρακολουθεί τα "
+"ολοκληρωμένα έργα σε διάφορες χώρες."
+
+#: includes/country.php:215
+msgid "Timor-Leste"
+msgstr "Τιμόρ-Λέστε"
+
+#: includes/admin/pages/settings-page.php:41
+msgid ""
+"To utilize the plugin, choose the 'World Domi Map' block in the Gutenberg "
+"editor. As an alternative, you can simply insert the provided shortcode into "
+"any post or page:"
+msgstr ""
+"Για να χρησιμοποιήσετε το πρόσθετο, επιλέξτε το μπλοκ 'World Domi Map' στον "
+"επεξεργαστή Gutenberg. Εναλλακτικά, μπορείτε απλά να εισαγάγετε τον "
+"παρεχόμενο σύντομο κωδικό σε οποιαδήποτε δημοσίευση ή σελίδα:"
+
+#: includes/country.php:216
+msgid "Togo"
+msgstr "Τόγκο"
+
+#: includes/country.php:217
+msgid "Tonga"
+msgstr "Τόνγκα"
+
+#: includes/country.php:218
+msgid "Trinidad and Tobago"
+msgstr "Τρινιντάντ και Τομπάγκο"
+
+#: includes/country.php:219
+msgid "Tunisia"
+msgstr "Τυνησία"
+
+#: includes/country.php:220
+msgid "Turkey"
+msgstr "Τουρκία"
+
+#: includes/country.php:221
+msgid "Turkmenistan"
+msgstr "Τουρκμενιστάν"
+
+#: includes/country.php:222
+msgid "Turks and Caicos Islands"
+msgstr "Νήσοι Τερκς και Κάικος"
+
+#: includes/country.php:223
+msgid "Tuvalu"
+msgstr "Τουβαλού"
+
+#: includes/country.php:224
+msgid "Uganda"
+msgstr "Ουγκάντα"
+
+#: includes/country.php:225
+msgid "Ukraine"
+msgstr "Ουκρανία"
+
+#: includes/country.php:226
+msgid "United Arab Emirates"
+msgstr "Ηνωμένα Αραβικά Εμιράτα"
+
+#: includes/country.php:227
+msgid "United Kingdom"
+msgstr "Ηνωμένο Βασίλειο"
+
+#: includes/country.php:228
+msgid "United States"
+msgstr "Ηνωμένες Πολιτείες"
+
+#: includes/country.php:229
+msgid "United States Virgin Islands"
+msgstr "Παρθένοι Νήσοι των Ηνωμένων Πολιτειών"
+
+#: includes/country.php:230
+msgid "Uruguay"
+msgstr "Ουρουγουάη"
+
+#: includes/country.php:231
+msgid "Uzbekistan"
+msgstr "Ουζμπεκιστάν"
+
+#: includes/country.php:232
+msgid "Vanuatu"
+msgstr "Βανουάτου"
+
+#: includes/country.php:233
+msgid "Vatican City"
+msgstr "Πόλη του Βατικανού"
+
+#: includes/country.php:234
+msgid "Venezuela"
+msgstr "Βενεζουέλα"
+
+#: includes/country.php:235
+msgid "Vietnam"
+msgstr "Βιετνάμ"
+
+#: includes/country.php:236
+msgid "Western Sahara"
+msgstr "Δυτική Σαχάρα"
+
+#. Name of the plugin
+msgid "World Domi Map"
+msgstr "Παγκόσμιος χάρτης Domi"
+
+#: world-domi-map.php:53
+msgid "World Domination"
+msgstr "Παγκόσμια κυριαρχία"
+
+#: includes/country.php:237
+msgid "Yemen"
+msgstr "Υεμένη"
+
+#: includes/country.php:238
+msgid "Zambia"
+msgstr "Ζάμπια"
+
+#: includes/country.php:239
+msgid "Zimbabwe"
+msgstr "Ζιμπάμπουε"
