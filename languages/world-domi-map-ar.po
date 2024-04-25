@@ -1,0 +1,1031 @@
+# Copyright (C) 2024 Stefan Yoshovski
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: World Domi Map 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/world-domi-map\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-25 20:56+0000\n"
+"PO-Revision-Date: 2024-04-25 21:15+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: world-domi-map\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"X-Loco-Version: 2.6.7; wp-6.5.2"
+
+#: includes/country.php:10
+msgid "Afghanistan"
+msgstr "أفغانستان"
+
+#: includes/country.php:11
+msgid "Albania"
+msgstr "ألبانيا"
+
+#: includes/country.php:12
+msgid "Algeria"
+msgstr "الجزائر"
+
+#: includes/country.php:13
+msgid "American Samoa"
+msgstr "ساموا الأمريكية"
+
+#: includes/country.php:14
+msgid "Andorra"
+msgstr "أندورا"
+
+#: includes/country.php:15
+msgid "Angola"
+msgstr "أنغولا"
+
+#: includes/country.php:16
+msgid "Anguilla"
+msgstr "أنغيلا"
+
+#: includes/country.php:17
+msgid "Antigua and Barbuda"
+msgstr "أنتيغوا وباربودا"
+
+#: includes/country.php:18
+msgid "Argentina"
+msgstr "الأرجنتين"
+
+#: includes/country.php:19
+msgid "Armenia"
+msgstr "أرمينيا"
+
+#: includes/country.php:20
+msgid "Aruba"
+msgstr "أروبا"
+
+#: includes/country.php:21
+msgid "Australia"
+msgstr "استراليا"
+
+#: includes/country.php:22
+msgid "Austria"
+msgstr "النمسا"
+
+#: includes/admin/pages/settings-page.php:186
+msgid "Average Completed Projects Per country"
+msgstr "متوسط المشاريع المنجزة لكل بلد"
+
+#: includes/admin/pages/settings-page.php:179
+msgid "Average Distribution"
+msgstr "متوسط التوزيع"
+
+#: includes/country.php:23
+msgid "Azerbaijan"
+msgstr "أذربيجان"
+
+#: includes/country.php:24
+msgid "Bahamas"
+msgstr "جزر البهاما"
+
+#: includes/country.php:25
+msgid "Bahrain"
+msgstr "البحرين"
+
+#: includes/country.php:26
+msgid "Bangladesh"
+msgstr "بنغلاديش"
+
+#: includes/country.php:27
+msgid "Barbados"
+msgstr "بربادوس"
+
+#: includes/country.php:28
+msgid "Belarus"
+msgstr "بيلاروسيا"
+
+#: includes/country.php:29
+msgid "Belgium"
+msgstr "بلجيكا"
+
+#: includes/country.php:30
+msgid "Belize"
+msgstr "بليز"
+
+#: includes/country.php:31
+msgid "Benin"
+msgstr "بنين"
+
+#: includes/country.php:32
+msgid "Bermuda"
+msgstr "برمودا"
+
+#: includes/country.php:33
+msgid "Bhutan"
+msgstr "بوتان"
+
+#: includes/country.php:34
+msgid "Bolivia"
+msgstr "بوليفيا"
+
+#: includes/country.php:35
+msgid "Bosnia and Herzegovina"
+msgstr "البوسنة والهرسك"
+
+#: includes/country.php:36
+msgid "Botswana"
+msgstr "بوتسوانا"
+
+#: includes/country.php:37
+msgid "Brazil"
+msgstr "البرازيل"
+
+#: includes/country.php:38
+msgid "British Virgin Islands"
+msgstr "جزر فيرجن البريطانية"
+
+#: includes/country.php:39
+msgid "Brunei Darussalam"
+msgstr "بروناي دار السلام"
+
+#: includes/country.php:40
+msgid "Bulgaria"
+msgstr "بلغاريا"
+
+#: includes/country.php:41
+msgid "Burkina Faso"
+msgstr "بوركينا فاسو"
+
+#: includes/country.php:42
+msgid "Burundi"
+msgstr "بوروندي"
+
+#: includes/country.php:43
+msgid "Cambodia"
+msgstr "كمبوديا"
+
+#: includes/country.php:44
+msgid "Cameroon"
+msgstr "الكاميرون"
+
+#: includes/country.php:45
+msgid "Canada"
+msgstr "كندا"
+
+#: includes/country.php:46
+msgid "Canary Islands (Spain)"
+msgstr "جزر الكناري (إسبانيا)"
+
+#: includes/country.php:47
+msgid "Cape Verde"
+msgstr "الرأس الأخضر"
+
+#: includes/country.php:48
+msgid "Cayman Islands"
+msgstr "جزر كايمان"
+
+#: includes/country.php:49
+msgid "Central African Republic"
+msgstr "جمهورية أفريقيا الوسطى"
+
+#: includes/country.php:50
+msgid "Chad"
+msgstr "تشاد"
+
+#: includes/country.php:51
+msgid "Chile"
+msgstr "شيلي"
+
+#: includes/country.php:52
+msgid "China"
+msgstr "الصين"
+
+#: includes/admin/pages/settings-page.php:75
+#: includes/admin/pages/settings-page.php:78
+msgid "Choose your country"
+msgstr "اختر بلدك"
+
+#: includes/country.php:53
+msgid "Colombia"
+msgstr "كولومبيا"
+
+#: includes/country.php:54
+msgid "Comoros"
+msgstr "جزر القمر"
+
+#: includes/admin/pages/settings-page.php:130
+msgid "Completed Projects"
+msgstr "المشاريع المنجزة"
+
+#: includes/country.php:55
+msgid "Costa Rica"
+msgstr "كوستاريكا"
+
+#: includes/admin/pages/settings-page.php:141
+msgid "Countries"
+msgstr "الدول"
+
+#: includes/country.php:56
+msgid "Croatia"
+msgstr "كرواتيا"
+
+#: includes/country.php:57
+msgid "Cuba"
+msgstr "كوبا"
+
+#: includes/country.php:58
+msgid "Curaçao"
+msgstr "كوراساو"
+
+#: includes/country.php:59
+msgid "Cyprus"
+msgstr "قبرص"
+
+#: includes/country.php:60
+msgid "Czech Republic"
+msgstr "الجمهورية التشيكية"
+
+#: includes/country.php:61
+msgid "Dem. Rep. Korea"
+msgstr "ديموقراطي جمهورية كوريا"
+
+#: includes/country.php:62
+msgid "Democratic Republic of the Congo"
+msgstr "جمهورية الكونغو الديمقراطية"
+
+#: includes/country.php:63
+msgid "Denmark"
+msgstr "الدنمارك"
+
+#: world-domi-map.php:108 includes/admin/pages/settings-page.php:40
+msgid ""
+"Display an interactive global map showcasing tracked projects completed in "
+"various countries."
+msgstr ""
+"عرض خريطة تفاعلية عالمية تفاعلية تعرض المشاريع التي تم تتبعها في مختلف "
+"البلدان."
+
+#: includes/country.php:64
+msgid "Djibouti"
+msgstr "جيبوتي"
+
+#: includes/country.php:65
+msgid "Dominica"
+msgstr "دومينيكا"
+
+#: includes/country.php:66
+msgid "Dominican Republic"
+msgstr "جمهورية الدومينيكان"
+
+#: includes/country.php:67
+msgid "Ecuador"
+msgstr "الإكوادور"
+
+#: includes/country.php:68
+msgid "Egypt"
+msgstr "مصر"
+
+#: includes/country.php:69
+msgid "El Salvador"
+msgstr "السلفادور"
+
+#: includes/country.php:70
+msgid "Equatorial Guinea"
+msgstr "غينيا الاستوائية"
+
+#: includes/country.php:71
+msgid "Eritrea"
+msgstr "إريتريا"
+
+#: includes/country.php:72
+msgid "Estonia"
+msgstr "إستونيا"
+
+#: includes/country.php:73
+msgid "Eswatini"
+msgstr "إيسواتيني"
+
+#: includes/country.php:74
+msgid "Ethiopia"
+msgstr "إثيوبيا"
+
+#: includes/country.php:75
+msgid "Faeroe Islands"
+msgstr "جزر فيرو"
+
+#: includes/country.php:76
+msgid "Falkland Islands"
+msgstr "جزر فوكلاند"
+
+#: includes/country.php:77
+msgid "Federated States of Micronesia"
+msgstr "ولايات ميكرونيزيا الموحدة"
+
+#: includes/country.php:78
+msgid "Fiji"
+msgstr "فيجي"
+
+#: includes/country.php:79
+msgid "Finland"
+msgstr "فنلندا"
+
+#: includes/country.php:80
+msgid "France"
+msgstr "فرنسا"
+
+#: includes/country.php:81
+msgid "French Guiana"
+msgstr "غيانا الفرنسية"
+
+#: includes/country.php:82
+msgid "French Polynesia"
+msgstr "بولينيزيا الفرنسية"
+
+#: includes/country.php:83
+msgid "Gabon"
+msgstr "الغابون"
+
+#: includes/country.php:84
+msgid "Georgia"
+msgstr "جورجيا"
+
+#: includes/country.php:85
+msgid "Germany"
+msgstr "ألمانيا"
+
+#: includes/country.php:86
+msgid "Ghana"
+msgstr "غانا"
+
+#: includes/country.php:87
+msgid "Greece"
+msgstr "اليونان"
+
+#: includes/country.php:88
+msgid "Greenland"
+msgstr "جرينلاند"
+
+#: includes/country.php:89
+msgid "Grenada"
+msgstr "غرينادا"
+
+#: includes/country.php:90
+msgid "Guadeloupe"
+msgstr "غوادلوب"
+
+#: includes/country.php:91
+msgid "Guam"
+msgstr "غوام"
+
+#: includes/country.php:92
+msgid "Guatemala"
+msgstr "غواتيمالا"
+
+#: includes/country.php:93
+msgid "Guinea"
+msgstr "غينيا"
+
+#: includes/country.php:94
+msgid "Guinea-Bissau"
+msgstr "غينيا بيساو"
+
+#: includes/country.php:95
+msgid "Guyana"
+msgstr "غيانا"
+
+#: includes/country.php:96
+msgid "Haiti"
+msgstr "هايتي"
+
+#: includes/country.php:97
+msgid "Honduras"
+msgstr "هندوراس"
+
+#. page title
+#: includes/admin/pages/settings-page.php:24
+#: includes/admin/pages/settings-page.php:38
+msgid "How to Use"
+msgstr "كيفية الاستخدام"
+
+#: includes/country.php:98
+msgid "Hungary"
+msgstr "هنغاريا"
+
+#: includes/country.php:99
+msgid "Iceland"
+msgstr "أيسلندا"
+
+#: includes/country.php:100
+msgid "India"
+msgstr "الهند"
+
+#: includes/country.php:101
+msgid "Indonesia"
+msgstr "إندونيسيا"
+
+#: includes/country.php:102
+msgid "Iran"
+msgstr "إيران"
+
+#: includes/country.php:103
+msgid "Iraq"
+msgstr "العراق"
+
+#: includes/country.php:104
+msgid "Ireland"
+msgstr "أيرلندا"
+
+#: includes/country.php:105
+msgid "Israel"
+msgstr "إسرائيل"
+
+#: includes/country.php:106
+msgid "Italy"
+msgstr "ايطاليا"
+
+#: includes/country.php:107
+msgid "Ivory Coast"
+msgstr "ساحل العاج"
+
+#: includes/country.php:108
+msgid "Jamaica"
+msgstr "جامايكا"
+
+#: includes/country.php:109
+msgid "Japan"
+msgstr "اليابان"
+
+#: includes/country.php:110
+msgid "Jordan"
+msgstr "الأردن"
+
+#: includes/country.php:111
+msgid "Kazakhstan"
+msgstr "كازاخستان"
+
+#: includes/country.php:112
+msgid "Kenya"
+msgstr "كينيا"
+
+#: includes/country.php:113
+msgid "Kiribati"
+msgstr "كيريباتي"
+
+#: includes/country.php:114
+msgid "Kosovo"
+msgstr "كوسوفو"
+
+#: includes/country.php:115
+msgid "Kuwait"
+msgstr "الكويت"
+
+#: includes/country.php:116
+msgid "Kyrgyzstan"
+msgstr "قيرغيزستان"
+
+#: includes/country.php:117
+msgid "Lao PDR"
+msgstr "جمهورية لاو الديمقراطية الشعبية"
+
+#: includes/country.php:118
+msgid "Laos"
+msgstr "لاوس"
+
+#: includes/country.php:119
+msgid "Latvia"
+msgstr "لاتفيا"
+
+#: includes/country.php:120
+msgid "Lebanon"
+msgstr "لبنان"
+
+#: includes/country.php:121
+msgid "Lesotho"
+msgstr "ليسوتو"
+
+#: includes/country.php:122
+msgid "Liberia"
+msgstr "ليبيريا"
+
+#: includes/country.php:123
+msgid "Libya"
+msgstr "ليبيا"
+
+#: includes/country.php:124
+msgid "Liechtenstein"
+msgstr "ليختنشتاين"
+
+#: includes/country.php:125
+msgid "Lithuania"
+msgstr "ليتوانيا"
+
+#: includes/country.php:126
+msgid "Luxembourg"
+msgstr "لوكسمبورغ"
+
+#: includes/country.php:127
+msgid "Macedonia"
+msgstr "مقدونيا"
+
+#: includes/country.php:128
+msgid "Madagascar"
+msgstr "مدغشقر"
+
+#: includes/country.php:129
+msgid "Malawi"
+msgstr "ملاوي"
+
+#: includes/country.php:130
+msgid "Malaysia"
+msgstr "ماليزيا"
+
+#: includes/country.php:131
+msgid "Maldives"
+msgstr "جزر المالديف"
+
+#: includes/country.php:132
+msgid "Mali"
+msgstr "مالي"
+
+#: includes/country.php:133
+msgid "Malta"
+msgstr "مالطا"
+
+#: includes/country.php:134
+msgid "Marshall Islands"
+msgstr "جزر مارشال"
+
+#: includes/country.php:135
+msgid "Martinique"
+msgstr "مارتينيك"
+
+#: includes/country.php:136
+msgid "Mauritania"
+msgstr "موريتانيا"
+
+#: includes/country.php:137
+msgid "Mauritius"
+msgstr "موريشيوس"
+
+#: includes/country.php:138
+msgid "Mayotte"
+msgstr "مايوت"
+
+#: includes/country.php:139
+msgid "Mexico"
+msgstr "المكسيك"
+
+#: includes/country.php:140
+msgid "Moldova"
+msgstr "مولدوفا"
+
+#: includes/country.php:141
+msgid "Monaco"
+msgstr "موناكو"
+
+#: includes/country.php:142
+msgid "Mongolia"
+msgstr "منغوليا"
+
+#: includes/country.php:143
+msgid "Montenegro"
+msgstr "مونتينيغرو"
+
+#: includes/country.php:144
+msgid "Montserrat"
+msgstr "مونتسيرات"
+
+#: includes/country.php:145
+msgid "Morocco"
+msgstr "المغرب"
+
+#: includes/admin/pages/settings-page.php:160
+msgid "Most Sales"
+msgstr "معظم المبيعات"
+
+#: includes/country.php:146
+msgid "Mozambique"
+msgstr "موزمبيق"
+
+#: includes/country.php:147
+msgid "Myanmar"
+msgstr "ميانمار"
+
+#: includes/country.php:148
+msgid "Namibia"
+msgstr "ناميبيا"
+
+#: includes/country.php:149
+msgid "Nauru"
+msgstr "ناورو"
+
+#: includes/country.php:150
+msgid "Nepal"
+msgstr "نيبال"
+
+#: includes/country.php:151
+msgid "Netherlands"
+msgstr "هولندا"
+
+#: includes/country.php:152
+msgid "New Caledonia"
+msgstr "كاليدونيا الجديدة"
+
+#: includes/country.php:153
+msgid "New Zealand"
+msgstr "نيوزيلندا"
+
+#: includes/country.php:154
+msgid "Nicaragua"
+msgstr "نيكاراغوا"
+
+#: includes/country.php:155
+msgid "Niger"
+msgstr "النيجر"
+
+#: includes/country.php:156
+msgid "Nigeria"
+msgstr "نيجيريا"
+
+#: includes/country.php:157
+msgid "Northern Mariana Islands"
+msgstr "جزر ماريانا الشمالية"
+
+#: includes/country.php:158
+msgid "Norway"
+msgstr "النرويج"
+
+#: includes/admin/pages/settings-page.php:97
+msgid "Number of Sales"
+msgstr "عدد المبيعات"
+
+#: includes/country.php:159
+msgid "Oman"
+msgstr "سلطنة عمان"
+
+#: includes/country.php:160
+msgid "Pakistan"
+msgstr "باكستان"
+
+#: includes/country.php:161
+msgid "Palau"
+msgstr "بالاو"
+
+#: includes/country.php:162
+msgid "Palestine"
+msgstr "فلسطين"
+
+#: includes/country.php:163
+msgid "Panama"
+msgstr "بنما"
+
+#: includes/country.php:164
+msgid "Papua New Guinea"
+msgstr "بابوا غينيا الجديدة"
+
+#: includes/country.php:165
+msgid "Paraguay"
+msgstr "باراغواي"
+
+#: includes/country.php:166
+msgid "Peru"
+msgstr "بيرو"
+
+#: includes/country.php:167
+msgid "Philippines"
+msgstr "الفلبين"
+
+#: includes/country.php:168
+msgid "Poland"
+msgstr "بولندا"
+
+#: includes/country.php:169
+msgid "Portugal"
+msgstr "البرتغال"
+
+#: includes/country.php:170
+msgid "Puerto Rico"
+msgstr "بورتوريكو"
+
+#: includes/country.php:171
+msgid "Qatar"
+msgstr "قطر"
+
+#: includes/admin/pages/settings-page.php:149
+msgid "Reached Countries"
+msgstr "البلدان التي تم الوصول إليها"
+
+#: includes/country.php:172
+msgid "Republic of Congo"
+msgstr "جمهورية الكونغو"
+
+#: includes/country.php:173
+msgid "Republic of Korea"
+msgstr "جمهورية كوريا"
+
+#: includes/country.php:174
+msgid "Reunion"
+msgstr "لم الشمل"
+
+#: includes/country.php:175
+msgid "Romania"
+msgstr "رومانيا"
+
+#: includes/country.php:176
+msgid "Russian Federation"
+msgstr "الاتحاد الروسي"
+
+#: includes/country.php:177
+msgid "Rwanda"
+msgstr "رواندا"
+
+#: includes/country.php:178
+msgid "Saba (Netherlands)"
+msgstr "سابا (هولندا)"
+
+#: includes/country.php:179
+msgid "Saint Kitts and Nevis"
+msgstr "سانت كيتس ونيفيس"
+
+#: includes/country.php:180
+msgid "Saint Lucia"
+msgstr "سانت لوسيا"
+
+#: includes/country.php:181
+msgid "Saint Vincent and the Grenadines"
+msgstr "سانت فنسنت وجزر غرينادين"
+
+#: includes/country.php:182
+msgid "Saint-Barthélemy"
+msgstr "سان بارتيليمي"
+
+#: includes/country.php:183
+msgid "Saint-Martin"
+msgstr "سان مارتن"
+
+#: world-domi-map.php:55
+msgid "Sale"
+msgstr "التخفيضات"
+
+#: world-domi-map.php:54 includes/admin/pages/settings-page.php:122
+msgid "Sales"
+msgstr "المبيعات"
+
+#: includes/admin/pages/settings-page.php:168
+msgid "Sales at"
+msgstr "المبيعات في"
+
+#: world-domi-map.php:78
+msgid "Sales in"
+msgstr "المبيعات في"
+
+#: includes/country.php:184
+msgid "Samoa"
+msgstr "ساموا"
+
+#: includes/country.php:185
+msgid "San Marino"
+msgstr "سان مارينو"
+
+#: includes/country.php:186
+msgid "Sao Tome and Principe"
+msgstr "ساو تومي وبرينسيبي"
+
+#: includes/country.php:187
+msgid "Saudi Arabia"
+msgstr "المملكة العربية السعودية"
+
+#: includes/country.php:188
+msgid "Senegal"
+msgstr "السنغال"
+
+#: includes/country.php:189
+msgid "Serbia"
+msgstr "صربيا"
+
+#: includes/country.php:190
+msgid "Seychelles"
+msgstr "سيشيل"
+
+#: includes/country.php:191
+msgid "Sierra Leone"
+msgstr "سيراليون"
+
+#: includes/country.php:192
+msgid "Singapore"
+msgstr "سنغافورة"
+
+#: includes/country.php:193
+msgid "Sint Maarten"
+msgstr "سينت مارتن"
+
+#: includes/country.php:194
+msgid "Slovakia"
+msgstr "سلوفاكيا"
+
+#: includes/country.php:195
+msgid "Slovenia"
+msgstr "سلوفينيا"
+
+#: includes/country.php:196
+msgid "Solomon Islands"
+msgstr "جزر سليمان"
+
+#: includes/country.php:197
+msgid "Somalia"
+msgstr "الصومال"
+
+#: includes/country.php:198
+msgid "South Africa"
+msgstr "جنوب أفريقيا"
+
+#: includes/country.php:199
+msgid "South Sudan"
+msgstr "جنوب السودان"
+
+#: includes/country.php:200
+msgid "Spain"
+msgstr "اسبانيا"
+
+#: includes/country.php:201
+msgid "Sri Lanka"
+msgstr "سريلانكا"
+
+#: includes/country.php:202
+msgid "St. Eustatius (Netherlands)"
+msgstr "سانت يوستاتيوس (هولندا)"
+
+#. Author of the plugin
+msgid "Stefan Yoshovski"
+msgstr "ستيفان يوشوفسكي"
+
+#: includes/country.php:203
+msgid "Sudan"
+msgstr "السودان"
+
+#: includes/country.php:204
+msgid "Suriname"
+msgstr "سورينام"
+
+#: includes/country.php:205
+msgid "Swaziland"
+msgstr "سوازيلاند"
+
+#: includes/country.php:206
+msgid "Sweden"
+msgstr "السويد"
+
+#: includes/country.php:207
+msgid "Switzerland"
+msgstr "سويسرا"
+
+#: includes/country.php:208
+msgid "Syria"
+msgstr "سوريا"
+
+#: includes/country.php:209
+msgid "São Tomé and Principe"
+msgstr "ساو تومي وبرينسيبي"
+
+#: includes/country.php:210
+msgid "Taiwan"
+msgstr "تايوان"
+
+#: includes/country.php:211
+msgid "Tajikistan"
+msgstr "طاجيكستان"
+
+#: includes/country.php:212
+msgid "Tanzania"
+msgstr "تنزانيا"
+
+#: includes/country.php:213
+msgid "Thailand"
+msgstr "تايلاند"
+
+#: includes/country.php:214
+msgid "The Gambia"
+msgstr "غامبيا"
+
+#. Description of the plugin
+msgid ""
+"This plugin shows a map of the world and tracks completed projects in "
+"different countries."
+msgstr ""
+"يعرض هذا المكون الإضافي خريطة للعالم ويتتبع المشاريع المنجزة في مختلف "
+"البلدان."
+
+#: includes/country.php:215
+msgid "Timor-Leste"
+msgstr "تيمور - ليشتي"
+
+#: includes/admin/pages/settings-page.php:41
+msgid ""
+"To utilize the plugin, choose the 'World Domi Map' block in the Gutenberg "
+"editor. As an alternative, you can simply insert the provided shortcode into "
+"any post or page:"
+msgstr ""
+"لاستخدام الإضافة، اختر مكوِّن \"خريطة دومي العالمية\" في محرِّر Gutenberg. "
+"كبديل، يمكنك ببساطة إدراج الكود القصير المتوفر في أي مقالة أو صفحة:"
+
+#: includes/country.php:216
+msgid "Togo"
+msgstr "توغو"
+
+#: includes/country.php:217
+msgid "Tonga"
+msgstr "تونغا"
+
+#: includes/country.php:218
+msgid "Trinidad and Tobago"
+msgstr "ترينيداد وتوباغو"
+
+#: includes/country.php:219
+msgid "Tunisia"
+msgstr "تونس"
+
+#: includes/country.php:220
+msgid "Turkey"
+msgstr "تركيا"
+
+#: includes/country.php:221
+msgid "Turkmenistan"
+msgstr "تركمانستان"
+
+#: includes/country.php:222
+msgid "Turks and Caicos Islands"
+msgstr "جزر تركس وكايكوس"
+
+#: includes/country.php:223
+msgid "Tuvalu"
+msgstr "توفالو"
+
+#: includes/country.php:224
+msgid "Uganda"
+msgstr "أوغندا"
+
+#: includes/country.php:225
+msgid "Ukraine"
+msgstr "أوكرانيا"
+
+#: includes/country.php:226
+msgid "United Arab Emirates"
+msgstr "الإمارات العربية المتحدة"
+
+#: includes/country.php:227
+msgid "United Kingdom"
+msgstr "المملكة المتحدة"
+
+#: includes/country.php:228
+msgid "United States"
+msgstr "الولايات المتحدة الأمريكية"
+
+#: includes/country.php:229
+msgid "United States Virgin Islands"
+msgstr "جزر فيرجن التابعة للولايات المتحدة"
+
+#: includes/country.php:230
+msgid "Uruguay"
+msgstr "أوروغواي"
+
+#: includes/country.php:231
+msgid "Uzbekistan"
+msgstr "أوزبكستان"
+
+#: includes/country.php:232
+msgid "Vanuatu"
+msgstr "فانواتو"
+
+#: includes/country.php:233
+msgid "Vatican City"
+msgstr "مدينة الفاتيكان"
+
+#: includes/country.php:234
+msgid "Venezuela"
+msgstr "فنزويلا"
+
+#: includes/country.php:235
+msgid "Vietnam"
+msgstr "فيتنام"
+
+#: includes/country.php:236
+msgid "Western Sahara"
+msgstr "الصحراء الغربية"
+
+#. Name of the plugin
+msgid "World Domi Map"
+msgstr "خريطة دومي العالمية"
+
+#: world-domi-map.php:53
+msgid "World Domination"
+msgstr "الهيمنة على العالم"
+
+#: includes/country.php:237
+msgid "Yemen"
+msgstr "اليمن"
+
+#: includes/country.php:238
+msgid "Zambia"
+msgstr "زامبيا"
+
+#: includes/country.php:239
+msgid "Zimbabwe"
+msgstr "زيمبابوي"
