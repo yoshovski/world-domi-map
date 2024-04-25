@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-25 20:56+0000\n"
-"PO-Revision-Date: 2024-04-25 21:30+0000\n"
+"PO-Revision-Date: 2024-04-25 21:37+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: world-domi-map\n"
 "Language: bg_BG\n"
@@ -1016,7 +1016,7 @@ msgstr "Карта на света Domi"
 
 #: world-domi-map.php:53
 msgid "World Domination"
-msgstr "Световно господство"
+msgstr "Световно предимство"
 
 #: includes/country.php:237
 msgid "Yemen"
