@@ -1,0 +1,1031 @@
+# Copyright (C) 2024 Stefan Yoshovski
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: World Domi Map 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/world-domi-map\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-25 20:56+0000\n"
+"PO-Revision-Date: 2024-04-25 21:14+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: world-domi-map\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.6.7; wp-6.5.2"
+
+#: includes/country.php:10
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: includes/country.php:11
+msgid "Albania"
+msgstr "Albanië"
+
+#: includes/country.php:12
+msgid "Algeria"
+msgstr "Algerije"
+
+#: includes/country.php:13
+msgid "American Samoa"
+msgstr "Amerikaans-Samoa"
+
+#: includes/country.php:14
+msgid "Andorra"
+msgstr "Andorra"
+
+#: includes/country.php:15
+msgid "Angola"
+msgstr "Angola"
+
+#: includes/country.php:16
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: includes/country.php:17
+msgid "Antigua and Barbuda"
+msgstr "Antigua en Barbuda"
+
+#: includes/country.php:18
+msgid "Argentina"
+msgstr "Argentinië"
+
+#: includes/country.php:19
+msgid "Armenia"
+msgstr "Armenië"
+
+#: includes/country.php:20
+msgid "Aruba"
+msgstr "Aruba"
+
+#: includes/country.php:21
+msgid "Australia"
+msgstr "Australië"
+
+#: includes/country.php:22
+msgid "Austria"
+msgstr "Oostenrijk"
+
+#: includes/admin/pages/settings-page.php:186
+msgid "Average Completed Projects Per country"
+msgstr "Gemiddeld aantal voltooide projecten per land"
+
+#: includes/admin/pages/settings-page.php:179
+msgid "Average Distribution"
+msgstr "Gemiddelde verdeling"
+
+#: includes/country.php:23
+msgid "Azerbaijan"
+msgstr "Azerbeidzjan"
+
+#: includes/country.php:24
+msgid "Bahamas"
+msgstr "Bahama's"
+
+#: includes/country.php:25
+msgid "Bahrain"
+msgstr "Bahrein"
+
+#: includes/country.php:26
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: includes/country.php:27
+msgid "Barbados"
+msgstr "Barbados"
+
+#: includes/country.php:28
+msgid "Belarus"
+msgstr "Wit-Rusland"
+
+#: includes/country.php:29
+msgid "Belgium"
+msgstr "België"
+
+#: includes/country.php:30
+msgid "Belize"
+msgstr "Belize"
+
+#: includes/country.php:31
+msgid "Benin"
+msgstr "Benin"
+
+#: includes/country.php:32
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: includes/country.php:33
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: includes/country.php:34
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: includes/country.php:35
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnië en Herzegovina"
+
+#: includes/country.php:36
+msgid "Botswana"
+msgstr "Botswana"
+
+#: includes/country.php:37
+msgid "Brazil"
+msgstr "Brazilië"
+
+#: includes/country.php:38
+msgid "British Virgin Islands"
+msgstr "Britse Maagdeneilanden"
+
+#: includes/country.php:39
+msgid "Brunei Darussalam"
+msgstr "Brunei Darussalam"
+
+#: includes/country.php:40
+msgid "Bulgaria"
+msgstr "Bulgarije"
+
+#: includes/country.php:41
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: includes/country.php:42
+msgid "Burundi"
+msgstr "Burundi"
+
+#: includes/country.php:43
+msgid "Cambodia"
+msgstr "Cambodja"
+
+#: includes/country.php:44
+msgid "Cameroon"
+msgstr "Kameroen"
+
+#: includes/country.php:45
+msgid "Canada"
+msgstr "Canada"
+
+#: includes/country.php:46
+msgid "Canary Islands (Spain)"
+msgstr "Canarische Eilanden (Spanje)"
+
+#: includes/country.php:47
+msgid "Cape Verde"
+msgstr "Kaapverdië"
+
+#: includes/country.php:48
+msgid "Cayman Islands"
+msgstr "Kaaimaneilanden"
+
+#: includes/country.php:49
+msgid "Central African Republic"
+msgstr "Centraal-Afrikaanse Republiek"
+
+#: includes/country.php:50
+msgid "Chad"
+msgstr "Chad"
+
+#: includes/country.php:51
+msgid "Chile"
+msgstr "Chili"
+
+#: includes/country.php:52
+msgid "China"
+msgstr "China"
+
+#: includes/admin/pages/settings-page.php:75
+#: includes/admin/pages/settings-page.php:78
+msgid "Choose your country"
+msgstr "Kies je land"
+
+#: includes/country.php:53
+msgid "Colombia"
+msgstr "Colombia"
+
+#: includes/country.php:54
+msgid "Comoros"
+msgstr "Comoren"
+
+#: includes/admin/pages/settings-page.php:130
+msgid "Completed Projects"
+msgstr "Voltooide projecten"
+
+#: includes/country.php:55
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: includes/admin/pages/settings-page.php:141
+msgid "Countries"
+msgstr "Landen"
+
+#: includes/country.php:56
+msgid "Croatia"
+msgstr "Kroatië"
+
+#: includes/country.php:57
+msgid "Cuba"
+msgstr "Cuba"
+
+#: includes/country.php:58
+msgid "Curaçao"
+msgstr "Curaçao"
+
+#: includes/country.php:59
+msgid "Cyprus"
+msgstr "Cyprus"
+
+#: includes/country.php:60
+msgid "Czech Republic"
+msgstr "Tsjechië"
+
+#: includes/country.php:61
+msgid "Dem. Rep. Korea"
+msgstr "Dem. Rep. Korea"
+
+#: includes/country.php:62
+msgid "Democratic Republic of the Congo"
+msgstr "Democratische Republiek Congo"
+
+#: includes/country.php:63
+msgid "Denmark"
+msgstr "Denemarken"
+
+#: world-domi-map.php:108 includes/admin/pages/settings-page.php:40
+msgid ""
+"Display an interactive global map showcasing tracked projects completed in "
+"various countries."
+msgstr ""
+"Laat een interactieve wereldkaart zien met gevolgde projecten die in "
+"verschillende landen zijn voltooid."
+
+#: includes/country.php:64
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: includes/country.php:65
+msgid "Dominica"
+msgstr "Dominica"
+
+#: includes/country.php:66
+msgid "Dominican Republic"
+msgstr "Dominicaanse Republiek"
+
+#: includes/country.php:67
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: includes/country.php:68
+msgid "Egypt"
+msgstr "Egypte"
+
+#: includes/country.php:69
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: includes/country.php:70
+msgid "Equatorial Guinea"
+msgstr "Equatoriaal-Guinea"
+
+#: includes/country.php:71
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: includes/country.php:72
+msgid "Estonia"
+msgstr "Estland"
+
+#: includes/country.php:73
+msgid "Eswatini"
+msgstr "Eswatini"
+
+#: includes/country.php:74
+msgid "Ethiopia"
+msgstr "Ethiopië"
+
+#: includes/country.php:75
+msgid "Faeroe Islands"
+msgstr "Faeröer Eilanden"
+
+#: includes/country.php:76
+msgid "Falkland Islands"
+msgstr "Falklandeilanden"
+
+#: includes/country.php:77
+msgid "Federated States of Micronesia"
+msgstr "Federale Staten van Micronesië"
+
+#: includes/country.php:78
+msgid "Fiji"
+msgstr "Fiji"
+
+#: includes/country.php:79
+msgid "Finland"
+msgstr "Finland"
+
+#: includes/country.php:80
+msgid "France"
+msgstr "Frankrijk"
+
+#: includes/country.php:81
+msgid "French Guiana"
+msgstr "Frans Guyana"
+
+#: includes/country.php:82
+msgid "French Polynesia"
+msgstr "Frans Polynesië"
+
+#: includes/country.php:83
+msgid "Gabon"
+msgstr "Gabon"
+
+#: includes/country.php:84
+msgid "Georgia"
+msgstr "Georgië"
+
+#: includes/country.php:85
+msgid "Germany"
+msgstr "Duitsland"
+
+#: includes/country.php:86
+msgid "Ghana"
+msgstr "Ghana"
+
+#: includes/country.php:87
+msgid "Greece"
+msgstr "Griekenland"
+
+#: includes/country.php:88
+msgid "Greenland"
+msgstr "Groenland"
+
+#: includes/country.php:89
+msgid "Grenada"
+msgstr "Grenada"
+
+#: includes/country.php:90
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: includes/country.php:91
+msgid "Guam"
+msgstr "Guam"
+
+#: includes/country.php:92
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: includes/country.php:93
+msgid "Guinea"
+msgstr "Guinee"
+
+#: includes/country.php:94
+msgid "Guinea-Bissau"
+msgstr "Guinee-Bissau"
+
+#: includes/country.php:95
+msgid "Guyana"
+msgstr "Guyana"
+
+#: includes/country.php:96
+msgid "Haiti"
+msgstr "Haïti"
+
+#: includes/country.php:97
+msgid "Honduras"
+msgstr "Honduras"
+
+#. page title
+#: includes/admin/pages/settings-page.php:24
+#: includes/admin/pages/settings-page.php:38
+msgid "How to Use"
+msgstr "Hoe te gebruiken"
+
+#: includes/country.php:98
+msgid "Hungary"
+msgstr "Hongarije"
+
+#: includes/country.php:99
+msgid "Iceland"
+msgstr "IJsland"
+
+#: includes/country.php:100
+msgid "India"
+msgstr "India"
+
+#: includes/country.php:101
+msgid "Indonesia"
+msgstr "Indonesië"
+
+#: includes/country.php:102
+msgid "Iran"
+msgstr "Iran"
+
+#: includes/country.php:103
+msgid "Iraq"
+msgstr "Irak"
+
+#: includes/country.php:104
+msgid "Ireland"
+msgstr "Ierland"
+
+#: includes/country.php:105
+msgid "Israel"
+msgstr "Israël"
+
+#: includes/country.php:106
+msgid "Italy"
+msgstr "Italië"
+
+#: includes/country.php:107
+msgid "Ivory Coast"
+msgstr "Ivoorkust"
+
+#: includes/country.php:108
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: includes/country.php:109
+msgid "Japan"
+msgstr "Japan"
+
+#: includes/country.php:110
+msgid "Jordan"
+msgstr "Jordan"
+
+#: includes/country.php:111
+msgid "Kazakhstan"
+msgstr "Kazachstan"
+
+#: includes/country.php:112
+msgid "Kenya"
+msgstr "Kenia"
+
+#: includes/country.php:113
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: includes/country.php:114
+msgid "Kosovo"
+msgstr "Kosovo"
+
+#: includes/country.php:115
+msgid "Kuwait"
+msgstr "Koeweit"
+
+#: includes/country.php:116
+msgid "Kyrgyzstan"
+msgstr "Kirgizië"
+
+#: includes/country.php:117
+msgid "Lao PDR"
+msgstr "Laos"
+
+#: includes/country.php:118
+msgid "Laos"
+msgstr "Laos"
+
+#: includes/country.php:119
+msgid "Latvia"
+msgstr "Letland"
+
+#: includes/country.php:120
+msgid "Lebanon"
+msgstr "Libanon"
+
+#: includes/country.php:121
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: includes/country.php:122
+msgid "Liberia"
+msgstr "Liberia"
+
+#: includes/country.php:123
+msgid "Libya"
+msgstr "Libië"
+
+#: includes/country.php:124
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: includes/country.php:125
+msgid "Lithuania"
+msgstr "Litouwen"
+
+#: includes/country.php:126
+msgid "Luxembourg"
+msgstr "Luxemburg"
+
+#: includes/country.php:127
+msgid "Macedonia"
+msgstr "Macedonië"
+
+#: includes/country.php:128
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: includes/country.php:129
+msgid "Malawi"
+msgstr "Malawi"
+
+#: includes/country.php:130
+msgid "Malaysia"
+msgstr "Maleisië"
+
+#: includes/country.php:131
+msgid "Maldives"
+msgstr "Malediven"
+
+#: includes/country.php:132
+msgid "Mali"
+msgstr "Mali"
+
+#: includes/country.php:133
+msgid "Malta"
+msgstr "Malta"
+
+#: includes/country.php:134
+msgid "Marshall Islands"
+msgstr "Marshalleilanden"
+
+#: includes/country.php:135
+msgid "Martinique"
+msgstr "Martinique"
+
+#: includes/country.php:136
+msgid "Mauritania"
+msgstr "Mauritanië"
+
+#: includes/country.php:137
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: includes/country.php:138
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: includes/country.php:139
+msgid "Mexico"
+msgstr "Mexico"
+
+#: includes/country.php:140
+msgid "Moldova"
+msgstr "Moldavië"
+
+#: includes/country.php:141
+msgid "Monaco"
+msgstr "Monaco"
+
+#: includes/country.php:142
+msgid "Mongolia"
+msgstr "Mongolië"
+
+#: includes/country.php:143
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#: includes/country.php:144
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: includes/country.php:145
+msgid "Morocco"
+msgstr "Marokko"
+
+#: includes/admin/pages/settings-page.php:160
+msgid "Most Sales"
+msgstr "Meeste verkopen"
+
+#: includes/country.php:146
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: includes/country.php:147
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: includes/country.php:148
+msgid "Namibia"
+msgstr "Namibië"
+
+#: includes/country.php:149
+msgid "Nauru"
+msgstr "Nauru"
+
+#: includes/country.php:150
+msgid "Nepal"
+msgstr "Nepal"
+
+#: includes/country.php:151
+msgid "Netherlands"
+msgstr "Nederland"
+
+#: includes/country.php:152
+msgid "New Caledonia"
+msgstr "Nieuw-Caledonië"
+
+#: includes/country.php:153
+msgid "New Zealand"
+msgstr "Nieuw-Zeeland"
+
+#: includes/country.php:154
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: includes/country.php:155
+msgid "Niger"
+msgstr "Niger"
+
+#: includes/country.php:156
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: includes/country.php:157
+msgid "Northern Mariana Islands"
+msgstr "Noordelijke Marianen"
+
+#: includes/country.php:158
+msgid "Norway"
+msgstr "Noorwegen"
+
+#: includes/admin/pages/settings-page.php:97
+msgid "Number of Sales"
+msgstr "Aantal verkopen"
+
+#: includes/country.php:159
+msgid "Oman"
+msgstr "Oman"
+
+#: includes/country.php:160
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: includes/country.php:161
+msgid "Palau"
+msgstr "Palau"
+
+#: includes/country.php:162
+msgid "Palestine"
+msgstr "Palestina"
+
+#: includes/country.php:163
+msgid "Panama"
+msgstr "Panama"
+
+#: includes/country.php:164
+msgid "Papua New Guinea"
+msgstr "Papoea-Nieuw-Guinea"
+
+#: includes/country.php:165
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: includes/country.php:166
+msgid "Peru"
+msgstr "Peru"
+
+#: includes/country.php:167
+msgid "Philippines"
+msgstr "Filippijnen"
+
+#: includes/country.php:168
+msgid "Poland"
+msgstr "Polen"
+
+#: includes/country.php:169
+msgid "Portugal"
+msgstr "Portugal"
+
+#: includes/country.php:170
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: includes/country.php:171
+msgid "Qatar"
+msgstr "Qatar"
+
+#: includes/admin/pages/settings-page.php:149
+msgid "Reached Countries"
+msgstr "Bereikte landen"
+
+#: includes/country.php:172
+msgid "Republic of Congo"
+msgstr "Republiek Congo"
+
+#: includes/country.php:173
+msgid "Republic of Korea"
+msgstr "Republiek Korea"
+
+#: includes/country.php:174
+msgid "Reunion"
+msgstr "Reünie"
+
+#: includes/country.php:175
+msgid "Romania"
+msgstr "Roemenië"
+
+#: includes/country.php:176
+msgid "Russian Federation"
+msgstr "Russische Federatie"
+
+#: includes/country.php:177
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: includes/country.php:178
+msgid "Saba (Netherlands)"
+msgstr "Saba (Nederland)"
+
+#: includes/country.php:179
+msgid "Saint Kitts and Nevis"
+msgstr "Saint Kitts en Nevis"
+
+#: includes/country.php:180
+msgid "Saint Lucia"
+msgstr "Saint Lucia"
+
+#: includes/country.php:181
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent en de Grenadines"
+
+#: includes/country.php:182
+msgid "Saint-Barthélemy"
+msgstr "Saint-Barthélemy"
+
+#: includes/country.php:183
+msgid "Saint-Martin"
+msgstr "Saint-Martin"
+
+#: world-domi-map.php:55
+msgid "Sale"
+msgstr "Verkoop"
+
+#: world-domi-map.php:54 includes/admin/pages/settings-page.php:122
+msgid "Sales"
+msgstr "Verkoop"
+
+#: includes/admin/pages/settings-page.php:168
+msgid "Sales at"
+msgstr "Verkoop bij"
+
+#: world-domi-map.php:78
+msgid "Sales in"
+msgstr "Verkoop in"
+
+#: includes/country.php:184
+msgid "Samoa"
+msgstr "Samoa"
+
+#: includes/country.php:185
+msgid "San Marino"
+msgstr "San Marino"
+
+#: includes/country.php:186
+msgid "Sao Tome and Principe"
+msgstr "Sao Tomé en Principe"
+
+#: includes/country.php:187
+msgid "Saudi Arabia"
+msgstr "Saoedi-Arabië"
+
+#: includes/country.php:188
+msgid "Senegal"
+msgstr "Senegal"
+
+#: includes/country.php:189
+msgid "Serbia"
+msgstr "Servië"
+
+#: includes/country.php:190
+msgid "Seychelles"
+msgstr "Seychellen"
+
+#: includes/country.php:191
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: includes/country.php:192
+msgid "Singapore"
+msgstr "Singapore"
+
+#: includes/country.php:193
+msgid "Sint Maarten"
+msgstr "Sint Maarten"
+
+#: includes/country.php:194
+msgid "Slovakia"
+msgstr "Slowakije"
+
+#: includes/country.php:195
+msgid "Slovenia"
+msgstr "Slovenië"
+
+#: includes/country.php:196
+msgid "Solomon Islands"
+msgstr "Salomoneilanden"
+
+#: includes/country.php:197
+msgid "Somalia"
+msgstr "Somalië"
+
+#: includes/country.php:198
+msgid "South Africa"
+msgstr "Zuid-Afrika"
+
+#: includes/country.php:199
+msgid "South Sudan"
+msgstr "Zuid-Soedan"
+
+#: includes/country.php:200
+msgid "Spain"
+msgstr "Spanje"
+
+#: includes/country.php:201
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: includes/country.php:202
+msgid "St. Eustatius (Netherlands)"
+msgstr "St. Eustatius (Nederland)"
+
+#. Author of the plugin
+msgid "Stefan Yoshovski"
+msgstr "Stefan Josovski"
+
+#: includes/country.php:203
+msgid "Sudan"
+msgstr "Soedan"
+
+#: includes/country.php:204
+msgid "Suriname"
+msgstr "Suriname"
+
+#: includes/country.php:205
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: includes/country.php:206
+msgid "Sweden"
+msgstr "Zweden"
+
+#: includes/country.php:207
+msgid "Switzerland"
+msgstr "Zwitserland"
+
+#: includes/country.php:208
+msgid "Syria"
+msgstr "Syrië"
+
+#: includes/country.php:209
+msgid "São Tomé and Principe"
+msgstr "São Tomé en Principe"
+
+#: includes/country.php:210
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: includes/country.php:211
+msgid "Tajikistan"
+msgstr "Tadzjikistan"
+
+#: includes/country.php:212
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: includes/country.php:213
+msgid "Thailand"
+msgstr "Thailand"
+
+#: includes/country.php:214
+msgid "The Gambia"
+msgstr "Gambia"
+
+#. Description of the plugin
+msgid ""
+"This plugin shows a map of the world and tracks completed projects in "
+"different countries."
+msgstr ""
+"Deze plugin toont een kaart van de wereld en volgt voltooide projecten in "
+"verschillende landen."
+
+#: includes/country.php:215
+msgid "Timor-Leste"
+msgstr "Oost-Timor"
+
+#: includes/admin/pages/settings-page.php:41
+msgid ""
+"To utilize the plugin, choose the 'World Domi Map' block in the Gutenberg "
+"editor. As an alternative, you can simply insert the provided shortcode into "
+"any post or page:"
+msgstr ""
+"Om de plugin te gebruiken, kies je het blok 'World Domi Map' in de Gutenberg "
+"editor. Als alternatief kun je ook gewoon de meegeleverde shortcode invoegen "
+"in een bericht of pagina:"
+
+#: includes/country.php:216
+msgid "Togo"
+msgstr "Togo"
+
+#: includes/country.php:217
+msgid "Tonga"
+msgstr "Tonga"
+
+#: includes/country.php:218
+msgid "Trinidad and Tobago"
+msgstr "Trinidad en Tobago"
+
+#: includes/country.php:219
+msgid "Tunisia"
+msgstr "Tunesië"
+
+#: includes/country.php:220
+msgid "Turkey"
+msgstr "Kalkoen"
+
+#: includes/country.php:221
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: includes/country.php:222
+msgid "Turks and Caicos Islands"
+msgstr "Turks- en Caicoseilanden"
+
+#: includes/country.php:223
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: includes/country.php:224
+msgid "Uganda"
+msgstr "Oeganda"
+
+#: includes/country.php:225
+msgid "Ukraine"
+msgstr "Oekraïne"
+
+#: includes/country.php:226
+msgid "United Arab Emirates"
+msgstr "Verenigde Arabische Emiraten"
+
+#: includes/country.php:227
+msgid "United Kingdom"
+msgstr "Verenigd Koninkrijk"
+
+#: includes/country.php:228
+msgid "United States"
+msgstr "Verenigde Staten"
+
+#: includes/country.php:229
+msgid "United States Virgin Islands"
+msgstr "Amerikaanse Maagdeneilanden"
+
+#: includes/country.php:230
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: includes/country.php:231
+msgid "Uzbekistan"
+msgstr "Oezbekistan"
+
+#: includes/country.php:232
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: includes/country.php:233
+msgid "Vatican City"
+msgstr "Vaticaanstad"
+
+#: includes/country.php:234
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: includes/country.php:235
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: includes/country.php:236
+msgid "Western Sahara"
+msgstr "Westelijke Sahara"
+
+#. Name of the plugin
+msgid "World Domi Map"
+msgstr "Wereld Domi Kaart"
+
+#: world-domi-map.php:53
+msgid "World Domination"
+msgstr "Wereldoverheersing"
+
+#: includes/country.php:237
+msgid "Yemen"
+msgstr "Jemen"
+
+#: includes/country.php:238
+msgid "Zambia"
+msgstr "Zambia"
+
+#: includes/country.php:239
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
