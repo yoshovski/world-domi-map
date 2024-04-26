@@ -4,7 +4,7 @@
  * Plugin URI:
  * Slug: world-domi-map
  * Version: 1.0.0
- * Contributors: @syoshovski
+ * Contributors: syoshovski
  * Author: Stefan Yoshovski
  * Author URI:
  * Text Domain: world-domi-map
